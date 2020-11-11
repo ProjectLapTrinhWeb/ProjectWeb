@@ -1762,7 +1762,8 @@ h3.other-nw {
 	text-decoration:none;
 }
 .panel-body ul li a:hover{
-	color:#212121;
+	color:#ff5500;
+	text-decoration: underline #ff5500;
 }
 a.pa_italic label {
     cursor: pointer;
