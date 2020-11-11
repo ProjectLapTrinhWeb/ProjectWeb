@@ -503,7 +503,7 @@ li.w3pages .dropdown-menu > li > a:hover{
 	min-height:700px;
 } 
 .banner-mail{
-	background:url(../images/banner02.jpg) no-repeat center 0px; 
+	background:url(../images/background-mail.jpg) no-repeat center 0px; 
 	background-repeat: no-repeat;
 	background-size:cover;
 	-webkit-background-size:cover;
@@ -513,6 +513,9 @@ li.w3pages .dropdown-menu > li > a:hover{
 	min-height:700px;
 }
 .banner.banner10{
+	min-height:300px;
+}
+.banner-mail.banner10{
 	min-height:300px;
 }
 .banner.banner1,.banner.banner2,.banner.banner3{
