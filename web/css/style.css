@@ -1709,7 +1709,7 @@ h3.other-nw {
 	text-decoration: none;
 }
 .panel_bottom li a{
-	font-family: 'Glegoo', serif;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	font-size: .96em !important;
 }
 .panel_bottom li a:hover,.panel-title a:hover{	
