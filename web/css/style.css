@@ -135,7 +135,8 @@ label.icon-search {
     width: 500px;
     height: 62px;
     padding: 10px;
-    top: 44px;
+	top: 44px;
+	border-radius: 15px;
 	transition: height 0.2s ease-out, top 0.2s ease-out, padding 0.2s ease-out, 0.3s width ease-out 0.2s;
 	-webkit-transition: height 0.2s ease-out, top 0.2s ease-out, padding 0.2s ease-out, 0.3s width ease-out 0.2s;
 }
