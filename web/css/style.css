@@ -362,6 +362,9 @@ p.sbmincart-empty-text {
 }
 .navbar-default .navbar-nav > li:hover > .dropdown-menu {
 	display: block;
+	-webkit-transition:.5s all;
+	-moz-transition:.5s all; 
+	transition:.5s all;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
     background-color: transparent;
