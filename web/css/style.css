@@ -360,9 +360,9 @@ p.sbmincart-empty-text {
 	-moz-transition:.5s all; 
 	transition:.5s all;
 }
-/* .navbar-default .navbar-nav > li > a:hover {
-
-} */
+.navbar-default .navbar-nav > li:hover > .dropdown-menu {
+	display: block;
+}
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
     background-color: transparent;
 }
@@ -495,7 +495,8 @@ li.w3pages .dropdown-menu > li > a:hover{
     color: #000; 
 }
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
-    color: #ff5500; 
+	color: #ff5500; 
+	/* background-color: white; */
 }
 /*-- //navigation --*/
 /*-- banner --*/
