@@ -71,9 +71,9 @@ input[type="submit"],.panel-body ul li a,.checkout-right-basket a,.additional_in
 .w3l_login a span{
 	top:1.3em;
 }
-a.act {
+/* a.act {
     color:rgb(255 85 0) !important;
-}
+} */
 /*-- search --*/
 .search{
 	position: relative;
