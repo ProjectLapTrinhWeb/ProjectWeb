@@ -71,9 +71,9 @@ input[type="submit"],.panel-body ul li a,.checkout-right-basket a,.additional_in
 .w3l_login a span{
 	top:1.3em;
 }
-a.act {
+/* a.act {
     color:rgb(255 85 0) !important;
-}
+} */
 /*-- search --*/
 .search{
 	position: relative;
@@ -135,7 +135,7 @@ label.icon-search {
 	visibility: hidden;
 }
 .search_box:checked~.search_form{
-    width: 500px;
+    width: 488px;
     height: 62px;
     padding: 10px;
 	top: 44px;
@@ -360,6 +360,12 @@ p.sbmincart-empty-text {
 	-moz-transition:.5s all; 
 	transition:.5s all;
 }
+.navbar-default .navbar-nav > li:hover > .dropdown-menu {
+	display: block;
+	-webkit-transition:1s all;
+	-moz-transition:1s all; 
+	transition:1s all;
+}
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
     background-color: transparent;
 }
@@ -370,7 +376,8 @@ p.sbmincart-empty-text {
     color: #d8703f;
 }
 .navbar-default .navbar-nav > li > a:focus {
-    color: #ff5500 !important;
+	color: #ff5500 !important;
+	/* background-color: #ffffff; */
 }
 .navbar-default {
     background: none;
@@ -421,9 +428,12 @@ ul.multi-column-dropdown h6 {
     text-align: center;
 }
 .dropdown-menu.columns-3 {
-    min-width:900px;
+    /* min-width:900px;
     padding: 30px 30px;
-	left: -130%;
+	left: -130%; */
+	min-width: 1130px;
+    padding: 30px 30px;
+    left: -210%;
 }
 .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
     background: none;
@@ -443,7 +453,8 @@ ul.multi-column-dropdown h6 {
     padding: 20px 30px;
     font-size: 14px;
     text-transform: uppercase;
-    letter-spacing: 2px;
+	letter-spacing: 2px;
+	font-weight: bold;
 }
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
     color:#ff5500;
@@ -458,7 +469,7 @@ ul.multi-column-dropdown h6 {
 	background: #0064cf;
 }
 .navbar-nav {
-    float: none;
+	float: none;
 }
 .navbar-nav > li:nth-child(1) {
     margin-left: 12em;
@@ -488,7 +499,8 @@ li.w3pages .dropdown-menu > li > a:hover{
     color: #000; 
 }
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
-    color: #ff5500; 
+	color: #ff5500; 
+	/* background-color: white; */
 }
 /*-- //navigation --*/
 /*-- banner --*/
@@ -593,7 +605,7 @@ li.w3pages .dropdown-menu > li > a:hover{
     border: none;
 }
 .video-img {
-    background: url(../images/2.jpg)no-repeat right center;
+    background: url(../images/banner-squared.jpg)no-repeat right center;
     -webkit-background-size: cover;
     background-size: cover;
     -moz-background-size: cover;
@@ -602,10 +614,13 @@ li.w3pages .dropdown-menu > li > a:hover{
 	min-height: 455px;
 }
 .video-img a {
-    display: inline-block;
-    margin:11em 0em 0 12em;
-	outline:none;
-}
+    display: flex;
+    /* margin: 1em 0em 0 12em; */
+    align-items: center;
+    padding-top: 180px;
+    justify-content: center;
+	outline: none;
+}	
 .video-img a span.glyphicon {
     font-size: 2em;
     color: #FFFFFF;
@@ -613,7 +628,7 @@ li.w3pages .dropdown-menu > li > a:hover{
     -webkit-border-radius: 50%;
     border-radius: 50%;
     -moz-border-radius: 50%;
-    padding: 0.55em 0.7em;
+    padding: 18px;
     width: 80px;
     height: 80px;
 }
@@ -652,7 +667,8 @@ li.w3pages .dropdown-menu > li > a:hover{
 .nav-tabs > li > a {
     font-size: 1em;
     color: #212121;
-    font-family: 'Glegoo', serif;
+	/* font-family: 'Glegoo', serif; */
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-transform: uppercase;
     letter-spacing: 1px;
 	border-radius: 0;
@@ -972,15 +988,15 @@ li.w3pages .dropdown-menu > li > a:hover{
 }
 .w3agile_special_deals_grid_right_pos h5{
 	font-weight: 700;
-    color: #ff5500;
-    padding-left: 5em;
+    color: #0064cf;
+    padding-left: 2em;
     margin: .5em 0 0;
 }
 .w3agile_special_deals_grid_right_pos h5 span{
 	font-weight: 300;
     display: block;
     color:#ffffff;
-    padding-left: 2em;
+    padding-left: 1em;
     margin: .5em 0 0.2em;
 }
 .w3agile_special_deals_grid_left_grid_pos{
@@ -1679,8 +1695,9 @@ h3.other-nw {
     color:#ffffff;
     line-height: 1.5em;
     padding: 3.5em 0 0 4em;
-    font-family: 'Open Sans', sans-serif;
-    letter-spacing: 4px;
+    /* font-family: 'Open Sans', sans-serif; */
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	letter-spacing: 4px;
 }
 .banner1 h2 span,.banner2 h2 span,.banner3 h2 span,.banner4 h2 span,.banner5 h2 span,.banner6 h2 span,.banner7 h2 span,.banner8 h2 span,.banner9 h2 span{
 	display: block;
@@ -2280,7 +2297,8 @@ h2.typoh2{
     position: relative;
     top: 1px;
     display: inline-block;
-    font-family: 'Glyphicons Halflings';
+	/* font-family: 'Glyphicons Halflings'; */
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: normal;
     font-weight: 400;
     line-height: 1;
@@ -2334,7 +2352,8 @@ h3.icon-subheading {
     position: relative;
     top: 1px;
     display: inline-block;
-    font-family: 'Glyphicons Halflings';
+	/* font-family: 'Glyphicons Halflings'; */
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: normal;
     font-weight: 400;
     line-height: 1;
@@ -2599,7 +2618,8 @@ h2.typoh2{
 	font-size:.8em;
 	margin:.6em 0 0;
 	color:#212121;
-	font-family: 'Open Sans', sans-serif;
+	/* font-family: 'Open Sans', sans-serif; */
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 500;
 }
 .wthree_team_grids p{
@@ -5056,19 +5076,142 @@ margin-bottom: 30px;
 	margin: auto;
 	font-size: 25px;
 }
-.cart1_begin{
-	width: 100%;
-	height: 700px;
-	margin: auto;
-	background-color: darkgray;
+/* --------------------------- Form Payment ---------------------------*/
+#payment{
+    display: block;
+    width: 55%;
+    height: 810px;
+    margin: auto;
+    background-color: #f5f5f5;
+	border-radius: 15px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+    padding: 30px;
+    padding-top: 25px;
+    box-shadow: 3px 3px 3px #0c435e;
 }
-.container_cart1{
-	width: 700px;
-	height: 500px;
-	margin: auto;
-	background-color: white;
+#payment h3{
+	display: block;
+    color: #0c435e;
+    margin-bottom: 20px;
 }
-.container_cart1 h1{
-	text-align: center;
-	padding-top: 50px;
+#payment div.input{
+    width: 97.5%;
+	height: 42px;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    margin-bottom: 20px;
 }
+#payment div.input > i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    /* font-size: 30px; */
+    padding-right: 5px;
+    border-right: 1px solid black;
+}
+#payment div.input input{
+    width: 98%;
+    height: 30px;
+    margin-left: 5px;
+    font-size: 17px;
+	padding-left: 5px;
+	background-color: #f5f5f5;
+}
+#payment div.birth{
+    width: 50%;
+    height: 90px;
+    float: left;
+}
+#payment div.birth input{
+    width: 20%;
+    height: 40px;
+	font-size: 20px;
+	background-color: #f5f5f5;
+    /* background-color: aqua; */
+    padding-left: 5%;
+    border-radius: 5px;
+    /* border: 1px solid black; */
+    float: left;
+    margin-right: 5%;
+}
+#payment div.birth input:last-child{
+    width: 25%;
+}
+/* ====================== */
+#payment div.gender{
+    width: 49.5%;
+    height: 90px;
+    float: right;
+    margin-right: 0.5%;
+}
+#payment div.radio-group {
+    width: 100%;
+    height: 45%;
+    border: 1px solid black;
+    display: inline-block;
+    /* margin: 20px; */
+    border-radius: 5px;
+    overflow: hidden;
+}
+#payment div.radio-group input[type=radio] {
+    position: absolute;
+    visibility: hidden;
+    display: none;
+}
+#payment div.radio-group label{
+    /* color: lighten( #332f35, 40%); */
+    width: 49.8%;
+    height: 100%;
+    color: gray;
+    display: flex;
+    float: left;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: bold;
+    /* padding: 5px 20px; */
+}
+#payment div.radio-group label:last-child{
+    border-left: 1px solid black;
+}
+#payment div.radio-group input[type=radio]:checked + label{
+    /* color: lighten(#332f35,60%); */
+	background: #0064cf;
+	color: #FFFFFF;
+    /* border: 1px solid #00f400; */
+}
+  /* ====================== */
+#payment div.payment-details{
+      width: 99.5%;
+      height: 120px;
+      margin-top: 120px;
+}
+#payment div.payment-details div.radio-group label i{
+      margin-right: 2%;
+}
+#payment > form > input[type=submit]{
+    width: 100%;
+    height: 30px;
+    margin-top: 20px;
+    border-radius: 5px;
+	background-color: #0064cf;
+	color: #FFFFFF;
+    font-size: 17px;
+    font-weight: bold;
+}
+#payment input[type=radio]:checked + label{
+    color: black;
+}
+#term-conditions-payment{
+	margin-top: 85px;
+}
+
+/* --------------------------- End Form Payment ---------------------------*/
+
