@@ -1086,8 +1086,8 @@ li.w3pages .dropdown-menu > li > a:hover{
 	width: auto;
 	height: auto;
 	display:block;--*/
-	max-width: 100px;
-	max-height: 100px;
+	max-width: 80px;
+	max-height: 80px;
 	border-radius: 50%;
 }
 /* Default Skin */
