@@ -5056,3 +5056,19 @@ margin-bottom: 30px;
 	margin: auto;
 	font-size: 25px;
 }
+.cart1_begin{
+	width: 100%;
+	height: 700px;
+	margin: auto;
+	background-color: darkgray;
+}
+.container_cart1{
+	width: 700px;
+	height: 500px;
+	margin: auto;
+	background-color: white;
+}
+.container_cart1 h1{
+	text-align: center;
+	padding-top: 50px;
+}
