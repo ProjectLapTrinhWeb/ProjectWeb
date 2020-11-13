@@ -534,11 +534,12 @@ li.w3pages .dropdown-menu > li > a:hover{
 	min-height:400px;
 }
 .banner1 h2,.banner10 h2{
-	color: #fff;
+	color: #ff5500;
     font-size: 3em;
     text-align: center;
     padding: 2.5em 0 0;
 	text-align: left;
+	/* text-decoration: dashed; */
 }
 .banner.banner1{
 	background:url(../images/bg1.jpg) no-repeat center;
@@ -2602,10 +2603,19 @@ h2.typoh2{
     background: #f5f5f5;
 }
 .wthree_team_grids{
-	margin:3em 0 0;
+	margin:3em;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 }
 .wthree_team_grid{
+	min-width: 200px;
 	text-align:center;
+	margin: 0 40px;
+}
+.wthree_team_grid img{
+	max-width: 150px;
+	max-height: 150px;
 }
 .wthree_team_grid h4 {
     font-size: 1em;
@@ -5282,3 +5292,10 @@ margin-bottom: 30px;
 	margin: 10px;
 }
 /* --------------------------- end product in cart ---------------------------*/
+/* --------------------------- insert about us ---------------------------*/
+.our-team{
+	display: flex !important;
+	flex-direction: row !important;
+	/* align-items: center !important; */
+}
+/* --------------------------- end insert about us ---------------------------*/
