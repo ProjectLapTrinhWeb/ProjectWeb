@@ -5215,3 +5215,70 @@ margin-bottom: 30px;
 
 /* --------------------------- End Form Payment ---------------------------*/
 
+/* --------------------------- product in cart ---------------------------*/
+#cart {
+	width: 90%;
+	height: auto;
+	margin: auto;
+} 
+#cart .container {
+	width: auto;
+	height: auto;
+	/* border: 5px solid black; */
+	margin: 20px;
+}
+#cart .container #header-product {
+	border-bottom: 5px solid black;
+	display: flex;
+	flex-direction: row;
+	
+	padding: 15px;
+}
+#cart .container #header-product h3.img{
+	margin-right: 50px;
+}
+#cart .container #header-product h3.name-product{
+	margin-right: 250px;
+}
+#cart .container #header-product h3.price-product{
+	margin-right: 240px;
+}
+#cart .container #header-product h3.price-sale{
+	margin-right: 95px;
+}
+#cart .container .product-in-cart{
+	display: flex;
+	flex-direction: row;
+	padding: 20px;
+	align-items: center;
+}
+#cart .container .product-in-cart img{
+	width: 40px;
+	height: 40px;
+	margin-right: 5px;
+}
+#cart .container .product-in-cart > h3{
+	margin-left: 50px;
+	margin-right: 50px;
+	min-width: 240px;
+}
+#cart .container .product-in-cart > h3.price-product-in-cart{
+	text-decoration: line-through;
+	opacity: 0.5;
+}
+#cart .container .product-in-cart > input[type=number]{
+	/* min-width: 60px; */
+	max-width: 50px;
+	height: auto;
+	margin-right: 100px;
+}
+#cart .container #footer-cart {
+	margin-top: 50px;
+	float: right;
+	display: flex;
+	flex-direction: row;
+}
+#cart .container #footer-cart h3{
+	margin: 10px;
+}
+/* --------------------------- end product in cart ---------------------------*/

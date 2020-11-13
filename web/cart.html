@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title> Shopping Cart | Laptop Store</title>
+<title> Giỏ hàng của bạn | Laptop Store</title>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -245,17 +245,64 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<div class="breadcrumb_dress">
 		<div class="container">
 			<ul>
-				<li><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a> <i>/</i></li>
-				<li>Your Cart</li>
+				<li><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Trang chủ</a> <i>/</i></li>
+				<li>Giỏ hàng của bạn</li>
 			</ul>
 		</div>
 	</div>
 	<!-- //breadcrumbs --> 
 	<!-- cart -->
-	<div class="cart1">
+	<div id="cart">
 		<div class="container">
-			
-			
+			<!-- header cart -->
+			<div id="header-product">
+				<h3 class="img">Hình</h3>
+				<h3 class="name-product">Tên sản phẩm</h3>
+				<h3 class="price-product">Giá</h3>
+				<h3 class="price-sale">Giá khuyến mãi</h3>
+				<h3 class="amount">Số lượng</h3>
+			</div>
+			<!-- end header cart -->
+			<!-- product in cart -->
+			<div class="product-in-cart">
+				<img src="images/product-in-cart.jpg" alt="">
+				<h3 class="name-product-in-cart">Laptop chơi game cực mạnh</h3>
+				<h3 class="price-product-in-cart">20.000.000 VNĐ</h3>
+				<h3 class="price-sale">19.999.999 VNĐ</h3>
+				<input type="number" name="amount" id="amount" value="1">
+				<input type="button" value="Xóa" id="delete-product-in-cart">
+			</div>
+			<!-- end 1 of product in cart -->
+			<div class="product-in-cart">
+				<img src="images/product-in-cart.jpg" alt="">
+				<h3 class="name-product-in-cart">Laptop xịn xò</h3>
+				<h3 class="price-product-in-cart">50.000.000 VNĐ</h3>
+				<h3 class="price-sale">49.999.999 VNĐ</h3>
+				<input type="number" name="amount" id="amount" value="1">
+				<input type="button" value="Xóa" id="delete-product-in-cart">
+			</div>
+			<div class="product-in-cart">
+				<img src="images/product-in-cart.jpg" alt="">
+				<h3 class="name-product-in-cart">Laptop cho dân văn phòng</h3>
+				<h3 class="price-product-in-cart">12.000.000 VNĐ</h3>
+				<h3 class="price-sale">11.999.999 VNĐ</h3>
+				<input type="number" name="amount" id="amount" value="1">
+				<input type="button" value="Xóa" id="delete-product-in-cart">
+			</div>
+			<div class="product-in-cart">
+				<img src="images/product-in-cart.jpg" alt="">
+				<h3 class="name-product-in-cart">Laptop cho yang hồ</h3>
+				<h3 class="price-product-in-cart">99.999.999 VNĐ</h3>
+				<h3 class="price-sale">999.999.999 VNĐ</h3>
+				<input type="number" name="amount" id="amount" value="1">
+				<input type="button" value="Xóa" id="delete-product-in-cart">
+			</div>
+			<!-- footer cart -->
+			<div id="footer-cart">
+				<h3 class="label-sum-money">Tổng tiền:</h3>
+				<h3 class="sum-money">1.081.999.996 VNĐ</h3>
+			</div>
+			<!-- end footer cart -->
 		</div>
 	</div>
 	<!-- //mail -->
