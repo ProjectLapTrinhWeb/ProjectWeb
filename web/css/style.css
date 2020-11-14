@@ -472,7 +472,7 @@ ul.multi-column-dropdown h6 {
 	float: none;
 }
 .navbar-nav > li:nth-child(1) {
-    margin-left: 12em;
+    margin-left: 8em;
 } 
 .w3ls_products_pos h4 {
     font-size: 2em;
@@ -2566,13 +2566,14 @@ h2.typoh2{
 /*-- faq --*/
 .w3l_faq_grid h3{
 	font-size:1.3em;
-	color:#212121;
+	color: #ff0000;
 	line-height:1.5em;
 	margin-bottom:1em;
 }
 .w3l_faq_grid p{
-	color:#999;
+	color:#000;
 	line-height:1.8em;
+	text-align: justify;
 }
 .w3l_faq_grids{
 	width:70%;
