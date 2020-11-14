@@ -4872,14 +4872,14 @@ td.invert-image a img {
 		margin:0.7em 0 0 0;
 	}
 	.search_box:checked~.search_form {
-		width: 286px;
+		width: 257px;
 	}
 	.search_form input[type='submit'] {
 		font-size: 13px;
 		padding: 10px 15px;
 	}
 	.search_form input[type='text'] {
-		width: 196px;
+		width: 177px;
 	} 
 	.banner h3 { 
 		margin: 6em 0 0;
