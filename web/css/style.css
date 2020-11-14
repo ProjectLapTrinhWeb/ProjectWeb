@@ -5289,15 +5289,47 @@ margin-bottom: 30px;
 	height: auto;
 	margin-right: 100px;
 }
-#cart .container #footer-cart {
-	margin-top: 50px;
+#cart .container .footer-cart {
+	/* margin-top: 50px;
 	float: right;
 	display: flex;
-	flex-direction: row;
+	flex-direction: row; */
+	width: 300px;
+	height: 300px;
+	float: right;
 }
-#cart .container #footer-cart h3{
+.cart-sales{
+	width: 700px;
+	height: 150px;
+	float: right;
+	display: block;
+	padding-top: 20px;
+}
+.table-cart{
+	width: 400px;
+	font-size: 24px;
+	float:right;
+}
+.cart-checkboxx{
+	float: right;
+	width: 190px;
+	height: 27px;
+	display: block;
+}
+.cart-checkboxx>h3{
+	float: right;
+}
+.nhapmaKM{
+	margin-bottom: 10px;
+	margin-top: 20px;
+	width: 400px;
+	height: 35px;
+	margin-left: 300px;
+}
+
+/* #cart .container .footer-cart h3{
 	margin: 10px;
-}
+} */
 /* --------------------------- end product in cart ---------------------------*/
 /* --------------------------- insert about us ---------------------------*/
 .our-team{

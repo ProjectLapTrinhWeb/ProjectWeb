@@ -298,10 +298,32 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<input type="number" name="amount" id="amount" value="1">
 				<input type="button" value="Xóa" id="delete-product-in-cart">
 			</div>
+			<!-- check khuyen mai -->
+				
 			<!-- footer cart -->
-			<div id="footer-cart">
-				<h3 class="label-sum-money">Tổng tiền:</h3>
-				<h3 class="sum-money">1.081.999.996 VNĐ</h3>
+			<div class="footer-cart">
+				<div class="cart-sales">
+					<div class="cart-checkboxx">
+						<input class="check-KM" type="checkbox">
+						<h3>Mã khuyến mãi</h3>
+					</div>
+					<input class="nhapmaKM"  type="text"placeholder="Nhập mã khuyến mãi">
+				</div>
+				<table class="table-cart">
+					<tr>
+						<th>Tạm tính: </th>
+						<td>1.081.999.996 VNĐ</td>
+					</tr>
+					<tr>
+						<th>Khuyến mãi: </th>
+						<td>0 VNĐ</td>
+					</tr>
+					<tr>
+						<th>Tổng tiền: </th>
+						<td>1.081.999.996 VNĐ</td>
+					</tr>
+				</table>
+				<button><a href="payment.html">Xác nhận thanh toán</a></button>
 			</div>
 			<!-- end footer cart -->
 		</div>
