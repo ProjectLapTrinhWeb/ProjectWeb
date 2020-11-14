@@ -11,7 +11,7 @@ html, body{
 }
 p{
 	margin:0;
-	font-size:17px;
+	font-size:14px;
 }
 h1,h2,h3,h4,h5,h6{
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -3630,6 +3630,7 @@ td.invert-image a img {
 	.single-left {
 		width: 70%;
 		margin: 0 auto;
+		height: 100%;
 	}
 }
 @media (max-width:800px){
@@ -5326,7 +5327,68 @@ margin-bottom: 30px;
 	height: 35px;
 	margin-left: 300px;
 }
+.KM-Info{
+	width: 940px;
+	height: 620.2px;
+	margin: auto;
+	border-top: 8px solid rgb(201, 201, 201);
 
+}
+.KM-QT{
+	width:460px;
+	height: 280px;;
+}
+.KM-QT>h3{
+	color: #0064cf;
+	margin-bottom: 5px;
+}
+.KM-QT>p{
+	margin-left: 20px;
+	margin-bottom: 5px;
+	font-size: 18px;
+}
+.UudaiTG{
+	width:460px;
+	height: 280px;
+}
+.UudaiTG>h3{
+	color: #0064cf;
+	margin-bottom: 5px;
+}
+.UudaiTG>p{
+	margin-left: 20px;
+	margin-bottom: 5px;
+	font-size: 18px;
+}
+.Block2KQ-UD{
+	width: 460px;
+	height: 600px;
+	float: left;
+	display: block;
+	margin-top: 20px;
+}
+.buttonTG{
+	color: white;
+	background-color: orangered;
+	margin-top:20px;
+	margin-left: 20px;
+}
+div.KM-Info>.NH-DV{
+	width: 460px;
+	height: 450px;
+	float: right;
+	display: flow-root;
+	margin-top: 20px;
+}
+.NH-DV>h3{
+	color: #0064cf;
+	margin-bottom: 5px;
+}
+.NH-DV>p{
+	margin-left: 20px;
+	margin-bottom: 5px;
+	font-size: 18px;
+}
 /* #cart .container .footer-cart h3{
 	margin: 10px;
 } */
