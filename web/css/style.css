@@ -5398,22 +5398,49 @@ div.KM-Info>.NH-DV{
 .contain-account{
 	width: 80%;
 	height: 700px;
-	display: block;
+	display: flex;
 }
-.account-img{
+.contain-account >.img-account{
 	width: 255px;
 	height: 600px;
 	border-right: 1px solid gray;
-	/* margin-left: 100px; */
+	margin-left: 100px;
 }
-div.contain-account >.Thongtincanhan{
+.contain-account>.Thongtincanhan{
+	width: 900px;
+	height: 600px;
+	margin-left: 50px;
+}
+.contain-account>.Thongtincanhan>p{
+	margin-left: 50px;
+	font-size: 20px;
+}
+.contain-account>.Thongtincanhan>h3{
+	margin-bottom: 20px;
+}
+.contain-account>.Thongtincanhan>address{
+	margin-left: 50px;
+}
+.contain-account>.Thongtincanhan>button{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 50px;
+}
+.contain-account>.Thongtincanhan>table{
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+	border: 1px solid #dddddd;
+	margin-left: 5px;
 	text-align: center;
-	width: 400px;
-	height: 400px;
-	/* margin-right: 200px; */
-	background-color: khaki;
+}
+.contain-account>.Thongtincanhan>table>tr>th,td{
+	border: 1px solid #dddddd;
+	padding: 8px;
+}
+.contain-account>.Thongtincanhan>select{
 	float: right;
-	display: block;
+	margin-bottom: 20px;
 }
 /* #cart .container .footer-cart h3{
 	margin: 10px;
