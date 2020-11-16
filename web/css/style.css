@@ -5389,6 +5389,31 @@ div.KM-Info>.NH-DV{
 	margin-bottom: 5px;
 	font-size: 18px;
 }
+/* account css */
+.demo-account{
+	width: 100%;
+	height: 800px;
+}
+.contain-account{
+	width: 80%;
+	height: 700px;
+	display: block;
+}
+.account-img{
+	width: 255px;
+	height: 600px;
+	border-right: 1px solid gray;
+	/* margin-left: 100px; */
+}
+div.contain-account >.Thongtincanhan{
+	text-align: center;
+	width: 400px;
+	height: 400px;
+	/* margin-right: 200px; */
+	background-color: khaki;
+	float: right;
+	display: block;
+}
 /* #cart .container .footer-cart h3{
 	margin: 10px;
 } */
