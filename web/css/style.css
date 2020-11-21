@@ -1373,8 +1373,9 @@ ul.wmuSliderPagination {
     color: #999;
     text-decoration: none;
 }
-.w3_footer_grid ul li a:hover {
-	color:#212121;
+.w3_footer_grid  > ul > li > a:hover {
+	color: #ff5500;
+	margin-left: 10px;
 }
 .w3_footer_grid ul.info li a {
     padding-left:2.2em;
@@ -5111,7 +5112,7 @@ margin-bottom: 30px;
 }
 #payment h3{
 	display: block;
-    color: #0c435e;
+    color: #0064cf;
     margin-bottom: 20px;
 }
 #payment div.input{
@@ -5129,7 +5130,8 @@ margin-bottom: 30px;
     align-items: center;
     justify-content: center;
     width: 30px;
-    height: 30px;
+	height: 30px;
+	color: #0064cf;
     /* font-size: 30px; */
     padding-right: 5px;
     border-right: 1px solid black;
@@ -5185,7 +5187,7 @@ margin-bottom: 30px;
 }
 #payment div.radio-group label{
     /* color: lighten( #332f35, 40%); */
-    width: 49.8%;
+    width: 49.99%;
     height: 100%;
     color: gray;
     display: flex;
