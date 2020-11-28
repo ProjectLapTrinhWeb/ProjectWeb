@@ -5400,14 +5400,20 @@ div.KM-Info>.NH-DV{
 }
 .contain-account{
 	width: 80%;
-	height: 700px;
+	min-height: 700px;
+	margin: auto;
+	margin-top: 30px;
 	display: flex;
 }
 .contain-account >.img-account{
 	width: 255px;
 	height: 600px;
 	border-right: 1px solid gray;
-	margin-left: 100px;
+	/* margin-left: 100px; */
+	display: flex;
+	flex-direction: column;
+	/* justify-content: center; */
+	align-items: center;
 }
 .contain-account>.Thongtincanhan{
 	width: 900px;
@@ -5431,15 +5437,17 @@ div.KM-Info>.NH-DV{
 }
 .contain-account>.Thongtincanhan>table{
 	font-family: arial, sans-serif;
-	border-collapse: collapse;
+	/* border-collapse: collapse; */
 	width: 100%;
 	border: 1px solid #dddddd;
-	margin-left: 5px;
+	/* margin-left: 5px; */
 	text-align: center;
+	padding: 8px;
 }
 .contain-account>.Thongtincanhan>table>tr>th,td{
 	border: 1px solid #dddddd;
 	padding: 8px;
+	text-align: center;
 }
 .contain-account>.Thongtincanhan>select{
 	float: right;
