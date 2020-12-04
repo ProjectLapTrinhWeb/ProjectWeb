@@ -5464,3 +5464,39 @@ div.KM-Info>.NH-DV{
 	/* align-items: center !important; */
 }
 /* --------------------------- end insert about us ---------------------------*/
+/* pape item */
+.nav.pape-item{
+	width: 300px;
+	height: 30px;
+	
+}
+ul.pape-contain-item{
+	text-decoration: none;
+	list-style: none;
+	display: flex;
+	padding-left: 0;
+	margin: 50px;
+	margin-left: 180px;
+	margin-bottom: -50px;
+
+}
+li.pape-item {
+	float: left;
+	box-sizing: border-box;
+	display: list-item;
+	width: 40px;
+	height: 30px;
+	text-align: center;
+	border-radius: .25rem;
+}
+
+.pape-link{
+	color: #6c757d;
+    pointer-events: none;
+    cursor: auto;
+    background-color: #fff;
+	border-color: #dee2e6;
+	width: 40px;
+	height: 30px;
+	text-align: center;
+}
