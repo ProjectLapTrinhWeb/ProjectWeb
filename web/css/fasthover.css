@@ -7,7 +7,10 @@
 }
 .hs-wrapper1{
 	width: 255px !important;
-    height:340px !important;
+	height:170px !important;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 .hs-wrapper2 {
     width: 223px !important;
