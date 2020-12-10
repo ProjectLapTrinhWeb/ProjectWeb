@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Empty Cart | Laptop Store</title>
+<title>Your Account | Laptop Store</title>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -19,6 +19,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!-- Custom Theme files -->
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" /> 
+<link href="css/fasthover.css" rel="stylesheet" type="text/css" media="all" />
 <!-- //Custom Theme files -->
 <!-- font-awesome icons -->
 <link href="css/font-awesome.css" rel="stylesheet"> 
@@ -53,7 +54,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
 						&times;</button>
-					<h4 class="modal-title" id="myModalLabel">Don't Wait, Login now!</h4>
+					<h4 class="modal-title" id="myModalLabel">Chần chờ gì nữa, đăng nhập ngay để mua sắm nào!!!</h4>
 				</div>
 				<div class="modal-body modal-body-sub">
 					<div class="row">
@@ -61,17 +62,17 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<div class="sap_tabs">	
 								<div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
 									<ul>
-										<li class="resp-tab-item" aria-controls="tab_item-0"><span>Sign in</span></li>
-										<li class="resp-tab-item" aria-controls="tab_item-1"><span>Sign up</span></li>
+										<li class="resp-tab-item" aria-controls="tab_item-0"><span>Đăng nhập</span></li>
+										<li class="resp-tab-item" aria-controls="tab_item-1"><span>Đăng ký</span></li>
 									</ul>		
 									<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-0">
 										<div class="facts">
 											<div class="register">
 												<form action="#" method="post">			
-													<input name="Email" placeholder="Email Address" type="text" required="">						
-													<input name="Password" placeholder="Password" type="password" required="">										
+													<input name="Email" placeholder="Email" type="text" required="">						
+													<input name="Password" placeholder="Mật khẩu" type="password" required="">										
 													<div class="sign-up">
-														<input type="submit" value="Sign in"/>
+														<input type="submit" value="Đăng nhập"/>
 													</div>
 												</form>
 											</div>
@@ -81,12 +82,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 										<div class="facts">
 											<div class="register">
 												<form action="#" method="post">			
-													<input placeholder="Name" name="Name" type="text" required="">
-													<input placeholder="Email Address" name="Email" type="email" required="">	
-													<input placeholder="Password" name="Password" type="password" required="">	
-													<input placeholder="Confirm Password" name="Password" type="password" required="">
+													<input placeholder="Tên" name="Name" type="text" required="">
+													<input placeholder="Email" name="Email" type="email" required="">	
+													<input placeholder="Mật khẩu" name="Password" type="password" required="">	
+													<input placeholder="Xác nhận mật khẩu" name="Password" type="password" required="">
 													<div class="sign-up">
-														<input type="submit" value="Create Account"/>
+														<input type="submit" value="Tạo tài khoản"/>
 													</div>
 												</form>
 											</div>
@@ -104,12 +105,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 									});
 								});
 							</script>
-							<div id="OR" class="hidden-xs">OR</div>
+							<div id="OR" class="hidden-xs">Hoặc</div>
 						</div>
 						<div class="col-md-4 modal_body_right modal_body_right1">
 							<div class="row text-center sign-with">
 								<div class="col-md-12">
-									<h3 class="other-nw">Sign in with</h3>
+									<h3 class="other-nw">Đăng ký bằng</h3>
 								</div>
 								<div class="col-md-12">
 									<ul class="social">
@@ -125,7 +126,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				</div>
 			</div>
 		</div>
-	</div> 
+	</div>
+	<!-- <script>
+		$('#myModal88').modal('show');
+	</script>   -->
 	<!-- header modal -->
 	<!-- header -->
 	<div class="header" id="home1">
@@ -134,7 +138,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<a href="#" data-toggle="modal" data-target="#myModal88"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
 			</div>
 			<div class="w3l_logo">
-				<h1><a href="index.html">Electronic Store<span>Your stores. Your place.</span></a></h1>
+				<h1><a href="index.html">Laptop Store<span>Nonglam University</span></a></h1>
 			</div>
 			<div class="search">
 				<input class="search_box" type="checkbox" id="search_box">
@@ -150,7 +154,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<form action="#" method="post" class="last"> 
 					<input type="hidden" name="cmd" value="_cart" />
 					<input type="hidden" name="display" value="1" />
-					<button class="w3view-cart" type="submit" name="submit" value=""><a href="cart.html"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></a></button>
+					<button class="w3view-cart" type="submit" name="submit" value=""><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></button>
 				</form>   
 			</div>  
 		</div>
@@ -171,45 +175,51 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				</div> 
 				<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
 					<ul class="nav navbar-nav">
-						<li><a href="index.html">Home</a></li>	
+						<li><a href="index.html" class="act">Trang chủ</a></li>	
 						<!-- Mega Menu -->
 						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Products <b class="caret"></b></a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Sản phẩm<b class="caret"></b></a>
 							<ul class="dropdown-menu multi-column columns-3">
 								<div class="row">
 									<div class="col-sm-3">
 										<ul class="multi-column-dropdown">
-											<h6>Mobiles</h6>
-											<li><a href="products.html">Mobile Phones</a></li>
-											<li><a href="products.html">Mp3 Players <span>New</span></a></li> 
-											<li><a href="products.html">Popular Models</a></li>
-											<li><a href="products.html">All Tablets<span>New</span></a></li>
+											<h6>Laptop</h6>
+											<li><a href="LaptopGaming.html">Laptop Gaming</a></li>
+											<li><a href="products.html">Macbook<span>New</span></a></li> 
+											<li><a href="products.html">Laptop Văn Phòng</a></li>
+											<li><a href="products.html">Laptop Đồ Họa<span>New</span></a></li>
 										</ul>
 									</div>
 									<div class="col-sm-3">
 										<ul class="multi-column-dropdown">
-											<h6>Accessories</h6>
-											<li><a href="products1.html">Laptop</a></li>
-											<li><a href="products1.html">Desktop</a></li>
-											<li><a href="products1.html">Wearables <span>New</span></a></li>
-											<li><a href="products1.html"><i>Summer Store</i></a></li>
+											<h6>Phụ Kiện</h6>
+											<li><a href="products1.html">Bàn phím</a></li>
+											<li><a href="products1.html">Chuột</a></li>
+											<li><a href="products1.html">Loa<span>New</span></a></li>
+											<li><a href="products1.html">Tai nghe</a></li>
+											<!-- <li><a href="products1.html"><i>Tai nghe</i></a></li> -->
 										</ul>
 									</div>
-									<div class="col-sm-2">
+									<div class="col-sm-3">
 										<ul class="multi-column-dropdown">
-											<h6>Home</h6>
-											<li><a href="products2.html">Tv</a></li>
-											<li><a href="products2.html">Camera</a></li>
-											<li><a href="products2.html">AC</a></li>
-											<li><a href="products2.html">Grinders</a></li>
+											<h6>Thương Hiệu</h6>
+											<li><a href="products2.html">Asus</a></li>
+											<li><a href="products2.html">Dell</a></li>
+											<li><a href="products2.html">Macbook<span>New</span></a></li>
+											<li><a href="products2.html">HP</a></li>
+											<!-- <li><a href="products2.html">Acer</a></li> -->
+											<!-- <li><a href="products2.html">Lenovo</a></li> -->
 										</ul>
 									</div>
-									<div class="col-sm-4">
+									<div class="img-product">
+										<img src="images/airpod.jpg" alt="air-pod" style="width: 270px; height: 180px; border-radius: 4px;">
+									</div>
+									<!-- <div class="col-sm-4">
 										<div class="w3ls_products_pos">
 											<h4>30%<i>Off/-</i></h4>
 											<img src="images/1.jpg" alt=" " class="img-responsive" />
 										</div>
-									</div>
+									</div> -->
 									<div class="clearfix"></div>
 								</div>
 							</ul>
@@ -220,46 +230,84 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								<li><a href="icons.html">Web Icons</a></li>
 								<li><a href="codes.html">Short Codes</a></li>     
 							</ul>
-						</li>  
-						<li><a href="mail.html" class="act">Mail Us</a></li>
+						</li> 
+						<li><a href="faq.html" class="">FAQ's</a></li>
+						<li><a href="mail.html">Mail Us</a></li>
 					</ul>
 				</div>
 			</nav>
 		</div>
 	</div>
-	<!-- //navigation -->
-    <!-- banner -->
-	<div class="banner banner10">
-		<div class="container">
-			<h2>Cart</h2>
-		</div>
-	</div>
-	<!-- //banner -->    
-	<!-- breadcrumbs -->
-	<div class="breadcrumb_dress">
-		<div class="container">
-			<ul>
-				<li><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a> <i>/</i></li>
-				<li>Your Cart</li>
-			</ul>
-		</div>
-	</div>
-	<!-- //breadcrumbs --> 
-	<!-- cart -->
-<div class="empty_cart" id="empty_cart1">
-	<div class="container_emptycart">
-        <h1>Your Cart</h1>
-        <h2 style="text-align: center;"><i>Rất tiếc</i></h2>
-        <p>Không có sản phẩm nào trong giỏ hàng của bạn</p>
-        <button class="button_emptyCart"><a href="index.html">Quay lại trang chủ</a></button>
-			
-
-			
-				
-	</div>
-</div>
-	<!-- //mail -->
-<!-- newsletter -->
+    <!-- //navigation -->
+    <!-- Account body -->
+    <div class="demo-account">
+        <div class="contain-account">
+            <div class="img-account">
+				<img src="image2/account-icon.jpg" alt="">
+                <button>Thay đổi ảnh đại diện</button>
+                <p>nhochoang2015</p>
+			</div>
+            <div class="Thongtincanhan">
+				<h2>Thông tin cá nhân</h2>
+                <p>Tên tài khoản: nhochoang2015</p>
+				<p>Email: 18130000@st.hcmuaf.edu.vn</p>
+				<p>Facebook: chưa liên kết</p>
+                <p>Tên: Cao Hoàng</p>
+				<p>Họ: Nguyễn</p>
+				<button>Thay đổi thông tin cá nhân</button>
+                <h2>Thông tin liên lạc</h2>
+                <p>SĐT cá nhân: 0399 999 999 </p>
+                <address>
+                    Địa chỉ:
+					Tòa Thiên Lý ,
+					Thủ Đức, 
+					Đại học Nông Lâm
+				</address>
+				<button>Thay đổi thông tin liên lạc</button>
+				<h3>Lịch sử hoạt động</h3>
+				<select name="" id="">
+					<option selected="selected">Sắp xếp lịch sử</option>
+					<option>Sắp xếp theo ngày mới nhất</option>
+					<option>Sắp xếp theo ngày cũ nhẩt</option>
+				</select>
+				<table>
+					<tr>
+						<th>STT</th>
+						<th>Mã SP</th>
+						<th>Tên sản phẩm</th>
+						<th>Số tiền</th>
+						<th>PTTT</th>
+						<th>Ngày</th>
+					</tr>
+					<tr>
+						<td>01</td>
+						<td>19HTDJN1</td>
+						<td>Asus ROG Zephyrus S GX502 </td>
+						<td>39.000.000</td>
+						<td>Paypal</td>
+						<td>16/11/2020</td>
+					</tr>
+					<tr>
+						<td>02</td>
+						<td>25FJAIOW9</td>
+						<td>Laptop MSI Bravo 15 A4DCR 070VN R5</td>
+						<td>19.000.000</td>
+						<td>Trả góp</td>
+						<td>05/11/2020</td>
+					</tr>
+					<tr>
+						<td>02</td>
+						<td>35FUKAK6</td>
+						<td>Phụ kiện chuột</td>
+						<td>200.000</td>
+						<td>VISA</td>
+						<td>09/10/2020</td>
+					</tr>
+				</table>
+            </div>
+        </div>
+    </div> 
+    <!-- newsletter -->
 <div class="newsletter">
 	<div class="container">
 		<div class="col-md-6 w3agile_newsletter_left">
@@ -275,7 +323,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<div class="clearfix"> </div>
 	</div>
 </div>
-<!-- //newsletter -->
+    <!-- //newsletter -->
 		<!-- footer -->
 		<div class="footer">
 			<div class="container">
