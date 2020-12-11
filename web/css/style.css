@@ -5524,8 +5524,17 @@ li.pape-item {
 .header-tab > ul > li{
 	margin-top: 7px;
 }
+#content-order{
+	width: 1000px;
+	min-height: 500px;
+	margin-right: 0;
+}
 #content-order > div{
-	/* padding: 50px; */
 	padding-top: 20px;
+}
+.order-item{
+	width: 1000px;
+	height: 60px;
+	margin: 10px 0;
 }
 /* end content admin */
