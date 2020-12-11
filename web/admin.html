@@ -33,6 +33,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <link href='//fonts.googleapis.com/css?family=Glegoo:400,700' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 <!-- //web fonts -->  
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <!-- start-smooth-scrolling -->
 <script type="text/javascript">
 	jQuery(document).ready(function($) {
@@ -167,14 +168,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<div class="container">
 			<nav class="navbar navbar-default">
 				<!-- Brand and toggle get grouped for better mobile display -->
-				<!-- <div class="navbar-header nav_2">
+				<div class="navbar-header nav_2">
 					<button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
 						<span class="sr-only">Toggle navigation</span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-				</div>  -->
+				</div> 
 				<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
 					<ul class="nav navbar-nav">
 						<li><a href="index.html" class="act">Trang chủ</a></li>	
@@ -261,7 +262,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <!-- body -->
         	<!-- admin -->
 	<div class="mobiles">
-		<div class="container">
+		<div class="container" style="margin: 0 !important;">
 			<div class="w3ls_mobiles_grids">
 				<div class="col-md-4 w3ls_mobiles_grid_left">
 					<div class="w3ls_mobiles_grid_left_grid">
@@ -280,8 +281,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								  <div class="panel-body panel_text">
 									<ul>
 										<li><a href="admin.html">Tất cả</a></li>
-										<li><a href="products1.html">Đơn bị hủy</a></li>
-										<li><a href="products2.html">Đơn đã hủy</a></li>
+										<li><a href="products1.html">Đơn đã hủy</a></li>
+										<li><a href="products2.html">Đơn đang giao</a></li>
+										<li><a href="#delivered">Đơn đã giao</a></li>
 										<li><a href="products.html">Trả hàng/Hoàn tiền</a></li>
 									</ul>
 								  </div>
@@ -307,50 +309,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								</div>
 							  </div>
                             </div>
-
-                            <!-- <div class="panel panel-default">
-								<div class="panel-heading" role="tab" id="headingThree">
-								  <h4 class="panel-title asd">
-									<a class="pa_italic collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-									  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>Sản phẩm
-									</a>
-								  </h4>
-								</div>
-								<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-								   <div class="panel-body panel_text">
-									<ul>
-										<li><a href="products2.html">Tất cả sản phẩm</a></li>
-										<li><a href="products2.html">Thêm sản phẩm</a></li>
-										<li><a href="products2.html">SP đã hết hàng</a></li>
-									</ul>
-								  </div>
-								</div>
-							  </div>
-							</div> -->
-							<!-- <ul class="panel_bottom">
-								<li><a href="products.html">Khuyến mãi mùa hè</a></li>
-								<li><a href="products.html">Nhãn hiệu nổi tiếng</a></li>
-								<li><a href="products.html">Ưu đãi hôm nay</a></li>
-								<li><a href="products.html">Latest Watches</a></li>
-							</ul> -->
 						</div>
 					</div>
-					<!-- <div class="w3ls_mobiles_grid_left_grid">
-						<h3>Tài chính</h3>
-						<div class="w3ls_mobiles_grid_left_grid_sub">
-							<div class="ecommerce_color">
-								<ul>
-									<li><a href="#">Doanh thu theo tuần</a></li>
-                                    <li><a href="#">Doanh thu theo tháng</a></li>
-                                    <li><a href="#">Doanh thu theo quý</a></li>
-									<li><a href="#">Doanh thu theo năm</a></li>
-									<li><a href="#"><i></i> Violet(6)</a></li>
-									<li><a href="#"><i></i> Orange(2)</a></li>
-									<li><a href="#"><i></i> Blue(1)</a></li>
-								</ul>
-							</div>
-						</div>
-					</div> -->
 					<div class="w3ls_mobiles_grid_left_grid">
 						<h3>Tài chính</h3>
 						<div class="w3ls_mobiles_grid_left_grid_sub">
@@ -360,12 +320,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 									<li><a href="#">Doanh thu theo tháng</a></li>
 									<li><a href="#">Doanh thu theo quý</a></li>
 									<li><a href="#">Doanh thu theo năm</a></li>
-									<!-- <li><a href="#">$ Above 20k</a></li> -->
 								</ul>
 							</div>
 						</div>
                     </div>
-                    
                     <div class="w3ls_mobiles_grid_left_grid">
 						<h3>Dữ liệu</h3>
 						<div class="w3ls_mobiles_grid_left_grid_sub">
@@ -373,19 +331,82 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								<ul>
 									<li><a href="#">Phân tích bán hàng</a></li>
 									<li><a href="#">Hiệu quả hoạt động</a></li>
-									<!-- <li><a href="#">Doanh thu theo quý</a></li>
-									<li><a href="#">Doanh thu theo năm</a></li> -->
-									<!-- <li><a href="#">$ Above 20k</a></li> -->
 								</ul>
 							</div>
 						</div>
 					</div>
+				</div>
+				
+			</div>
+			<div class="content-admin ">
+				<div class="all-order">
+					<ul class="nav nav-tabs" id="myOrderTab">
+						<li class="active"><a data-toggle="tab" href="#all">Tất cả</a></li>
+						<li><a data-toggle="tab" href="#cancel">Đơn đã hủy</a></li>
+						<li><a data-toggle="tab" href="#shipping">Đơn đang giao</a></li>
+						<li><a data-toggle="tab" href="#delivered">Đơn đã giao</a></li>
+						<li><a data-toggle="tab" href="#refund">Trả hàng</a></li>
+					</ul>
+					  <div class="header-tab">
+						  <ul class="col" style="list-style-type: none;">
+							  <li class="col-md-2" style="margin-right: 100px;">Sản phẩm</li>
+							  <li class="col-md-2">Tổng đơn</li>
+							  <li class="col-md-2">Trạng thái</li>
+							  <li class="col-md-2">Vận chuyển</li>
+							  <li class="col-md-2" style="text-align: right;">Thao tác</li>
+						  </ul>
+					  </div>
+					  <br>
+					  <div class="tab-content" id="content-order">
+						<div id="all" class="tab-pane fade in active">
+						  <div id="order-tab">
+							  <!-- start don hang -->
+							  <div class="order-item">
+								<div class="card mb-3" style="max-width: 540px;">
+									<div class="col-md-2">
+										<img src="images/laptopcucmanh01.jpg" alt="san-pham" width="50px" height="50px">
+									</div>
+										<div class="col-md-3">
+										<div class="card-body">
+										  <h5 class="card-title">Macbook Air</h5>
+										  <p class="card-text"><small class="text-muted">Số lượng: 1</small></p>
+									  </div>
+									</div>
+								</div>
+								
+							  </div>
+							<!-- end don hang -->
+						  </div>
+						</div>
+						<div id="cancel" class="tab-pane fade">
+						  <h3>Menu 1</h3>
+						  <p>Some content in menu 1.</p>
+						</div>
+						<div id="shipping" class="tab-pane fade">
+							<h3>Menu 2</h3>
+							<p>Some content in menu 2.</p>
+						  </div>
+						<div id="delivered" class="tab-pane fade">
+						  <h3>Menu 3</h3>
+						  <p>Some content in menu 3.</p>
+						</div>
+						<div id="refund" class="tab-pane fade">
+							<h3>Menu 4</h3>
+							<p>Some content in menu 4.</p>
+						  </div>
+					  </div>
+				</div>
+				
+				<!-- end all order -->
+			</div> 
+			<!-- end content-admin -->
+			</div>
 
-                </div>
-            </div>
-        </div>
+		</div>
+		
     </div>		
-    <!-- end body -->
+	<!-- end body -->
+	
     <!-- div -->
     <div style="background-color: #0064cf; width: 100%; height: 60px;"></div>
     <!-- end div -->

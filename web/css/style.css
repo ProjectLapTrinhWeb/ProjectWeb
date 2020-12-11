@@ -5500,3 +5500,32 @@ li.pape-item {
 	height: 30px;
 	text-align: center;
 }
+
+/* content admin */
+.content-admin{
+	min-width: 1100px;
+	border: 2px solid #f1f1f1;
+	margin-left: 350px;
+	/* margin-right: -100px; */
+	min-height: 500px;
+}
+#myOrderTab{
+	width: 800px;
+	height: 40px;
+	margin: auto;
+}
+.header-tab{
+	width: 1000px;
+	height: 50px;
+	margin: auto;
+	margin-top: 30px;
+	border: 2px #f1f1f1 solid;
+}
+.header-tab > ul > li{
+	margin-top: 7px;
+}
+#content-order > div{
+	padding: 50px;
+	padding-top: 20px;
+}
+/* end content admin */
