@@ -5508,6 +5508,7 @@ li.pape-item {
 	margin-left: 350px;
 	/* margin-right: -100px; */
 	min-height: 500px;
+
 }
 #myOrderTab{
 	width: 800px;
@@ -5534,7 +5535,32 @@ li.pape-item {
 }
 .order-item{
 	width: 1000px;
-	height: 60px;
-	margin: 10px 0;
+	height: 100px;
+	margin: 10px 50px;
+	background: #fff;
+	border: 2px solid #f1f1f1;
+	border-collapse: collapse;
+}
+.header-order{
+	width: 996px;
+	height: 30px;
+	background: #f1f1f1;
+}
+.body-order{
+	width: 996px;
+	height: 70px;
+	padding: 10px;
+}
+#customer-id {
+	display: flex;
+	padding: 10px;
+	align-items: center;
+	float: left;
+}
+#order-id{
+	float: right;
+	display: flex;
+	padding: 10px;
+	align-items: center;
 }
 /* end content admin */
