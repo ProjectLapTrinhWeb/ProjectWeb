@@ -1305,7 +1305,8 @@ ul.wmuSliderPagination {
     padding: 10px;
     color: #212121;
     font-size: 14px;
-    width: 70%;
+	width: 70%;
+	height: 36.5px;
     background: #fff;
     border:none;
     float: left;
@@ -1314,7 +1315,8 @@ ul.wmuSliderPagination {
 .w3agile_newsletter_right input[type="submit"]{
 	outline: none;
     padding: 6px 0;
-    width: 17%;
+	width: 17%;
+	height: 36.5px;
     background: url(../images/img-sp.png) no-repeat 26px -65px #ff5500;
     border: none;
     -webkit-transition: .5s all;
@@ -5394,64 +5396,70 @@ div.KM-Info>.NH-DV{
 	font-size: 18px;
 }
 /* account css */
-.demo-account{
+.container_body{
 	width: 100%;
 	height: 800px;
+	background-color: rgb(239, 239, 239);
 }
-.contain-account{
-	width: 80%;
-	min-height: 700px;
-	margin: auto;
-	margin-top: 30px;
+.container_account{
+	width: 1200px;
+	height: 630px;
+	display: flex;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: rgb(239, 239, 239);
+	padding-top: 20px;
+}
+.userpape-sidebar{
+	display: block;
+	width: 180px;
+	flex-shrink: 0;
+	width: 180px;
+	height: 630px;
+	background-color: white;
+}
+.user-pape-brief{
+	width: 180px;
+	height: 80px;
+	display: flex;
+    padding: 15px 0;
+    border-bottom: 1px solid gray;
+}
+.shop-avatar{
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+    position: relative;
+    border-radius: 50%;
+    border: .0625rem solid rgba(0,0,0,.09);
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.shop-img{
+	position: absolute;
+    width: 100%;
+    height: 100%;
+	display: block;
+	border-radius: 50%;
+}
+.username-account{
+	width: 130px;
+	height: 50px;
+	display: flex;
+	padding-left: 20px;
+	display: block;
+}
+.user-link-profile{
+	width: 115px;
+	height: 17px;
 	display: flex;
 }
-.contain-account >.img-account{
-	width: 255px;
-	height: 600px;
-	border-right: 1px solid gray;
-	/* margin-left: 100px; */
+.user-name-profile{
+	width: 115px;
+	height: 17px;
 	display: flex;
-	flex-direction: column;
-	/* justify-content: center; */
-	align-items: center;
-}
-.contain-account>.Thongtincanhan{
-	width: 900px;
-	height: 600px;
-	margin-left: 50px;
-}
-.contain-account>.Thongtincanhan>p{
-	margin-left: 50px;
-	font-size: 20px;
-}
-.contain-account>.Thongtincanhan>h3{
-	margin-bottom: 20px;
-}
-.contain-account>.Thongtincanhan>address{
-	margin-left: 50px;
-}
-.contain-account>.Thongtincanhan>button{
-	margin-top: 10px;
 	margin-bottom: 10px;
-	margin-left: 50px;
-}
-.contain-account>.Thongtincanhan>table{
-	font-family: arial, sans-serif;
-	/* border-collapse: collapse; */
-	width: 100%;
-	border: 1px solid #dddddd;
-	/* margin-left: 5px; */
-	text-align: center;
-	padding: 8px;
-}
-.contain-account>.Thongtincanhan>table>tr>th,td{
-	border: 1px solid #dddddd;
-	padding: 8px;
-	text-align: center;
-}
-.contain-account>.Thongtincanhan>select{
-	float: right;
-	margin-bottom: 20px;
+	padding-top: 5px;
 }
 /* #cart .container .footer-cart h3{
 	margin: 10px;
