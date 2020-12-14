@@ -5426,6 +5426,7 @@ div.KM-Info>.NH-DV{
     border-bottom: 1px solid gray;
 }
 .shop-avatar{
+	margin-left: 5px;
 	width: 50px;
 	height: 50px;
 	display: inline-block;
@@ -5446,7 +5447,7 @@ div.KM-Info>.NH-DV{
 	width: 130px;
 	height: 50px;
 	display: flex;
-	padding-left: 20px;
+	padding-left: 15px;
 	display: block;
 }
 .user-link-profile{
@@ -5460,6 +5461,33 @@ div.KM-Info>.NH-DV{
 	display: flex;
 	margin-bottom: 10px;
 	padding-top: 5px;
+}
+.user-pape-sidebar{
+	width: 180px;
+	height: 182px;
+	display: block;
+}
+.startdust-dropdown{
+	width: 180px;
+	height: 40px;
+}
+.startdust-dropdown_item-header{
+	width: 180px;
+	height: 22px;
+}
+.image-icon-user{
+	width: 20px;
+	height: 20px;
+}
+.startdust-dropdown_item-body{
+	width: 180px;
+	height: 130px;
+}
+.startdust-dropdown_item-body > a{
+	display: none;
+}
+.startdust-dropdown_item-header :hover .startdust-dropdown_item-body{
+	display: block;
 }
 /* #cart .container .footer-cart h3{
 	margin: 10px;
