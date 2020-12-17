@@ -5548,14 +5548,14 @@ li.pape-item {
 }
 #myOrderTab{
 	width: 800px;
-	height: 40px;
+	height: 50px;
 	margin: auto;
 }
 .header-tab{
 	width: 1000px;
 	height: 50px;
 	margin: auto;
-	margin-top: 30px;
+	/* margin-top: 30px; */
 	border: 2px #f1f1f1 solid;
 }
 .header-tab > ul > li{
@@ -5598,5 +5598,10 @@ li.pape-item {
 	display: flex;
 	padding: 10px;
 	align-items: center;
+}
+.search-order{
+	width: 100%;
+	height: 40px;
+	margin: 20px 0 20px 50px;
 }
 /* end content admin */
