@@ -153,13 +153,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					</form>
 				</div>
 			</div>
-			<div class="cart cart box_1"> 
+			<!-- <div class="cart cart box_1"> 
 				<form action="#" method="post" class="last"> 
 					<input type="hidden" name="cmd" value="_cart" />
 					<input type="hidden" name="display" value="1" />
 					<button class="w3view-cart" type="submit" name="submit" value=""><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></button>
 				</form>   
-			</div>  
+			</div>   -->
 		</div>
 	</div>
 	<!-- //header -->
@@ -272,32 +272,32 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							  <div class="panel panel-default">
 								<div class="panel-heading" role="tab" id="headingOne">
 								  <h4 class="panel-title asd">
-									<a class="pa_italic" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+									<a class="pa_italic" role="button" data-toggle="collapse" data-parent="#accordion" href="#admin-order" aria-expanded="true" aria-controls="admin-order">
 									  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>Đơn hàng
 									</a>
 								  </h4>
 								</div>
-								<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+								<!-- <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
 								  <div class="panel-body panel_text">
 									<ul>
-										<li><a href="admin.html">Tất cả</a></li>
-										<li><a href="products1.html">Đơn đã hủy</a></li>
+										<li><a href="" role="button" data-toggle="collapse" >Tất cả</a></li>
+										<li><a href="#cancel"  role="button" data-toggle="collapse" >Đơn đã hủy</a></li>
 										<li><a href="products2.html">Đơn đang giao</a></li>
 										<li><a href="#delivered">Đơn đã giao</a></li>
 										<li><a href="products.html">Trả hàng/Hoàn tiền</a></li>
 									</ul>
 								  </div>
-								</div>
+								</div> -->
 							  </div>
 							  <div class="panel panel-default">
 								<div class="panel-heading" role="tab" id="headingTwo">
 								  <h4 class="panel-title asd">
-									<a class="pa_italic collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+									<a class="pa_italic collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#admin-product" aria-expanded="false" aria-controls="admin-product">
 									  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>Sản phẩm
 									</a>
 								  </h4>
 								</div>
-								<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+								<!-- <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
 								   <div class="panel-body panel_text">
 									<ul>
 										<li><a href="products2.html">Tất cả sản phẩm</a></li>
@@ -306,7 +306,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 										<li><a href="products2.html">Đã hết</a></li>
 									</ul>
 								  </div>
-								</div>
+								</div> -->
 							  </div>
                             </div>
 						</div>
@@ -336,9 +336,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						</div>
 					</div>
 				</div>
-				
 			</div>
-			<div class="content-admin ">
+			<div class="content-admin collapse in" id="admin-order">
 				<div class="all-order">
 					<ul class="nav nav-tabs" id="myOrderTab">
 						<li class="active"><a data-toggle="tab" href="#all">Tất cả</a></li>
@@ -351,7 +350,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<form action="">
 							<label for="search-order">
 								Tìm kiếm đơn hàng: 
-								<input type="search" name="search" id="search-box">
+								<input type="search" name="search" class="search-box" placeholder="Theo tên khách hàng...">
 								<input type="submit" value="Tìm">
 							</label>
 						</form>
@@ -607,6 +606,98 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				
 				<!-- end all order -->
 			</div> 
+			<div class="content-admin collapse" id="admin-product" >
+				<div class="all-product">
+					<ul class="nav nav-tabs" id="myProductTab">
+						<li class="active"><a data-toggle="tab" href="#all-product">Tất cả</a></li>
+						<li><a data-toggle="tab" href="#onStock">Đang bán</a></li>
+						<li><a data-toggle="tab" href="#outStock">Đã hết hàng</a></li>
+						<li><a data-toggle="tab" href="#stopTrading">Đã tạm ngưng</a></li>
+						<li><a data-toggle="tab" href="#comingSoon">Sắp ra mắt</a></li>
+					</ul>
+					<div class="search-product search-order">
+						<form action="">
+							<label for="search-order">
+								Tìm kiếm sản phẩm:
+								<input type="search" name="search" class="search-box" placeholder="Theo tên thương hiệu...">
+								<input type="submit" value="Tìm">
+								<a href="AddProduct" target="_blank" rel="noopener noreferrer" id="add-product">Thêm sản phẩm</a>
+							</label>
+						</form>
+					</div>
+					  <div class="header-tab">
+						  <ul class="col" style="list-style-type: none;">
+							  <li class="col-md-3">Sản phẩm</li>
+							  <li class="col-md-2">Phân loại</li>
+							  <li class="col-md-3">Số lượng</li>
+							  <li class="col-md-2">Giá</li>
+							  <li class="col-md-2" style="text-align: right;">Thao tác</li>
+						  </ul>
+					  </div>
+					  <div class="tab-content" id="content-order">
+						<div id="all-product" class="tab-pane fade in active">
+						  <div id="order-tab">
+							 <!-- start don hang -->
+							 <div class="product-item">
+								<div class="header-product">
+									<div id="product-id">
+										<a href="#">
+											<h5 class="card-title">ID Sản phẩm: 333XXX</h5>
+									  </a>
+									</div>
+								</div>
+								<div class="body-product body-order">
+									<a href="single.html">
+										<div class="card mb-3" style="max-width: 540px;">
+											<div class="col-md-2">
+												<img src="images/laptopcucmanh01.jpg" alt="san-pham" width="50px" height="50px">
+											</div>
+												<div class="col-md-4">
+												<div class="card-body">
+												  <h5 class="card-title">Macbook Air</h5>
+											  </div>
+											</div>
+										</div>
+									</a>
+									<div class="col-md-2" id="supplier-product">
+										<p>Dell</p>
+									</div>
+									<div class="col-md-2" id="quantity-product">
+										<p>20</p>
+									</div>
+									<div class="col-md-2" id="price-product">
+										<p>25.000.000vnđ</p>
+									</div>
+									<div class="col-md-2" style="float: right;">
+										<a href="single.html">Xem sản phẩm</a>
+									</div>
+								</div>
+							  </div>
+							<!-- end don hang -->
+							
+						  </div>
+						</div>
+						<div id="onStock" class="tab-pane fade">
+						  <h3>Menu 1</h3>
+						  <p>Some content in menu 1.</p>
+						</div>
+						<div id="outStock" class="tab-pane fade">
+							<h3>Menu 2</h3>
+							<p>Some content in menu 2.</p>
+						  </div>
+						<div id="stopTrading" class="tab-pane fade">
+						  <h3>Menu 3</h3>
+						  <p>Some content in menu 3.</p>
+						</div>
+						<div id="comingSoon" class="tab-pane fade">
+							<h3>Menu 4</h3>
+							<p>Some content in menu 4.</p>
+						  </div>
+					  </div>
+				</div>
+				
+				<!-- end all order -->
+			</div> 
 			<!-- end content-admin -->
 			</div>
 
@@ -682,7 +773,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <!-- //footer -->  
       
 	<!-- cart-js -->
-	<script src="js/minicart.js"></script>
+	<!-- <script src="js/minicart.js"></script>
 	<script>
         w3ls.render();
 
@@ -696,7 +787,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         		}
         	}
         });
-    </script>  
+    </script>   -->
 	<!-- //cart-js -->   
 </body>
 </html>
