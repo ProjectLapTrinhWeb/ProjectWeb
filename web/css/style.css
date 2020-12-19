@@ -5643,3 +5643,35 @@ li.pape-item {
 	font-weight: normal;
 }
 /* end content admin */
+/* tài khoản của tôi */
+#menu-my-account div{
+	width: 180px;
+	height: 400px;
+	padding: 15px;
+	padding-left: 5px;
+}
+.menu1-my-account >a {
+	font-weight: bold;
+	display: block;
+	list-style: none;
+}
+.menu1-my-account> ul>li{
+	text-decoration: none;
+	list-style: none;
+}
+.submenu-my-account {
+	list-style: none;
+	padding-left: 10px;
+	position: relative;
+}
+.submenu-my-account >ul>li {
+	list-style: none;
+	display: none;
+	position: absolute;
+	border-bottom: 1px solid #e8e8e8;
+}
+#menu-my-account :hover .submenu-my-account{
+	display: block;
+}
+.
+/* tài khoản của tôi */
