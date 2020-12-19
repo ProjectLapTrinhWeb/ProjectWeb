@@ -5412,7 +5412,6 @@ div.KM-Info>.NH-DV{
 }
 .userpape-sidebar{
 	display: block;
-	width: 180px;
 	flex-shrink: 0;
 	width: 180px;
 	height: 630px;
@@ -5471,23 +5470,15 @@ div.KM-Info>.NH-DV{
 	width: 180px;
 	height: 40px;
 }
-.startdust-dropdown_item-header{
-	width: 180px;
-	height: 22px;
+div.dropdown {
+	padding-left: 17px;
+	margin-top: 20px ;
 }
-.image-icon-user{
-	width: 20px;
-	height: 20px;
-}
-.startdust-dropdown_item-body{
-	width: 180px;
-	height: 130px;
-}
-.startdust-dropdown_item-body > a{
-	display: none;
-}
-.startdust-dropdown_item-header :hover .startdust-dropdown_item-body{
-	display: block;
+.console-tab{
+width: 900px;
+height: 630px;
+background-color: white;
+margin-left: 20px;
 }
 /* #cart .container .footer-cart h3{
 	margin: 10px;
@@ -5549,14 +5540,14 @@ li.pape-item {
 }
 #myOrderTab{
 	width: 800px;
-	height: 50px;
+	height: 40px;
 	margin: auto;
 }
 .header-tab{
 	width: 1000px;
 	height: 50px;
 	margin: auto;
-	/* margin-top: 30px; */
+	margin-top: 30px;
 	border: 2px #f1f1f1 solid;
 }
 .header-tab > ul > li{
@@ -5658,3 +5649,34 @@ li.pape-item {
 	font-weight: normal;
 }
 /* end content admin */
+/* tài khoản của tôi */
+#menu-my-account div{
+	width: 180px;
+	height: 400px;
+	padding: 15px;
+	padding-left: 5px;
+}
+.menu1-my-account >a {
+	font-weight: bold;
+	display: block;
+	list-style: none;
+}
+.menu1-my-account> ul>li{
+	text-decoration: none;
+	list-style: none;
+}
+.submenu-my-account {
+	list-style: none;
+	padding-left: 10px;
+	position: relative;
+}
+.submenu-my-account >ul>li {
+	list-style: none;
+	display: none;
+	position: absolute;
+	border-bottom: 1px solid #e8e8e8;
+}
+#menu-my-account :hover .submenu-my-account{
+	display: block;
+}
+/* tài khoản của tôi */
