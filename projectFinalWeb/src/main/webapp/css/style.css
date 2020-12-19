@@ -5630,6 +5630,11 @@ li.pape-item {
 	height: 30px;
 	background: #f1f1f1;
 }
+.search-btn{
+	color: white;
+	background: #0064cf;
+	border-radius: 5px;
+}
 #add-product{
 	width: 170px;
 	padding: 3px 10px;
@@ -5645,6 +5650,7 @@ li.pape-item {
 	padding-left: 5px;
 	font-size: 17px;
 	font-weight: normal;
+	border-radius: 5px;
 }
 .search-box::placeholder{
 	opacity: 0.7;
