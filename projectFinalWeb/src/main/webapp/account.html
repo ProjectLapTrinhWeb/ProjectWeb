@@ -265,23 +265,115 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						</div>
 					</div>
 				</div>
-				<div class="user-pape-sidebar">
+				<div class="user-pape-sidebar" style="margin-top: 20px;">
 					<div id="menu-my-account">
 						<ul class="menu1-my-account">
-						  <li><a href="#">Thông tin của tôi</a></li>
+						  <li><a href="#" style="font-size: 16px; margin-left: 10px;">Thông tin của tôi</a></li>
 							<ul class="submenu-my-account">
-								<li><a href="#">Hồ sơ</a></li>
-								<li><a href="#">Sản phẩm</a></li>
-								<li><a href="#">Liên hệ</a></li>
-								<li><a href="#">Thêm mật khẩu</a></li>
+								<div class="nav flex-column nav-pills" style="margin-top: 0px;" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+									<li><a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Hồ sơ</a></li>
+									<li><a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Ngân hàng</a></li>
+									<li><a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Địa chỉ</a></li>
+									<li><a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Thêm mật khẩu</a></li>
+								</div>
 							</ul>
 						</ul>
-					</div>
+							
+				    </div>
 				</div>
 			</div>
 			<div class="console-tab">
 				<div class="Console-menu-tab">
-					
+					<div class="tab-content" id="v-pills-tabContent">
+						<div class="tab-pane fade show active" style="width: 900px;height: 630px;" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+							<div class="tab-profile-header">
+								<p style="font-size: 20px;">Hồ sơ của tôi</p>
+								<p style="font-size: 16px;">Quản lí thông tin hồ sơ để bảo mật tài khoản </p>
+							</div>
+							<div class="tab-profile-content">
+								<div class="profile-content-console">
+									<div class="profile-sign-name">
+										<div class="input_lable-with-lable">
+											<label class="lable-font">Tên đăng nhập: </label>
+										</div>
+										<div class="input_info-account">
+											<p>username12345</p>
+										</div>
+									</div>
+									<div class="account-input-name">
+										<div class="input_lable-with-lable">
+											<label class="lable-font">Tên: </label>
+										</div>
+										<input class="input-name-account-input" type="text" placeholder="">
+									</div>
+									<div class="profile-sign-name">
+										<div class="input_lable-with-lable">
+											<label class="lable-font">Email: </label>
+										</div>
+										<div class="input_info-account">
+											<a href="">Thêm</a>
+										</div>
+									</div>
+									<div class="profile-sign-name">
+										<div class="input_lable-with-lable">
+											<label class="lable-font">Số điện thoại: </label>
+										</div>
+										<div class="input_info-account">
+											<a href="">Thêm</a>
+										</div>
+									</div>
+									<div class="account-input-name">
+										<div class="input_lable-with-lable">
+											<label class="lable-font">Tên Shop: </label>
+										</div>
+										<input class="input-name-account-input" type="text" placeholder="username12345" >
+									</div>
+									<div class="profile-sign-name">
+										<div class="input_lable-with-lable">
+											<label class="lable-font">Giới tính: </label>
+										</div>
+										<div class="input_info-account">
+											<form>
+												<label class="checkbox-inline">
+												  <input type="checkbox" value="">Nam
+												</label>
+												<label class="checkbox-inline">
+												  <input type="checkbox" value="">Nữ
+												</label>
+												<label class="checkbox-inline">
+												  <input type="checkbox" value="">Khác
+												</label>
+											  </form>
+										</div>
+									</div>
+									<div class="profile-sign-name">
+										<div class="input_lable-with-lable">
+											<label class="lable-font">Ngày sinh: </label>
+										</div>
+										<div class="input_info-account">
+											
+										</div>
+									</div>
+									<p class="lead">
+										<a style="margin-top: 30px;margin-left: 90px;" class="btn btn-primary btn-lg" href="#" role="button">Lưu</a>
+									</p>
+								</div>
+								<div class="profile-content-img">
+									<div class="profile-img-change">
+										<div class="shop-avatar" style="margin-left: 55px;padding-top: 20px;">
+											<img  class="shop-img" src="images/1.jpg" alt="">
+										</div>
+										<button style="margin-top: 30px;margin-left: 45px;opacity: 1;">Chọn ảnh</button>
+										<p style="margin-left: 5px;margin-top: 5px;">Dung lượng file tối đa 1 MB</p>
+										<p style="margin-left: 5px;margin-top: 5px;">Định dạng:.JPEG, .PNG</p>
+									</div>
+								</div>	
+							</div>
+						</div>
+						<div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">...</div>
+						<div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...</div>
+						<div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div>
+					</div>
 				</div>
 			</div>
 				
