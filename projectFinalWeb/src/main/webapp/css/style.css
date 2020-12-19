@@ -25,7 +25,7 @@ body a:hover{
 	text-decoration:none;
 }
 /*-- header --*/
-input[type="submit"],.panel-body ul li a,.checkout-right-basket a,.additional_info_sub_grid_right a,.panel_bottom li a,.panel-title a,.breadcrumb_dress ul li a,.multi-column-dropdown li a,.footer-copy p a,.w3_footer_grid ul li a,.agileinfo_banner_bottom1_grid_left a,.navbar-default .navbar-nav > li > a,.simpleCart_shelfItem p a,.agile_ecommerce_tab_left h5 a,.w3_hs_bottom ul li a,.team-bottom a{
+input[type="submit"],.panel-body ul li a,.checkout-right-basket a,.additional_info_sub_grid_right a,.panel_bottom li a,.panel-title a,.breadcrumb_dress ul li a,.multi-column-dropdown li a,.footer-copy p a,.w3_footer_grid ul li a, .agileinfo_banner_bottom1_grid_left a,.navbar-default .navbar-nav > li > a,.simpleCart_shelfItem p a,.agile_ecommerce_tab_left h5 a,.w3_hs_bottom ul li a,.team-bottom a{
 	transition:.5s ease-in-out;
 	-webkit-transition:.5s ease-in-out;
 	-moz-transition:.5s ease-in-out;
@@ -78,7 +78,7 @@ input[type="submit"],.panel-body ul li a,.checkout-right-basket a,.additional_in
 .search{
 	position: relative;
     display: inline-block;
-    float: left;
+    /* float: left; */
     margin:0.8em 0 0 8em;
 }
 label.icon-search {
@@ -1768,9 +1768,9 @@ h3.other-nw {
 	color:#212121;
     background-color: #fff;
 }
-.panel-body {
-    /* padding:1em 0em 0 2em; */
-}
+/* .panel-body {
+    padding:1em 0em 0 2em;
+} */
 .panel_bottom li{
 	list-style-type:none;
 	margin-bottom: 1em;
@@ -5540,14 +5540,14 @@ li.pape-item {
 }
 #myOrderTab{
 	width: 800px;
-	height: 40px;
+	height: 50px;
 	margin: auto;
 }
 .header-tab{
 	width: 1000px;
 	height: 50px;
 	margin: auto;
-	margin-top: 30px;
+	/* margin-top: 30px; */
 	border: 2px #f1f1f1 solid;
 }
 .header-tab > ul > li{
@@ -5680,3 +5680,54 @@ li.pape-item {
 	display: block;
 }
 /* tài khoản của tôi */
+
+
+
+/* -------------form add product */
+#form-add{
+	min-height: 500px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	border: 2px solid #f1f1f1;
+}
+#form-add .header-card{
+	padding: 30px;
+}
+#form-add .body-card{
+	width: 100%;
+	margin: auto;
+	margin: 50px;
+	margin-top: 10px;
+}
+#form-add .body-card form{
+	width: 50%;
+	float: left;
+}
+#form-add .body-card input[type=file]{
+	width: 50%;
+}
+#form-add .body-card input[type=text]{
+	width: 500px;
+}
+#form-add .body-card input[type=submit]{
+	text-align: center;
+	background: #0064cf;
+	color: white;
+}
+#form-add .body-card .thumbnail{
+	min-width: 40%;
+	min-height: 400px;
+	float: right;
+	margin-right: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#form-add .body-card input::placeholder{
+	opacity: 0.6;
+	font-weight: normal;
+}
+#supplierProduct,#discountProduct,#categoryProduct{
+	width: 200px;
+}
+/*  end form add product-----------------*/
