@@ -267,35 +267,117 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				</div>
 				<div class="user-pape-sidebar" style="margin-top: 20px;">
 					<div id="menu-my-account">
-						<ul class="menu1-my-account">
-						  <!-- <li><a href="#" style="font-size: 16px; margin-left: 10px;;">Thông tin của tôi</a></li> -->
-						  <li style="text-decoration: none;list-style: none;"><button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-							Thông tin của tôi
-						  </button></li>
-							<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-							<ul class="submenu-my-account">
-								<div class="nav flex-column nav-pills" style="margin-top: 0px;" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-									<li><a class="nav-linkq" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="true">Hồ sơ</a></li>
-									<li><a class="nav-link" id="v-pills-bank-tab" data-toggle="pill" href="#v-pills-bank" role="tab" aria-controls="v-pills-bank" aria-selected="false">Ngân hàng</a></li>
-									<li><a class="nav-link" id="v-pills-address-tab" data-toggle="pill" href="#v-pills-address" role="tab" aria-controls="v-pills-address" aria-selected="false">Địa chỉ</a></li>
-									<li><a class="nav-link" id="v-pills-password-tab" data-toggle="pill" href="#v-pills-password" role="tab" aria-controls="v-pills-password" aria-selected="false">Thêm mật khẩu</a></li>
+						<ul class="menu1-my-account" >
+						  	<!-- <div id="accordion" style="margin: 0px;padding: 0px;">
+								<div class="card" style="margin: 0px;padding: 0px;">
+									<div class="card-header" id="headingOne" style="margin-top:-5px;padding: 0px;position: absolute;">
+											<button style="font-size: 18px;text-decoration: none;margin-left: 10px; border: 1px solid blue;" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+											Thông tin của tôi
+											</button>						
+										<div style="padding:0px;margin:0px;" id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+											<div class="card-body" style="padding: 0px;margin: 0px;">
+												<div class="template_console" style="padding: 0px;margin: 0px;">
+													<ul style="padding-left: 10px;" class="nav nav-tabs" id="myTab" role="tablist">
+														<li class="nav-item active">
+															<a class="nav-link nav-pills active" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="true">Hồ sơ</a>
+														</li>
+														<li class="nav-item">
+															<a class="nav-link nav-pills" id="bank-tab" data-toggle="tab" href="#bank" role="tab" aria-controls="bank" aria-selected="false">Ngân hàng</a>
+														</li>
+														<li class="nav-item">
+															<a class="nav-link nav-pills" id="address-tab" data-toggle="tab" href="address" role="tab" aria-controls="address" aria-selected="false">Địa chỉ</a>
+														</li>
+														<li class="nav-item">
+															<a class="nav-link nav-pills" id="password-tab" data-toggle="tab" href="#password" role="tab" aria-controls="password" aria-selected="false">Thêm mật khẩu</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
 								</div>
-							</ul>
-							</div>
-							<!-- <div class="nav flex-column nav-pills" style="margin-top: 0px;position: fixed" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-								<a class="nav-link active" id="v-pills-bill-tab" data-toggle="pill" href="#v-pills-bill" role="tab" aria-controls="v-pills-bill" aria-selected="true">Đơn mua</a>
+								<div class="card">
+									<div class="card-header" id="headingTwo">
+										<button style="font-size: 18px;text-decoration: none;margin-left: 10px; border: 1px solid blue;"class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+										Đơn hàng
+										</button>
+									</div>
+									<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+										<div class="card-body">
+											
+										</div>
+									</div>
+								</div>
 							</div> -->
-						</ul>	
+							<div id="accordion" style="margin: 0px;padding: 0px;;">
+								<div class="card">
+								  	<div style="padding: 0px;margin: 0px;height: 40px;width: 180px;"class="card-header" id="headingOne">
+										<h5 class="mb-0"></h5>
+											<button style="font-size: 18px;text-decoration: none;margin-left: 10px; border: 1px solid blue;" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+												Thông tin của tôi
+											</button>	
+										</h5>
+								  	</div>
+								  	<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+										<div class="card-body" style="padding: 0px;margin: 0px;height: 120px;width: 180px;">
+											<div class="template_console" style=" height: 120px;width: 180px;margin:0px;padding: 0px;">
+												<ul style="padding-left: 10px;" class="nav nav-tabs" id="myTab" role="tablist">
+													<li class="nav-item active">
+														<a class="nav-link nav-pills active" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="true">Hồ sơ</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link nav-pills" id="bank-tab" data-toggle="tab" href="#bank" role="tab" aria-controls="bank" aria-selected="false">Ngân hàng</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link nav-pills" id="address-tab" data-toggle="tab" href="address" role="tab" aria-controls="address" aria-selected="false">Địa chỉ</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link nav-pills" id="password-tab" data-toggle="tab" href="#password" role="tab" aria-controls="password" aria-selected="false">Thêm mật khẩu</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+								  	</div>
+								</div>
+								<div class="card" style="padding: 0px;margin:0px;">
+								  <div class="card-header" id="headingTwo" style="margin: 0px;padding: 0px; height: 40px;">
+									<h5 class="mb-0">
+									  <button style="font-size: 18px;text-decoration: none;margin-left: 10px; border: 1px solid blue;margin-top: 10px;"class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+										<a style="text-decoration: none;" sclass="nav-link nav-pills" id="product-tab" data-toggle="tab" href="#product" role="tab" aria-controls="product" aria-selected="true">Đơn hàng</a>
+									  </button>
+									</h5>
+								  </div>
+								  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+									<div class="card-body">
+										<div class="tab-pane" style="position: absolute;" id="product" role="tabpanel" aria-labelledby="product-tab">
+
+										</div>
+									</div>
+								  </div>
+								</div>
+								<div class="card">
+								  <div class="card-header" id="headingThree">
+									<h5 class="mb-0">
+									  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+										Thông báo
+									  </button>
+									</h5>
+								  </div>
+								  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+									<div class="card-body">
+									  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+									</div>
+								  </div>
+								</div>
+							  </div>
+						</ul>
 					</div>
 				</div>
-				<script>
-					$('.collapse').collapse()
-				</script>
 			</div>
 			<div class="console-tab">
 				<div class="Console-menu-tab">
 					<div class="tab-content" id="v-pills-tabContent">
-						<div class="tab-pane fade show active" style="width: 900px;height: 630px;position: absolute;" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+						<div class="tab-pane active" style="width: 900px;height: 630px;position: absolute;"id="profile" role="tabpanel" aria-labelledby="profile-tab">  
 							<div class="tab-profile-header">
 								<p style="font-size: 20px;">Hồ sơ của tôi</p>
 								<p style="font-size: 16px;">Quản lí thông tin hồ sơ để bảo mật tài khoản </p>
@@ -380,7 +462,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								</div>	
 							</div>
 						</div>
-						<div class="tab-pane fade" style="position: absolute;" id="v-pills-bank" role="tabpanel" aria-labelledby="v-pills-bank-tab">
+						<div class="tab-pane" style="position: absolute;" id="bank" role="tabpanel" aria-labelledby="bank-tab">
 							<div class="connect-bank-user">
 								<div class="connect-redict-card">
 									<h3 class="h3-info-add">Thẻ tín dụng/ ghi nợ của tôi</h3>
@@ -398,7 +480,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								</div>
 							</div>
 						</div>
-						<div class="tab-pane fade" style="position: absolute;" id="v-pills-address" role="tabpanel" aria-labelledby="v-pills-address-tab">
+						<div class="tab-pane" style="position: absolute;" id="address" role="tabpanel" aria-labelledby="address-tab">
 							<div class="connect-bank-account">
 								<h3 class="h3-info-add">Địa chỉ của tôi</h3>
 								<button class="btn-add-account">+ Thêm địa chỉ mới</button>
@@ -408,7 +490,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							</div>
 
 						</div>
-						<div class="tab-pane fade" style="position: absolute;" id="v-pills-password" role="tabpanel" aria-labelledby="v-pills-password-tab">
+						<div class="tab-pane" style="position: absolute;" id="password" role="tabpanel" aria-labelledby="password-tab">
 							<div class="connect-bank-account">
 								<h3 class="h3-info-add">Thêm mật khẩu <br><p>Vui lòng không chia sẽ mật khẩu cho người khác</p></h3>
 							</div>
