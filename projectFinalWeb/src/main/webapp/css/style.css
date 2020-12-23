@@ -5463,7 +5463,7 @@ div.KM-Info>.NH-DV{
 }
 .user-pape-sidebar{
 	width: 180px;
-	height: 182px;
+	height: 500px;
 	display: block;
 }
 .startdust-dropdown{
@@ -5652,7 +5652,7 @@ li.pape-item {
 /* tài khoản của tôi */
 #menu-my-account div{
 	width: 180px;
-	height: 400px;
+	height: 170px;
 	padding: 15px;
 	padding-left: 5px;
 	margin-top: 20px;
@@ -5663,8 +5663,10 @@ li.pape-item {
 	list-style: none;
 }
 .menu1-my-account{
+	height: 170px;
 	position: relative;
 	list-style: none;
+	display: flex;
 }
 .menu1-my-account> ul>li{
 	text-decoration: none;
@@ -5758,7 +5760,65 @@ li.pape-item {
 	color: white;
 	float: center;
 }
-
+.connect-bank-user{
+	width: 900px;
+	height: 630px;
+}
+.connect-redict-card{
+	width: 800px;
+	height: 80px;
+	border-bottom: 1px solid gray;
+	margin-left: 45px;
+}
+.h3-info-add{
+	float: left;
+	padding-top: 30px;
+}
+.btn-add-account{
+	float: right;
+	margin-top: 30px;
+	color: white;
+	background-color: blue;
+	height: 24px;
+	text-align: center;
+}
+.place-console-account{
+	width: 800px;
+	height: 140px;
+	margin-left: 45px;
+}
+.place-console-account>p{
+	font-size: 14px;
+	text-align: center;
+	margin-top: 70px;
+}
+.connect-bank-account{
+	width: 800px;
+	height: 80px;
+	border-bottom: 1px solid gray;
+	margin-left: 45px;
+}
+.add-password-account{
+	width: 500px;
+	height: 400px;
+	margin-top: 30px;
+	margin-left: 45px;
+}
+.password-used-con{
+	width: 500px;
+	height: 40px;
+	display: flex;
+	margin-bottom: 20px;
+}
+.password-lable-con{
+	width: 160px;
+	height: 16px;
+	margin-top: 10px;
+}
+.text-pass-input{
+	width: 340px;
+	height: 40px;
+}
 /*console tab */
 /* -------------form add product */
 #form-add{
@@ -5808,3 +5868,8 @@ li.pape-item {
 	width: 200px;
 }
 /*  end form add product-----------------*/
+.template1{
+	width: 180px;
+	height: 200px;
+	text-align: center;
+}
