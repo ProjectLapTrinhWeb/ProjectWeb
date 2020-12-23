@@ -257,7 +257,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<!-- banner -->
 	<div class="banner banner10" style="background-image: url(images/banner-about1.jpg);">
 		<div class="container">
-			<h2>Add Product</h2>
+			<h2>Admin Control</h2>
 		</div>
 	</div>
 	<!-- //banner -->
@@ -274,84 +274,372 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	</div>
 	<!-- //breadcrumbs -->
 	<!-- body -->
-	<div class="container" id="form-add">
-		<div class="header-card">
-			<h2 style="border-bottom: 2px solid #0064cf;">Thêm một sản phẩm mới</h2>
-		</div>
-		<div class="body-card">
-			<form id="form-add-product" class="form-horizontal" action="" method="post">
-				<div class="form-group">
-					<label for="name">
-						Tên sản phẩm:
-						<input type="text" value="" class="form-control" name="name" id="nameProduct"
-							placeholder="Nhập tên sản phẩm...">
-					</label>
+	<!-- admin -->
+	<div class="mobiles">
+		<div class="container" style="margin: 0 !important;">
+			<div class="w3ls_mobiles_grids">
+				<div class="col-md-4 w3ls_mobiles_grid_left">
+					<div class="w3ls_mobiles_grid_left_grid">
+						<h3>Quản lý</h3>
+						<div class="w3ls_mobiles_grid_left_grid_sub">
+							<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab" id="headingOne">
+										<h4 class="panel-title asd">
+											<a class="pa_italic" href="adminOrder.html">
+												<span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i
+													class="glyphicon glyphicon-minus" aria-hidden="true"></i>Đơn hàng
+											</a>
+										</h4>
+									</div>
+									<!-- <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+								  <div class="panel-body panel_text">
+									<ul>
+										<li><a href="" role="button" data-toggle="collapse" >Tất cả</a></li>
+										<li><a href="#cancel"  role="button" data-toggle="collapse" >Đơn đã hủy</a></li>
+										<li><a href="products2.html">Đơn đang giao</a></li>
+										<li><a href="#delivered">Đơn đã giao</a></li>
+										<li><a href="products.html">Trả hàng/Hoàn tiền</a></li>
+									</ul>
+								  </div>
+								</div> -->
+								</div>
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab" id="headingTwo">
+										<h4 class="panel-title asd">
+											<a class="pa_italic collapsed" href="adminProduct.html">
+												<span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i
+													class="glyphicon glyphicon-minus" aria-hidden="true"></i>Sản phẩm
+											</a>
+										</h4>
+									</div>
+									<!-- <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+								   <div class="panel-body panel_text">
+									<ul>
+										<li><a href="products2.html">Tất cả sản phẩm</a></li>
+                                        <li><a href="products2.html">Thêm sản phẩm</a></li>
+                                        <li><a href="products2.html">Đang kinh doanh</a></li>
+										<li><a href="products2.html">Đã hết</a></li>	
+									</ul>
+								  </div>
+								</div> -->
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="w3ls_mobiles_grid_left_grid">
+						<h3>Tài chính</h3>
+						<div class="w3ls_mobiles_grid_left_grid_sub">
+							<div class="ecommerce_color ecommerce_size">
+								<ul>
+									<li><a href="#">Doanh thu theo tuần</a></li>
+									<li><a href="#">Doanh thu theo tháng</a></li>
+									<li><a href="#">Doanh thu theo quý</a></li>
+									<li><a href="#">Doanh thu theo năm</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="w3ls_mobiles_grid_left_grid">
+						<h3>Dữ liệu</h3>
+						<div class="w3ls_mobiles_grid_left_grid_sub">
+							<div class="ecommerce_color ecommerce_size">
+								<ul>
+									<li><a href="#">Phân tích bán hàng</a></li>
+									<li><a href="#">Hiệu quả hoạt động</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="form-group">
-					<label for="price">
-						Giá:
-						<input type="text" value="" class="form-control" name="price" id="priceProduct"
-							placeholder="Đơn vị VNĐ">
-					</label>
-				</div>
-				<div class="form-group">
-					<label for="supplier">
-						Nhà sản xuất:
-						<select id="supplierProduct" class="form-control " name="supplier">
-							<option value="">Chọn...</option>
-							<option value="Dell">Dell</option>
-							<option value="Asus">Asus</option>
-							<option value="Apple">Apple</option>
-							<option value="HP">HP</option>
-						</select>
-					</label>
-				</div>
-				<div class="form-group">
-					<label for="discount">
-						Khuyến mãi:
-						<input type="number" max="99" min="10" value="" class="form-control " name="discount"
-							id="discountProduct" placeholder="%">
-					</label>
-				</div>
-				<div class="form-group">
-					<label for="category">
-						Phân loại:
-						<select id="categoryProduct" class="form-control" name="category">
-							<option value="">Chọn...</option>
-							<option value="Laptop">Laptop</option>
-							<option value="Accessory">Phụ kiện</option>
-						</select>
-					</label>
-				</div>
-				<div class="form-group">
-					<label for="img">
-						Ảnh:
-						<input type="file" class="form-control" onchange="readURL(this)" name="img" id="imgProduct">
-					</label>
-				</div>
-				<div class="form-group">
-					<input type="submit" value="Thêm sản phẩm" class="btn btn-lg">
-				</div>
-			</form>
-			<div class="thumbnail">
-				<img src="images/image.png" alt="hinh-anh-san-pham" id="img-upload">
 			</div>
+			<div class="tab-content">
+				<div class="content-admin collapse in" id="admin-order">
+					<div class="all-order">
+						<ul class="nav nav-tabs" id="myOrderTab">
+							<li class="active"><a data-toggle="tab" href="#all">Tất cả</a></li>
+							<li><a data-toggle="tab" href="#cancel">Đơn đã hủy</a></li>
+							<li><a data-toggle="tab" href="#shipping">Đơn đang giao</a></li>
+							<li><a data-toggle="tab" href="#delivered">Đơn đã giao</a></li>
+							<li><a data-toggle="tab" href="#refund">Trả hàng</a></li>
+						</ul>
+						<div class="search-order">
+							<form action="">
+								<label for="search-order">
+									Tìm kiếm đơn hàng:
+									<input type="search" name="search" class="search-box"
+										placeholder="Theo tên khách hàng...">
+									<input type="submit" value="Tìm" class="search-btn">
+								</label>
+							</form>
+						</div>
+						<div class="header-tab">
+							<ul class="col" style="list-style-type: none;">
+								<li class="col-md-3">Sản phẩm</li>
+								<li class="col-md-2">Tổng đơn</li>
+								<li class="col-md-2">Trạng thái</li>
+								<li class="col-md-2">Vận chuyển</li>
+								<li class="col-md-2" style="text-align: right;">Thao tác</li>
+							</ul>
+						</div>
+						<div class="tab-content">
+							<div id="all" class="tab-pane fade in active">
+								<div id="order-tab">
+									<!-- start don hang -->
+									<div class="order-item">
+										<div class="header-order">
+											<div id="customer-id">
+												<a href="account.html">
+													<h5 class="card-title">haokyln123456</h5>
+												</a>
+											</div>
+											<div id="order-id">
+												<a href="#">
+													<h5 class="card-title">ID Đơn hàng: 333XXX</h5>
+												</a>
+											</div>
+										</div>
+										<div class="body-order">
+											<a href="single.html">
+												<div class="card mb-3" style="max-width: 540px;">
+													<div class="col-md-2">
+														<img src="images/laptopcucmanh01.jpg" alt="san-pham"
+															width="50px" height="50px">
+													</div>
+													<div class="col-md-4">
+														<div class="card-body">
+															<h5 class="card-title">Macbook Air</h5>
+															<p class="card-text"><small class="text-muted">Số lượng:
+																	1</small></p>
+														</div>
+													</div>
+												</div>
+											</a>
+											<div class="col-md-2">
+												<p>25.000.000VNĐ</p>
+											</div>
+											<div class="col-md-2">
+												<p>Đã gửi</p>
+											</div>
+											<div class="col-md-2">
+												<p>GHTK</p>
+											</div>
+											<div class="col-md-2" style="text-align: right;">
+												<a href="detailOrder.html">Chi tiết đơn</a>
+											</div>
+										</div>
+									</div>
+									<!-- end don hang -->
+									<!-- start don hang -->
+									<div class="order-item">
+										<div class="header-order">
+											<div id="customer-id">
+												<a href="account.html">
+													<h5 class="card-title">haokyln123456</h5>
+												</a>
+											</div>
+											<div id="order-id">
+												<a href="#">
+													<h5 class="card-title">ID Đơn hàng: 333XXX</h5>
+												</a>
+											</div>
+										</div>
+										<div class="body-order">
+											<a href="single.html">
+												<div class="card mb-3" style="max-width: 540px;">
+													<div class="col-md-2">
+														<img src="images/laptopcucmanh01.jpg" alt="san-pham"
+															width="50px" height="50px">
+													</div>
+													<div class="col-md-4">
+														<div class="card-body">
+															<h5 class="card-title">Macbook Air</h5>
+															<p class="card-text"><small class="text-muted">Số lượng:
+																	1</small></p>
+														</div>
+													</div>
+												</div>
+											</a>
+											<div class="col-md-2">
+												<p>25.000.000VNĐ</p>
+											</div>
+											<div class="col-md-2">
+												<p>Đã gửi</p>
+											</div>
+											<div class="col-md-2">
+												<p>GHTK</p>
+											</div>
+											<div class="col-md-2" style="text-align: right;">
+												<a href="detailOrder.html">Chi tiết đơn</a>
+											</div>
+										</div>
+									</div>
+									<!-- end don hang -->
+									<!-- start don hang -->
+									<div class="order-item">
+										<div class="header-order">
+											<div id="customer-id">
+												<a href="account.html">
+													<h5 class="card-title">haokyln123456</h5>
+												</a>
+											</div>
+											<div id="order-id">
+												<a href="#">
+													<h5 class="card-title">ID Đơn hàng: 333XXX</h5>
+												</a>
+											</div>
+										</div>
+										<div class="body-order">
+											<a href="single.html">
+												<div class="card mb-3" style="max-width: 540px;">
+													<div class="col-md-2">
+														<img src="images/laptopcucmanh01.jpg" alt="san-pham"
+															width="50px" height="50px">
+													</div>
+													<div class="col-md-4">
+														<div class="card-body">
+															<h5 class="card-title">Macbook Air</h5>
+															<p class="card-text"><small class="text-muted">Số lượng:
+																	1</small></p>
+														</div>
+													</div>
+												</div>
+											</a>
+											<div class="col-md-2">
+												<p>25.000.000VNĐ</p>
+											</div>
+											<div class="col-md-2">
+												<p>Đã gửi</p>
+											</div>
+											<div class="col-md-2">
+												<p>GHTK</p>
+											</div>
+											<div class="col-md-2" style="text-align: right;">
+												<a href="detailOrder.html">Chi tiết đơn</a>
+											</div>
+										</div>
+									</div>
+									<!-- end don hang -->
+									<!-- start don hang -->
+									<div class="order-item">
+										<div class="header-order">
+											<div id="customer-id">
+												<a href="account.html">
+													<h5 class="card-title">haokyln123456</h5>
+												</a>
+											</div>
+											<div id="order-id">
+												<a href="#">
+													<h5 class="card-title">ID Đơn hàng: 333XXX</h5>
+												</a>
+											</div>
+										</div>
+										<div class="body-order">
+											<a href="single.html">
+												<div class="card mb-3" style="max-width: 540px;">
+													<div class="col-md-2">
+														<img src="images/laptopcucmanh01.jpg" alt="san-pham"
+															width="50px" height="50px">
+													</div>
+													<div class="col-md-4">
+														<div class="card-body">
+															<h5 class="card-title">Macbook Air</h5>
+															<p class="card-text"><small class="text-muted">Số lượng:
+																	1</small></p>
+														</div>
+													</div>
+												</div>
+											</a>
+											<div class="col-md-2">
+												<p>25.000.000VNĐ</p>
+											</div>
+											<div class="col-md-2">
+												<p>Đã gửi</p>
+											</div>
+											<div class="col-md-2">
+												<p>GHTK</p>
+											</div>
+											<div class="col-md-2" style="text-align: right;">
+												<a href="detailOrder.html">Chi tiết đơn</a>
+											</div>
+										</div>
+									</div>
+									<!-- end don hang -->
+									<!-- start don hang -->
+									<div class="order-item">
+										<div class="header-order">
+											<div id="customer-id">
+												<a href="account.html">
+													<h5 class="card-title">haokyln123456</h5>
+												</a>
+											</div>
+											<div id="order-id">
+												<a href="#">
+													<h5 class="card-title">ID Đơn hàng: 333XXX</h5>
+												</a>
+											</div>
+										</div>
+										<div class="body-order">
+											<a href="single.html">
+												<div class="card mb-3" style="max-width: 540px;">
+													<div class="col-md-2">
+														<img src="images/laptopcucmanh01.jpg" alt="san-pham"
+															width="50px" height="50px">
+													</div>
+													<div class="col-md-4">
+														<div class="card-body">
+															<h5 class="card-title">Macbook Air</h5>
+															<p class="card-text"><small class="text-muted">Số lượng:
+																	1</small></p>
+														</div>
+													</div>
+												</div>
+											</a>
+											<div class="col-md-2">
+												<p>25.000.000VNĐ</p>
+											</div>
+											<div class="col-md-2">
+												<p>Đã gửi</p>
+											</div>
+											<div class="col-md-2">
+												<p>GHTK</p>
+											</div>
+											<div class="col-md-2" style="text-align: right;">
+												<a href="detailOrder.html">Chi tiết đơn</a>
+											</div>
+										</div>
+									</div>
+									<!-- end don hang -->
+
+								</div>
+							</div>
+							<div id="cancel" class="tab-pane fade">
+								<h3>Menu 1</h3>
+								<p>Some content in menu 1.</p>
+							</div>
+							<div id="shipping" class="tab-pane fade">
+								<h3>Menu 2</h3>
+								<p>Some content in menu 2.</p>
+							</div>
+							<div id="delivered" class="tab-pane fade">
+								<h3>Menu 3</h3>
+								<p>Some content in menu 3.</p>
+							</div>
+							<div id="refund" class="tab-pane fade">
+								<h3>Menu 4</h3>
+								<p>Some content in menu 4.</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- end all order -->
+				</div>
+				<!-- end content-admin -->
+			</div>
+
 		</div>
+
 	</div>
-	<script>
-		function readURL(input) {
-			if (input.files && input.files[0]) {
-				var reader = new FileReader();
-				reader.onload = function (e) {
-					$('#img-upload')
-						.attr('src', e.target.result)
-						.width(450)
-						.height(300);
-				};
-				reader.readAsDataURL(input.files[0]);
-			}
-		}
-	</script>
 	<!-- end body -->
 
 	<!-- div -->
