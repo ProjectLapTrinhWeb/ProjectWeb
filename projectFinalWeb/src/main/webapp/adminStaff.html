@@ -287,31 +287,28 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 									<div class="panel-heading" role="tab" id="headingOne">
 										<h4 class="panel-title asd">
 											<a class="pa_italic" href="adminOrder.html">
-												<span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i
-													class="glyphicon glyphicon-minus" aria-hidden="true"></i>Đơn hàng
+												<i class="glyphicon glyphicon-plus" aria-hidden="true"></i>Đơn hàng
 											</a>
 										</h4>
 									</div>
-									<!-- <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel"
-										aria-labelledby="headingOne">
-										<div class="panel-body panel_text">
-											<ul>
-												<li><a href="" role="button" data-toggle="collapse">Tất cả</a></li>
-												<li><a href="#cancel" role="button" data-toggle="collapse">Đơn đã
-														hủy</a></li>
-												<li><a href="products2.html">Đơn đang giao</a></li>
-												<li><a href="#delivered">Đơn đã giao</a></li>
-												<li><a href="products.html">Trả hàng/Hoàn tiền</a></li>
-											</ul>
-										</div>
-									</div> -->
+									<!-- <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+								  <div class="panel-body panel_text">
+									<ul>
+										<li><a href="" role="button" data-toggle="collapse" >Tất cả</a></li>
+										<li><a href="#cancel"  role="button" data-toggle="collapse" >Đơn đã hủy</a></li>
+										<li><a href="products2.html">Đơn đang giao</a></li>
+										<li><a href="#delivered">Đơn đã giao</a></li>
+										<li><a href="products.html">Trả hàng/Hoàn tiền</a></li>
+									</ul>
+								  </div>
+								</div> -->
 								</div>
 								<div class="panel panel-default">
 									<div class="panel-heading" role="tab" id="headingTwo">
 										<h4 class="panel-title asd">
 											<a class="pa_italic collapsed" href="adminProduct.html">
 												<span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i
-													class="glyphicon glyphicon-minus" aria-hidden="true"></i>Sản phẩm
+													class="glyphicon glyphicon-plus" aria-hidden="true"></i>Sản phẩm
 											</a>
 										</h4>
 									</div>
@@ -331,7 +328,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 										<h4 class="panel-title asd">
 											<a class="pa_italic" href="adminStaff.html">
 												<span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i
-													class="glyphicon glyphicon-plus" aria-hidden="true"></i>Nhân viên
+													class="glyphicon glyphicon-minus" aria-hidden="true"></i>Nhân viên
 											</a>
 										</h4>
 									</div>
@@ -396,52 +393,46 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				</div>
 			</div>
 			<div class="tab-content">
-				<div class="content-admin collapse in" id="admin-order">
-					<div class="all-order">
-						<ul class="nav nav-tabs" id="myOrderTab">
-							<li class="active"><a data-toggle="tab" href="#all">Tất cả</a></li>
-							<li><a data-toggle="tab" href="#cancel">Đơn đã hủy</a></li>
-							<li><a data-toggle="tab" href="#shipping">Đơn đang giao</a></li>
-							<li><a data-toggle="tab" href="#delivered">Đơn đã giao</a></li>
-							<li><a data-toggle="tab" href="#refund">Trả hàng</a></li>
+				<div class="content-admin collapse in" id="admin-product">
+					<div class="all-product">
+						<ul class="nav nav-tabs" id="myProductTab">
+							<li class="active"><a data-toggle="tab" href="#all-staff">Tất cả</a></li>
+							<li><a data-toggle="tab" href="#restedStaff">Đang nghỉ</a></li>
 						</ul>
-						<div class="search-order">
+						<div class="search-product search-order">
 							<form action="">
 								<label for="search-order">
-									Tìm kiếm đơn hàng:
+									Tìm kiếm sản phẩm:
 									<input type="search" name="search" class="search-box"
-										placeholder="Theo tên khách hàng...">
+										placeholder="Theo tên thương hiệu...">
 									<input type="submit" value="Tìm" class="search-btn">
+									<a href="addProduct.html" target="_blank" rel="noopener noreferrer"
+										id="add-product">Thêm sản phẩm</a>
 								</label>
 							</form>
 						</div>
 						<div class="header-tab">
 							<ul class="col" style="list-style-type: none;">
 								<li class="col-md-3">Sản phẩm</li>
-								<li class="col-md-2">Tổng đơn</li>
-								<li class="col-md-2">Trạng thái</li>
-								<li class="col-md-2">Vận chuyển</li>
+								<li class="col-md-2">Phân loại</li>
+								<li class="col-md-3">Số lượng</li>
+								<li class="col-md-2">Giá</li>
 								<li class="col-md-2" style="text-align: right;">Thao tác</li>
 							</ul>
 						</div>
-						<div class="tab-content">
-							<div id="all" class="tab-pane fade in active">
+						<div class="tab-content" id="content-order">
+							<div id="all-staff" class="tab-pane fade in active">
 								<div id="order-tab">
 									<!-- start don hang -->
-									<div class="order-item">
-										<div class="header-order">
-											<div id="customer-id">
-												<a href="account.html">
-													<h5 class="card-title">haokyln123456</h5>
-												</a>
-											</div>
-											<div id="order-id">
+									<div class="product-item">
+										<div class="header-product">
+											<div id="product-id">
 												<a href="#">
-													<h5 class="card-title">ID Đơn hàng: 333XXX</h5>
+													<h5 class="card-title">ID Sản phẩm: 333XXX</h5>
 												</a>
 											</div>
 										</div>
-										<div class="body-order">
+										<div class="body-product body-order">
 											<a href="single.html">
 												<div class="card mb-3" style="max-width: 540px;">
 													<div class="col-md-2">
@@ -451,203 +442,21 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 													<div class="col-md-4">
 														<div class="card-body">
 															<h5 class="card-title">Macbook Air</h5>
-															<p class="card-text"><small class="text-muted">Số lượng:
-																	1</small></p>
 														</div>
 													</div>
 												</div>
 											</a>
-											<div class="col-md-2">
-												<p>25.000.000VNĐ</p>
+											<div class="col-md-2" id="supplier-product">
+												<p>Dell</p>
 											</div>
-											<div class="col-md-2">
-												<p>Đã gửi</p>
+											<div class="col-md-2" id="quantity-product">
+												<p>20</p>
 											</div>
-											<div class="col-md-2">
-												<p>GHTK</p>
+											<div class="col-md-2" id="price-product">
+												<p>25.000.000vnđ</p>
 											</div>
-											<div class="col-md-2" style="text-align: right;">
-												<a href="detailOrder.html">Chi tiết đơn</a>
-											</div>
-										</div>
-									</div>
-									<!-- end don hang -->
-									<!-- start don hang -->
-									<div class="order-item">
-										<div class="header-order">
-											<div id="customer-id">
-												<a href="account.html">
-													<h5 class="card-title">haokyln123456</h5>
-												</a>
-											</div>
-											<div id="order-id">
-												<a href="#">
-													<h5 class="card-title">ID Đơn hàng: 333XXX</h5>
-												</a>
-											</div>
-										</div>
-										<div class="body-order">
-											<a href="single.html">
-												<div class="card mb-3" style="max-width: 540px;">
-													<div class="col-md-2">
-														<img src="images/laptopcucmanh01.jpg" alt="san-pham"
-															width="50px" height="50px">
-													</div>
-													<div class="col-md-4">
-														<div class="card-body">
-															<h5 class="card-title">Macbook Air</h5>
-															<p class="card-text"><small class="text-muted">Số lượng:
-																	1</small></p>
-														</div>
-													</div>
-												</div>
-											</a>
-											<div class="col-md-2">
-												<p>25.000.000VNĐ</p>
-											</div>
-											<div class="col-md-2">
-												<p>Đã gửi</p>
-											</div>
-											<div class="col-md-2">
-												<p>GHTK</p>
-											</div>
-											<div class="col-md-2" style="text-align: right;">
-												<a href="detailOrder.html">Chi tiết đơn</a>
-											</div>
-										</div>
-									</div>
-									<!-- end don hang -->
-									<!-- start don hang -->
-									<div class="order-item">
-										<div class="header-order">
-											<div id="customer-id">
-												<a href="account.html">
-													<h5 class="card-title">haokyln123456</h5>
-												</a>
-											</div>
-											<div id="order-id">
-												<a href="#">
-													<h5 class="card-title">ID Đơn hàng: 333XXX</h5>
-												</a>
-											</div>
-										</div>
-										<div class="body-order">
-											<a href="single.html">
-												<div class="card mb-3" style="max-width: 540px;">
-													<div class="col-md-2">
-														<img src="images/laptopcucmanh01.jpg" alt="san-pham"
-															width="50px" height="50px">
-													</div>
-													<div class="col-md-4">
-														<div class="card-body">
-															<h5 class="card-title">Macbook Air</h5>
-															<p class="card-text"><small class="text-muted">Số lượng:
-																	1</small></p>
-														</div>
-													</div>
-												</div>
-											</a>
-											<div class="col-md-2">
-												<p>25.000.000VNĐ</p>
-											</div>
-											<div class="col-md-2">
-												<p>Đã gửi</p>
-											</div>
-											<div class="col-md-2">
-												<p>GHTK</p>
-											</div>
-											<div class="col-md-2" style="text-align: right;">
-												<a href="detailOrder.html">Chi tiết đơn</a>
-											</div>
-										</div>
-									</div>
-									<!-- end don hang -->
-									<!-- start don hang -->
-									<div class="order-item">
-										<div class="header-order">
-											<div id="customer-id">
-												<a href="account.html">
-													<h5 class="card-title">haokyln123456</h5>
-												</a>
-											</div>
-											<div id="order-id">
-												<a href="#">
-													<h5 class="card-title">ID Đơn hàng: 333XXX</h5>
-												</a>
-											</div>
-										</div>
-										<div class="body-order">
-											<a href="single.html">
-												<div class="card mb-3" style="max-width: 540px;">
-													<div class="col-md-2">
-														<img src="images/laptopcucmanh01.jpg" alt="san-pham"
-															width="50px" height="50px">
-													</div>
-													<div class="col-md-4">
-														<div class="card-body">
-															<h5 class="card-title">Macbook Air</h5>
-															<p class="card-text"><small class="text-muted">Số lượng:
-																	1</small></p>
-														</div>
-													</div>
-												</div>
-											</a>
-											<div class="col-md-2">
-												<p>25.000.000VNĐ</p>
-											</div>
-											<div class="col-md-2">
-												<p>Đã gửi</p>
-											</div>
-											<div class="col-md-2">
-												<p>GHTK</p>
-											</div>
-											<div class="col-md-2" style="text-align: right;">
-												<a href="detailOrder.html">Chi tiết đơn</a>
-											</div>
-										</div>
-									</div>
-									<!-- end don hang -->
-									<!-- start don hang -->
-									<div class="order-item">
-										<div class="header-order">
-											<div id="customer-id">
-												<a href="account.html">
-													<h5 class="card-title">haokyln123456</h5>
-												</a>
-											</div>
-											<div id="order-id">
-												<a href="#">
-													<h5 class="card-title">ID Đơn hàng: 333XXX</h5>
-												</a>
-											</div>
-										</div>
-										<div class="body-order">
-											<a href="single.html">
-												<div class="card mb-3" style="max-width: 540px;">
-													<div class="col-md-2">
-														<img src="images/laptopcucmanh01.jpg" alt="san-pham"
-															width="50px" height="50px">
-													</div>
-													<div class="col-md-4">
-														<div class="card-body">
-															<h5 class="card-title">Macbook Air</h5>
-															<p class="card-text"><small class="text-muted">Số lượng:
-																	1</small></p>
-														</div>
-													</div>
-												</div>
-											</a>
-											<div class="col-md-2">
-												<p>25.000.000VNĐ</p>
-											</div>
-											<div class="col-md-2">
-												<p>Đã gửi</p>
-											</div>
-											<div class="col-md-2">
-												<p>GHTK</p>
-											</div>
-											<div class="col-md-2" style="text-align: right;">
-												<a href="detailOrder.html">Chi tiết đơn</a>
+											<div class="col-md-2" style="float: right;">
+												<a href="single.html">Xem sản phẩm</a>
 											</div>
 										</div>
 									</div>
@@ -655,19 +464,19 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 								</div>
 							</div>
-							<div id="cancel" class="tab-pane fade">
+							<div id="restedStaff" class="tab-pane fade">
 								<h3>Menu 1</h3>
 								<p>Some content in menu 1.</p>
 							</div>
-							<div id="shipping" class="tab-pane fade">
+							<div id="outStock" class="tab-pane fade">
 								<h3>Menu 2</h3>
 								<p>Some content in menu 2.</p>
 							</div>
-							<div id="delivered" class="tab-pane fade">
+							<div id="stopTrading" class="tab-pane fade">
 								<h3>Menu 3</h3>
 								<p>Some content in menu 3.</p>
 							</div>
-							<div id="refund" class="tab-pane fade">
+							<div id="comingSoon" class="tab-pane fade">
 								<h3>Menu 4</h3>
 								<p>Some content in menu 4.</p>
 							</div>
@@ -676,10 +485,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 					<!-- end all order -->
 				</div>
-				<!-- end content-admin -->
 			</div>
 
+			<!-- end content-admin -->
 		</div>
+
+	</div>
 
 	</div>
 	<!-- end body -->
