@@ -5637,6 +5637,59 @@ li.pape-item {
 	border-radius: 5px;
 	text-decoration: none;
 }
+#add-staff{
+	width: 180px;
+	/* padding: 3px 10px; */
+	height: 35px;
+	margin-right: 100px;
+	float: right;
+	color: white;
+	text-align: center;
+	background: #0064cf;
+	border-radius: 5px;
+	text-decoration: none;
+}
+.staff-info{
+	width: 1000px;
+	height: 80px;
+	margin: 10px 50px;
+	background: #fff;
+	border: 2px solid #f1f1f1;
+	/* display: flex; */
+	align-items:  center;
+	/* border-collapse: collapse; */
+}
+.staff-info p{
+	font-size: 17px;
+}
+.id-staff{
+	padding: 28px 0px 28px 15px;
+}
+.name-staff{
+	padding: 28px 0px 28px 15px;
+}
+.mail-staff{
+	padding: 28px 0px 28px 15px;
+}
+.phone-staff{
+	padding: 28px 0px 28px 15px;
+}
+.status-staff{
+	padding: 28px 0px 28px 15px;
+}
+.action-staff{
+	padding: 28px 0px 28px 75px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+#all-staff{
+	width: 100%;
+	height: 100%;
+	/* display: flex;
+	flex-direction: column; */
+}
 .search-box{
 	padding-left: 5px;
 	font-size: 17px;
@@ -5872,4 +5925,44 @@ li.pape-item {
 	width: 180px;
 	height: 200px;
 	text-align: center;
+}
+
+input[type=text]::placeholder{
+	opacity: 0.7;
+	font-weight: normal;
+}
+.modal-body{
+	border-top: 1px solid #E5E5E5;
+	padding: 15px;
+}
+select{
+	font-weight: normal;
+	font-size: 17px;
+}
+input{
+	font-weight: normal;
+	font-size: 17px;
+}
+#add-staff-div label{
+	width: 50%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+#config-staff-div label{
+	width: 50%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.my-blue{
+	background: #0064cf;
+	color: white;
+}
+.error-validation{
+	font-weight: normal;
+	font-style: italic;
+	color: red;
 }

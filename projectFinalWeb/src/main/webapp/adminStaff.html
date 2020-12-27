@@ -392,100 +392,212 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					</div> -->
 				</div>
 			</div>
-			<div class="tab-content">
-				<div class="content-admin collapse in" id="admin-product">
-					<div class="all-product">
-						<ul class="nav nav-tabs" id="myProductTab">
-							<li class="active"><a data-toggle="tab" href="#all-staff">Tất cả</a></li>
-							<li><a data-toggle="tab" href="#restedStaff">Đang nghỉ</a></li>
-						</ul>
-						<div class="search-product search-order">
-							<form action="">
-								<label for="search-order">
-									Tìm kiếm sản phẩm:
-									<input type="search" name="search" class="search-box"
-										placeholder="Theo tên thương hiệu...">
-									<input type="submit" value="Tìm" class="search-btn">
-									<a href="addProduct.html" target="_blank" rel="noopener noreferrer"
-										id="add-product">Thêm sản phẩm</a>
-								</label>
-							</form>
-						</div>
-						<div class="header-tab">
-							<ul class="col" style="list-style-type: none;">
-								<li class="col-md-3">Sản phẩm</li>
-								<li class="col-md-2">Phân loại</li>
-								<li class="col-md-3">Số lượng</li>
-								<li class="col-md-2">Giá</li>
-								<li class="col-md-2" style="text-align: right;">Thao tác</li>
-							</ul>
-						</div>
-						<div class="tab-content" id="content-order">
-							<div id="all-staff" class="tab-pane fade in active">
-								<div id="order-tab">
-									<!-- start don hang -->
-									<div class="product-item">
-										<div class="header-product">
-											<div id="product-id">
-												<a href="#">
-													<h5 class="card-title">ID Sản phẩm: 333XXX</h5>
-												</a>
-											</div>
-										</div>
-										<div class="body-product body-order">
-											<a href="single.html">
-												<div class="card mb-3" style="max-width: 540px;">
-													<div class="col-md-2">
-														<img src="images/laptopcucmanh01.jpg" alt="san-pham"
-															width="50px" height="50px">
-													</div>
-													<div class="col-md-4">
-														<div class="card-body">
-															<h5 class="card-title">Macbook Air</h5>
-														</div>
-													</div>
-												</div>
-											</a>
-											<div class="col-md-2" id="supplier-product">
-												<p>Dell</p>
-											</div>
-											<div class="col-md-2" id="quantity-product">
-												<p>20</p>
-											</div>
-											<div class="col-md-2" id="price-product">
-												<p>25.000.000vnđ</p>
-											</div>
-											<div class="col-md-2" style="float: right;">
-												<a href="single.html">Xem sản phẩm</a>
-											</div>
-										</div>
-									</div>
-									<!-- end don hang -->
 
+			<div class="content-admin collapse in" id="admin-product">
+				<div class="all-product">
+					<ul class="nav nav-tabs" id="myProductTab">
+						<li class="active"><a data-toggle="tab" href="#all-staff">Tất cả</a></li>
+						<li><a data-toggle="tab" href="#activeStaff">Đang hoạt động</a></li>
+						<li><a data-toggle="tab" href="#unactiveStaff">Đang nghỉ</a></li>
+					</ul>
+					<div class="search-product search-order">
+						<form action="" method="POST">
+							<label for="search-order">
+								Tìm kiếm nhân viên:
+								<input type="search" name="search" class="search-box"
+									placeholder="Theo tên nhân viên...">
+								<input type="submit" value="Tìm" class="search-btn">
+							</label>
+							<button type="button" data-toggle="modal" data-target="#add-more-staff"
+								rel="noopener noreferrer" id="add-staff">Thêm
+								nhân viên</button>
+							<!-- modal -->
+							<div id="add-more-staff" class="modal fade" role="dialog">
+								<div class="modal-dialog">
+
+									<!-- Modal content-->
+									<div class="modal-content" id="add-staff-div">
+										<form action="" name="form-add-staff" method="post">
+											<div class="modal-header">
+												<button type="button" class="close"
+													data-dismiss="modal">&times;</button>
+												<h4 class="modal-title">Thêm nhân viên</h4>
+											</div>
+											<div class="modal-body">
+												<label for="name-staff">
+													Tên:
+													<input type="text" name="name-staff" id="name-staff"
+														placeholder="Tên nhân viên...">
+													<div id="error-name" class="error-validation"></div>
+												</label>
+												<label for="mail-staff">
+													Email:
+													<input type="text" name="mail-staff" id="mail-staff"
+														placeholder="Email...">
+													<div id="error-mail" class="error-validation"></div>
+												</label>
+												<label for="phone-staff">
+													Sđt:
+													<input type="text" name="phone-staff" id="phone-staff"
+														placeholder="Số điện thoại...">
+													<div id="error-phone" class="error-validation"></div>
+												</label>
+											</div>
+											<div class="modal-footer">
+												<button type="submit" class="btn my-blue"
+													onclick="return checkInfo()">Thêm</button>
+												<button type="button" class="btn btn-default"
+													data-dismiss="modal">Đóng</button>
+											</div>
+										</form>
+									</div>
 								</div>
 							</div>
-							<div id="restedStaff" class="tab-pane fade">
-								<h3>Menu 1</h3>
-								<p>Some content in menu 1.</p>
+							<script>
+								function is_phonenumber(phonenumber) {
+									var phoneno = /^\+?([0-9]{2})\)?[-. ]?([0-9]{4})[-. ]?([0-9]{4})$/;
+									if (phonenumber.match(phoneno)) {
+										return true;
+									}
+									else {
+										return false;
+									}
+								}
+								function checkInfo() {
+									var name = document.getElementById("name-staff").value;
+									var mail = document.getElementById("mail-staff").value;
+									var phone = document.getElementById("phone-staff").value;
+
+									var check_mail1 = mail.indexOf("@");
+									var check_mail2 = mail.lastIndexOf(".");
+									var f_name = "", f_mail = "", f_phone = "";
+									if (check_mail1 < 1 || check_mail2 < (check_mail1 + 2)
+										|| (check_mail2 + 2) >= x.length) {
+										f_mail = "Mail không hợp lệ";
+									}
+									// if (phonenumber(phone)) {
+									// 	f_phone = "Số điện thoại không hợp lệ";
+									// }
+									if (name == "") {
+										f_name = "Vui lòng nhập dữ liệu";
+									}
+									if (mail == "") {
+										f_mail = "Vui lòng nhập dữ liệu";
+									}
+									if (phone == "") {
+										f_phone = "Vui lòng nhập dữ liệu";
+									}
+
+									if (f_name == "" && f_mail == "" && f_phone == "") {
+										return true;
+									}
+									else {
+										document.getElementById("error-name").innerHTML = f_name;
+										document.getElementById("error-mail").innerHTML = f_mail;
+										document.getElementById("error-phone").innerHTML = f_phone;
+										return false;
+									}
+								}
+							</script>
+							<!-- end modal -->
+						</form>
+					</div>
+					<div class="header-tab">
+						<ul class="col" style="list-style-type: none;">
+							<li class="col-md-1">ID</li>
+							<li class="col-md-3">Tên</li>
+							<li class="col-md-3">Mail</li>
+							<li class="col-md-2">SĐT</li>
+							<li class="col-md-1">TT</li>
+							<li class="col-md-2" style="text-align: right;">Thao tác</li>
+						</ul>
+					</div>
+					<div class="tab-content" id="content-order">
+						<div id="all-staff" class="tab-pane fade in active">
+							<!-- start don hang -->
+							<div class="staff-info">
+								<p class="id-staff col-sm-1">S1</p>
+								<p class="name-staff col-sm-3">Vũ Trương Quang Hào</p>
+								<p class="mail-staff col-sm-3">haokyln@gmail.com</p>
+								<p class="phone-staff col-sm-2">099999999</p>
+								<p class="status-staff col-sm-1">Hđ</p>
+								<div class="action-staff col-sm-2">
+									<button type="button" class="btn my-blue btn-sm" data-toggle="modal"
+										data-target="#user1">
+										<span class="glyphicon glyphicon-cog"></span>
+									</button>
+									<button type="button" class="btn my-blue btn-sm" onclick="deleteStaff()">
+										<span class="glyphicon glyphicon-trash"></span>
+									</button>
+								</div>
 							</div>
-							<div id="outStock" class="tab-pane fade">
-								<h3>Menu 2</h3>
-								<p>Some content in menu 2.</p>
-							</div>
-							<div id="stopTrading" class="tab-pane fade">
-								<h3>Menu 3</h3>
-								<p>Some content in menu 3.</p>
-							</div>
-							<div id="comingSoon" class="tab-pane fade">
-								<h3>Menu 4</h3>
-								<p>Some content in menu 4.</p>
+							<!-- end don hang -->
+
+							<!-- Modal -->
+							<div id="user1" class="modal fade" role="dialog">
+								<div class="modal-dialog modal-lg">
+
+									<!-- Modal content-->
+									<div class="modal-content" id="config-staff-div">
+										<form action="" name="form-add-staff" method="post">
+											<div class="modal-header">
+												<button type="button" class="close"
+													data-dismiss="modal">&times;</button>
+												<h4 class="modal-title">Sửa thông tin nhân viên</h4>
+											</div>
+											<div class="modal-body">
+												<label for="name-staff-c">
+													Tên:
+													<input type="text" name="name-staff" id="name-staff-c"
+														value="Vũ Trương Quang Hào">
+													<div id="error-name-c" class="error-validation"></div>
+												</label>
+												<label for="mail-staff-c">
+													Email:
+													<input type="text" name="mail-staff" id="mail-staff-c"
+														value="haokyln@gmail.com">
+													<div id="error-mail-c" class="error-validation"></div>
+												</label>
+												<label for="phone-staff-c">
+													Sđt:
+													<input type="text" name="phone-staff" id="phone-staff-c"
+														value="099999999">
+													<div id="error-phone-c" class="error-validation"></div>
+												</label>
+												<label for="status-staff-c">
+													Trạng thái:
+													<select name="status-staff" id="status-staff-c">
+														<option value="Active">Hoạt động</option>
+														<option value="Un-active">Ngưng hoạt động</option>
+													</select>
+												</label>
+											</div>
+											<div class="modal-footer">
+												<button type="submit" class="btn my-blue"
+													onclick="return checkInfoConfig()">Sửa</button>
+												<button type="button" class="btn btn-default"
+													data-dismiss="modal">Đóng</button>
+											</div>
+										</form>
+									</div>
+								</div>
+
 							</div>
 						</div>
+						<div id="activeStaff" class="tab-pane fade">
+							<h3>Active Staff</h3>
+							<p>Some content in menu 1.</p>
+						</div>
+						<div id="unactiveStaff" class="tab-pane fade">
+							<h3>Un-active Staff</h3>
+							<p>Some content in menu 1.</p>
+						</div>
 					</div>
-
-					<!-- end all order -->
 				</div>
+
+				<!-- end all order -->
 			</div>
+
 
 			<!-- end content-admin -->
 		</div>
@@ -562,6 +674,48 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			</div>
 		</div>
 	</div>
+	<script>
+		function checkInfoConfig() {
+			{
+				var name = document.getElementById("name-staff-c").value;
+				var mail = document.getElementById("mail-staff-c").value;
+				var phone = document.getElementById("phone-staff-c").value;
+
+				var check_mail1 = mail.indexOf("@");
+				var check_mail2 = mail.lastIndexOf(".");
+				var f_name = "", f_mail = "", f_phone = "";
+				if (check_mail1 < 1 || check_mail2 < (check_mail1 + 2)
+					|| (check_mail2 + 2) >= x.length) {
+					f_mail = "Mail không hợp lệ";
+				}
+				// if (phonenumber(phone)) {
+				// 	f_phone = "Số điện thoại không hợp lệ";
+				// }
+				if (name == "") {
+					f_name = "Vui lòng nhập dữ liệu";
+				}
+				if (mail == "") {
+					f_mail = "Vui lòng nhập dữ liệu";
+				}
+				if (phone == "") {
+					f_phone = "Vui lòng nhập dữ liệu";
+				}
+
+				if (f_name == "" && f_mail == "" && f_phone == "") {
+					return true;
+				}
+				else {
+					document.getElementById("error-name-c").innerHTML = f_name;
+					document.getElementById("error-mail-c").innerHTML = f_mail;
+					document.getElementById("error-phone-c").innerHTML = f_phone;
+					return false;
+				}
+			}
+		}
+		function deleteStaff() {
+			alert("Xóa nhân viên này");
+		}
+	</script>
 	<!-- //footer -->
 
 	<!-- cart-js -->
