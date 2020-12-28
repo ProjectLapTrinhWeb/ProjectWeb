@@ -6,11 +6,19 @@ public class ConnectionDB {
     static Connection cnt;
 
     public static Statement connect() throws SQLException, ClassNotFoundException {
-        if(cnt==null||cnt.isClosed()){
+        if (cnt == null || cnt.isClosed()) {
             Class.forName("org.mariadb.jdbc.Driver");
             cnt = DriverManager.getConnection("jdbc:mariadb://localhost:3306/projectWeb?useUnicode=true&characterEncoding=utf-8", "root", "");
         }
         return cnt.createStatement();
+    }
+
+    public static PreparedStatement connect(String sql) throws ClassNotFoundException, SQLException {
+        if (cnt == null || cnt.isClosed()) {
+            Class.forName("org.mariadb.jdbc.Driver");
+            cnt = DriverManager.getConnection("jdbc:mariadb://localhost:3306/projectWeb?useUnicode=true&characterEncoding=utf-8", "root", "");
+        }
+        return cnt.prepareStatement(sql);
     }
 
     public static void main(String[] args) throws SQLException, ClassNotFoundException {
@@ -19,7 +27,7 @@ public class ConnectionDB {
         rs.last();
         System.out.println(rs.getRow());
         rs.beforeFirst();
-        while (rs.next()){
+        while (rs.next()) {
             System.out.println(rs.getString(2));
         }
     }

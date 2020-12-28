@@ -12,16 +12,16 @@ import java.util.List;
 import java.util.StringTokenizer;
 
 public class ProductEntity {
-    public static List<Product> getAllProduct(){
+    public static List<Product> getAllProduct() throws SQLException {
         List<Product> rs = new ArrayList<Product>();
-        Statement statement;
+        Statement statement = null;
         try {
             statement = ConnectionDB.connect();
             ResultSet rst = statement.executeQuery("select * from product");
             rst.last();
             int i = rst.getRow();
             rst.beforeFirst();
-            while(rst.next()&&i>1){
+            while (rst.next() && i > 1) {
                 int id = rst.getInt("id");
                 String name = rst.getString("name");
                 String price = rst.getString("price");
@@ -41,20 +41,22 @@ public class ProductEntity {
 
 //                rs.add(new Product(id, name, price, discount, description, img, categoryId, supplierId, createdDate, createdBy, modifiedDate, modifiedBy, status, quantity));
             }
-        } catch (ClassNotFoundException|SQLException e) {
+        } catch (ClassNotFoundException | SQLException e) {
             e.printStackTrace();
 //            return new ArrayList<Product>();
+        } finally {
+            statement.close();
         }
         return rs;
     }
 
-    public static List<Product> getHomeProduct(){
+    public static List<Product> getHomeProduct() {
         List<Product> rs = new ArrayList<Product>();
         Statement statement;
         try {
             statement = ConnectionDB.connect();
             ResultSet rst = statement.executeQuery("select * from product where categoryId = 1");
-            while(rst.next()){
+            while (rst.next()) {
                 int id = rst.getInt("id");
                 String name = rst.getString("name");
                 String price = rst.getString("price");
@@ -74,16 +76,16 @@ public class ProductEntity {
 
 //                rs.add(new Product(id, name, price, discount, description, img, categoryId, supplierId, createdDate, createdBy, modifiedDate, modifiedBy, status, quantity));
             }
-        } catch (ClassNotFoundException|SQLException e) {
+        } catch (ClassNotFoundException | SQLException e) {
             e.printStackTrace();
-//            return new ArrayList<Product>();
+            return new ArrayList<Product>();
         }
         return rs;
     }
 
-    public static void main(String[] args) {
-        for(Product p : getAllProduct())
-            System.out.println(p.getName());
-    }
+//    public static void main(String[] args) {
+//        for (Product p : getAllProduct())
+//            System.out.println(p.getName());
+//    }
 
 }
