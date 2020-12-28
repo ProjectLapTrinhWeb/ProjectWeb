@@ -151,7 +151,7 @@ public class Product implements Serializable {
         this.priceSale = priceSale;
     }
 
-    public Product(int id, String name, String price, double discount, String description, String img, int categoryId, int supplierId, MyDate createdDate, String createdBy, MyDate modifiedDate, String modifiedBy, String status, int quantity) {
+    public Product(int id, String name, String price, double discount, String description, String img, int categoryId, int supplierId,String status, int quantity) {
         this.id = id;
         this.name = name;
         this.price = price;
@@ -160,10 +160,6 @@ public class Product implements Serializable {
         this.img = img;
         this.categoryId = categoryId;
         this.supplierId = supplierId;
-        this.createdDate = createdDate;
-        this.createdBy = createdBy;
-        this.modifiedDate = modifiedDate;
-        this.modifiedBy = modifiedBy;
         this.status = status;
         this.quantity = quantity;
     }

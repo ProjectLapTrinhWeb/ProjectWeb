@@ -5580,13 +5580,13 @@ li.pape-item {
 	padding: 10px;
 	/* display: flex; */
 }
-#customer-id {
+.customer-id {
 	display: flex;
 	padding: 10px;
 	align-items: center;
 	float: left;
 }
-#order-id{
+.order-id{
 	float: right;
 	display: flex;
 	padding: 10px;
