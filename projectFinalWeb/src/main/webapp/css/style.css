@@ -5710,7 +5710,21 @@ li.pape-item {
 	padding-left: 5px;
 	margin-top: 20px;
 }
-
+.my-account-showline{
+	margin: auto;
+}
+#my_account div{
+	width: 80px;
+	height: 80px;
+	padding: 0px;
+	margin: 0px;
+}
+#my_account div a span{
+	color: black;
+}
+#my_account div a span:hover{
+	color: blue;
+}
 /* tài khoản của tôi */
 /*console tab */
 
