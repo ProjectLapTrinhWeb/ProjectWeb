@@ -22,13 +22,13 @@ public class ProductEntity {
 
     public static List<Product> getHomeProduct() throws SQLException {
         List<Product> rs = new ArrayList<Product>();
-        String sql = "select * from product where categoryId = 1";
+        String sql = "select * from product where categoryId = '1'";
 
         return getFromDB(sql, rs);
     }
 
     public static Product getProduct(int id) throws SQLException, ClassNotFoundException {
-        String sql = "select * from product where id = ?";
+        String sql = "select * from product where id = '?'";
         PreparedStatement ps = ConnectionDB.connect(sql);
         ps.setInt(1, id);
         ResultSet rst = ps.executeQuery();
@@ -58,7 +58,7 @@ public class ProductEntity {
     }
 
     public static Product getOneProduct(ResultSet rst) throws SQLException {
-        int id = rst.getInt("ID");
+        String id = rst.getString("ID");
         String name = rst.getString("Name");
         String price = rst.getString("Price");
         double discount = rst.getDouble("Discount");
