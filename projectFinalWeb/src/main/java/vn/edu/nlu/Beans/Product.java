@@ -3,7 +3,7 @@ package vn.edu.nlu.Beans;
 import java.io.Serializable;
 
 public class Product implements Serializable {
-    private int id;
+    private String id;
     private String name;
     private String price;
     private double discount;
@@ -18,11 +18,11 @@ public class Product implements Serializable {
     private String status;
     private int quantity;
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -143,7 +143,7 @@ public class Product implements Serializable {
     public Product() {
     }
 
-    public Product(int id, String name, String price, String img, String priceSale) {
+    public Product(String id, String name, String price, String img, String priceSale) {
         this.id = id;
         this.name = name;
         this.price = price;
@@ -151,7 +151,7 @@ public class Product implements Serializable {
         this.priceSale = priceSale;
     }
 
-    public Product(int id, String name, String price, double discount, String description, String img, int categoryId, int supplierId,String status, int quantity) {
+    public Product(String id, String name, String price, double discount, String description, String img, int categoryId, int supplierId,String status, int quantity) {
         this.id = id;
         this.name = name;
         this.price = price;

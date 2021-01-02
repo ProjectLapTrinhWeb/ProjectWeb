@@ -33,7 +33,6 @@ public class OrderEntity {
 
     public static List<Order> getDeliveredOrder() throws SQLException, ClassNotFoundException {
         List<Order> rs = new ArrayList<>();
-        PreparedStatement ps = null;
         String sql = "select * from order where status like'%da giao%'";
 
         return getFromDB(sql, rs);
@@ -52,7 +51,7 @@ public class OrderEntity {
     }
 
     public static Order getOrder(ResultSet rst) throws SQLException {
-        int id = rst.getInt(1);
+        String id = rst.getString(1);
         int userId = rst.getInt(2);
         int paymentId = rst.getInt(3);
         String customerName = rst.getString(4);

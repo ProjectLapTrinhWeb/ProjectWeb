@@ -296,31 +296,28 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                 <div class="panel-heading" role="tab" id="headingOne">
                                     <h4 class="panel-title asd">
                                         <a class="pa_italic" href="adminOrder.html">
-                                            <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i
-                                                class="glyphicon glyphicon-minus" aria-hidden="true"></i>Đơn hàng
+                                            <i class="glyphicon glyphicon-plus" aria-hidden="true"></i>Đơn hàng
                                         </a>
                                     </h4>
                                 </div>
-                                <!-- <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel"
-                                    aria-labelledby="headingOne">
-                                    <div class="panel-body panel_text">
-                                        <ul>
-                                            <li><a href="" role="button" data-toggle="collapse">Tất cả</a></li>
-                                            <li><a href="#cancel" role="button" data-toggle="collapse">Đơn đã
-                                                    hủy</a></li>
-                                            <li><a href="products2.html">Đơn đang giao</a></li>
-                                            <li><a href="#delivered">Đơn đã giao</a></li>
-                                            <li><a href="products.html">Trả hàng/Hoàn tiền</a></li>
-                                        </ul>
-                                    </div>
-                                </div> -->
+                                <!-- <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                              <div class="panel-body panel_text">
+                                <ul>
+                                    <li><a href="" role="button" data-toggle="collapse" >Tất cả</a></li>
+                                    <li><a href="#cancel"  role="button" data-toggle="collapse" >Đơn đã hủy</a></li>
+                                    <li><a href="products2.html">Đơn đang giao</a></li>
+                                    <li><a href="#delivered">Đơn đã giao</a></li>
+                                    <li><a href="products.html">Trả hàng/Hoàn tiền</a></li>
+                                </ul>
+                              </div>
+                            </div> -->
                             </div>
                             <div class="panel panel-default">
                                 <div class="panel-heading" role="tab" id="headingTwo">
                                     <h4 class="panel-title asd">
                                         <a class="pa_italic collapsed" href="adminProduct.html">
                                             <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i
-                                                class="glyphicon glyphicon-minus" aria-hidden="true"></i>Sản phẩm
+                                                class="glyphicon glyphicon-plus" aria-hidden="true"></i>Sản phẩm
                                         </a>
                                     </h4>
                                 </div>
@@ -336,7 +333,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             </div> -->
                             </div>
                             <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="headingthree">
+                                <div class="panel-heading" role="tab" id="heading3">
                                     <h4 class="panel-title asd">
                                         <a class="pa_italic" href="adminStaff.html">
                                             <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i
@@ -346,17 +343,17 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                 </div>
                             </div>
                             <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="headingfour">
+                                <div class="panel-heading" role="tab" id="heading4">
                                     <h4 class="panel-title asd">
                                         <a class="pa_italic" href="adminCustomer.html">
                                             <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i
-                                                class="glyphicon glyphicon-plus" aria-hidden="true"></i>Khách hàng
+                                                class="glyphicon glyphicon-minus" aria-hidden="true"></i>Khách hàng
                                         </a>
                                     </h4>
                                 </div>
                             </div>
                             <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="headingfive">
+                                <div class="panel-heading" role="tab" id="heading5">
                                     <h4 class="panel-title asd">
                                         <a class="pa_italic" href="adminContact.html">
                                             <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i
@@ -366,7 +363,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                 </div>
                             </div>
                             <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="headingsix">
+                                <div class="panel-heading" role="tab" id="heading6">
                                     <h4 class="panel-title asd">
                                         <a class="pa_italic" href="adminSupplier.html">
                                             <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i
@@ -404,307 +401,261 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 </div> -->
             </div>
         </div>
-        <div class="tab-content">
-            <div class="content-admin collapse in" id="admin-order">
-                <div class="all-order">
-                    <ul class="nav nav-tabs" id="myOrderTab">
-                        <li class="active"><a data-toggle="tab" href="#all">Tất cả</a></li>
-                        <li><a data-toggle="tab" href="#cancel">Đơn đã hủy</a></li>
-                        <li><a data-toggle="tab" href="#shipping">Đơn đang giao</a></li>
-                        <li><a data-toggle="tab" href="#delivered">Đơn đã giao</a></li>
-                        <li><a data-toggle="tab" href="#refund">Trả hàng</a></li>
+
+        <div class="content-admin collapse in" id="admin-product">
+            <div class="all-product">
+                <ul class="nav nav-tabs" id="myProductTab">
+                    <li class="active"><a data-toggle="tab" href="#all-staff">Tất cả</a></li>
+                    <li><a data-toggle="tab" href="#activeCustomer">Đang hoạt động</a></li>
+                    <li><a data-toggle="tab" href="#unactiveCustomer">Ngưng hoạt động</a></li>
+                </ul>
+                <div class="search-product search-order">
+                    <form action="" method="POST">
+                        <label>
+                            Tìm kiếm khách hàng:
+                            <input type="search" name="search" class="search-box"
+                                   placeholder="Theo mã khách hàng...">
+                            <input type="submit" value="Tìm" class="search-btn">
+                        </label>
+                        <!-- <button type="button" data-toggle="modal" data-target="#add-more-staff"
+                            rel="noopener noreferrer" id="add-staff">Thêm
+                            nhân viên</button> -->
+                    </form>
+                </div>
+                <div class="header-tab">
+                    <ul class="col" style="list-style-type: none;">
+                        <li class="col-md-1">ID</li>
+                        <li class="col-md-3">Tên</li>
+                        <li class="col-md-3">Mail</li>
+                        <li class="col-md-2">SĐT</li>
+                        <li class="col-md-1">TT</li>
+                        <li class="col-md-2" style="text-align: right;">Thao tác</li>
                     </ul>
-                    <div class="search-order">
-                        <form action="">
-                            <label for="search-order">
-                                Tìm kiếm đơn hàng:
-                                <input type="search" name="search" id="search-order" class="search-box"
-                                       placeholder="Theo tên khách hàng...">
-                                <input type="submit" value="Tìm" class="search-btn">
-                            </label>
-                        </form>
+                </div>
+                <div class="tab-content" id="content-order">
+                    <div id="all-staff" class="tab-pane fade in active">
+
+                        <c:set var="count" value="${count + 1}" scope="page"/>
+                        <c:forEach items="${listCus}" var="l">
+
+                            <!-- start khach hang -->
+                            <div class="staff-info">
+                                <p class="id-staff col-sm-1">${l.id}</p>
+                                <p class="name-staff col-sm-3">${l.name}</p>
+                                <p class="mail-staff col-sm-3">${l.mail}</p>
+                                <p class="phone-staff col-sm-2">${l.phone}</p>
+                                <p class="status-staff col-sm-1">${l.status}</p>
+                                <div class="action-staff col-sm-2">
+                                    <button type="button" class="btn my-blue btn-sm" data-toggle="modal"
+                                            data-target="#user<c:set/>">
+                                        <span class="glyphicon glyphicon-cog"></span>
+                                    </button>
+                                    <button type="button" class="btn my-blue btn-sm" data-toggle="modal"
+                                            data-target="#delUser1">
+                                        <span class="glyphicon glyphicon-trash"></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- end khach hang -->
+
+                            <!-- Modal Modify-->
+                            <div id="user<c:set/>" class="modal fade" role="dialog">
+                                <div class="modal-dialog modal-lg">
+
+                                    <!-- Modal content-->
+                                    <div class="modal-content" class="config-staff-div">
+                                        <form action="" name="form-add-staff" method="post">
+                                            <div class="modal-header">
+                                                <button type="button" class="close"
+                                                        data-dismiss="modal">&times;
+                                                </button>
+                                                <h4 class="modal-title">Sửa thông tin khách hàng</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <label>
+                                                    Tên:
+                                                    <input type="text" name="name-staff"
+                                                           value="${l.name}">
+                                                    <div id="error-name-c" class="error-validation"></div>
+                                                </label>
+                                                <label>
+                                                    Email:
+                                                    <input type="text" name="mail-staff"
+                                                           value="${l.mail}">
+                                                    <div id="error-mail-c" class="error-validation"></div>
+                                                </label>
+                                                <label>
+                                                    Sđt:
+                                                    <input type="text" name="phone-staff"
+                                                           value="${l.phone}">
+                                                    <div id="error-phone-c" class="error-validation"></div>
+                                                </label>
+                                                <label for="status-staff-c">
+                                                    Trạng thái:
+                                                    <select name="status-staff" id="status-staff-c">
+                                                        <option value="Active">Hoạt động</option>
+                                                        <option value="Un-active">Ngưng hoạt động</option>
+                                                    </select>
+                                                </label>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="submit" class="btn my-blue"
+                                                        onclick="return checkInfoConfig()">Sửa
+                                                </button>
+                                                <button type="button" class="btn btn-default"
+                                                        data-dismiss="modal">Đóng
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- Modal Delete-->
+                            <div id="delUser<c:set/>" class="modal fade" role="dialog">
+                                <div class="modal-dialog modal-lg">
+
+                                    <!-- Modal content-->
+                                    <div class="modal-content" class="config-staff-div">
+                                        <div class="modal-header">
+                                            <button type="button" class="close"
+                                                    data-dismiss="modal">&times;
+                                            </button>
+                                            <h4 class="modal-title">Xóa khách hàng</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h5 class="center">Bạn sẽ xóa khách hàng ID là: ${l.id}</h5>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="submit" class="btn my-blue"
+                                                    onclick="">Xóa
+                                            </button>
+                                            <button type="button" class="btn btn-default"
+                                                    data-dismiss="modal">Đóng
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </c:forEach>
                     </div>
-                    <div class="header-tab">
-                        <ul class="col" style="list-style-type: none;">
-                            <li class="col-md-3">Sản phẩm</li>
-                            <li class="col-md-2">Tổng đơn</li>
-                            <li class="col-md-2">Trạng thái</li>
-                            <li class="col-md-2">Vận chuyển</li>
-                            <li class="col-md-2" style="text-align: right;">Thao tác</li>
-                        </ul>
+                    <div id="activeCustomer" class="tab-pane fade">
+                        <c:set var="count1" value="${count1 + 1}" scope="page"/>
+                        <c:forEach items="${listAc}" var="l">
+
+                            <!-- start khach hang -->
+                            <div class="staff-info">
+                                <p class="id-staff col-sm-1">${l.id}</p>
+                                <p class="name-staff col-sm-3">${l.name}</p>
+                                <p class="mail-staff col-sm-3">${l.mail}</p>
+                                <p class="phone-staff col-sm-2">${l.phone}</p>
+                                <p class="status-staff col-sm-1">${l.status}</p>
+                                <div class="action-staff col-sm-2">
+                                    <button type="button" class="btn my-blue btn-sm" data-toggle="modal"
+                                            data-target="#user<c:set/>">
+                                        <span class="glyphicon glyphicon-cog"></span>
+                                    </button>
+                                    <button type="button" class="btn my-blue btn-sm" data-toggle="modal"
+                                            data-target="#delUser1">
+                                        <span class="glyphicon glyphicon-trash"></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- end khach hang -->
+
+                            <!-- Modal Modify-->
+                            <div id="user<c:set/>" class="modal fade" role="dialog">
+                                <div class="modal-dialog modal-lg">
+
+                                    <!-- Modal content-->
+                                    <div class="modal-content" class="config-staff-div">
+                                        <form action="" name="form-add-staff" method="post">
+                                            <div class="modal-header">
+                                                <button type="button" class="close"
+                                                        data-dismiss="modal">&times;
+                                                </button>
+                                                <h4 class="modal-title">Sửa thông tin khách hàng</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <label>
+                                                    Tên:
+                                                    <input type="text" name="name-staff"
+                                                           value="${l.name}">
+<%--                                                    <div id="error-name-c" class="error-validation"></div>--%>
+                                                </label>
+                                                <label>
+                                                    Email:
+                                                    <input type="text" name="mail-staff"
+                                                           value="${l.mail}">
+<%--                                                    <div id="error-mail-c" class="error-validation"></div>--%>
+                                                </label>
+                                                <label>
+                                                    Sđt:
+                                                    <input type="text" name="phone-staff"
+                                                           value="${l.phone}">
+<%--                                                    <div id="error-phone-c" class="error-validation"></div>--%>
+                                                </label>
+                                                <label for="status-staff-c">
+                                                    Trạng thái:
+                                                    <select name="status-staff">
+                                                        <option value="Active">Hoạt động</option>
+                                                        <option value="Un-active">Ngưng hoạt động</option>
+                                                    </select>
+                                                </label>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="submit" class="btn my-blue"
+                                                        onclick="return checkInfoConfig()">Sửa
+                                                </button>
+                                                <button type="button" class="btn btn-default"
+                                                        data-dismiss="modal">Đóng
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- Modal Delete-->
+                            <div id="delUser<c:set/>" class="modal fade" role="dialog">
+                                <div class="modal-dialog modal-lg">
+
+                                    <!-- Modal content-->
+                                    <div class="modal-content" class="config-staff-div">
+                                        <div class="modal-header">
+                                            <button type="button" class="close"
+                                                    data-dismiss="modal">&times;
+                                            </button>
+                                            <h4 class="modal-title">Xóa khách hàng</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h5 class="center">Bạn sẽ xóa khách hàng ID là: ${l.id}</h5>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="submit" class="btn my-blue"
+                                                    onclick="">Xóa
+                                            </button>
+                                            <button type="button" class="btn btn-default"
+                                                    data-dismiss="modal">Đóng
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </c:forEach>
                     </div>
-                    <div class="tab-content">
-                        <div id="all" class="tab-pane fade in active">
-                            <div class="order-tab">
-                                <c:forEach items="${ListOrder}" var="o">
-
-                                    <!-- start don hang -->
-                                    <div class="order-item">
-                                        <div class="header-order">
-                                            <div class="customer-id">
-                                                <a href="account.html">
-                                                    <h5 class="card-title">${o.userId}</h5>
-                                                </a>
-                                            </div>
-                                            <div class="order-id">
-                                                <a href="#">
-                                                    <h5 class="card-title">ID Đơn hàng: ${o.id}</h5>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="body-order">
-                                            <a href="single.html">
-                                                <div class="card mb-3" style="max-width: 540px;">
-                                                    <div class="col-md-2">
-                                                        <img src="images/laptopcucmanh01.jpg" alt="san-pham"
-                                                             width="50px" height="50px">
-                                                    </div>
-                                                    <div class="col-md-4">
-                                                        <div class="card-body">
-                                                            <h5 class="card-title">Macbook Air</h5>
-                                                            <p class="card-text"><small class="text-muted">Số lượng:
-                                                                1</small></p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                            <div class="col-md-2">
-                                                <p>${o.totalPrice}VNĐ</p>
-                                            </div>
-                                            <div class="col-md-2">
-                                                <p>${o.status}</p>
-                                            </div>
-                                            <div class="col-md-2">
-                                                <p>${o.paymentId}</p>
-                                            </div>
-                                            <div class="col-md-2" style="text-align: right;">
-                                                <a href="detailOrder.html">Chi tiết đơn</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- end don hang -->
-                                </c:forEach>
-                            </div>
-                        </div>
-                        <div id="cancel" class="tab-pane fade">
-                            <div class="order-tab">
-                                <c:forEach items="${ListCancel}" var="o">
-
-                                    <!-- start don hang -->
-                                    <div class="order-item">
-                                        <div class="header-order">
-                                            <div class="customer-id">
-                                                <a href="account.html">
-                                                    <h5 class="card-title">${o.userId}</h5>
-                                                </a>
-                                            </div>
-                                            <div class="order-id">
-                                                <a href="#">
-                                                    <h5 class="card-title">ID Đơn hàng: ${o.id}</h5>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="body-order">
-                                            <a href="single.html">
-                                                <div class="card mb-3" style="max-width: 540px;">
-                                                    <div class="col-md-2">
-                                                        <img src="images/laptopcucmanh01.jpg" alt="san-pham"
-                                                             width="50px" height="50px">
-                                                    </div>
-                                                    <div class="col-md-4">
-                                                        <div class="card-body">
-                                                            <h5 class="card-title">Macbook Air</h5>
-                                                            <p class="card-text"><small class="text-muted">Số lượng:
-                                                                1</small></p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                            <div class="col-md-2">
-                                                <p>${o.totalPrice}VNĐ</p>
-                                            </div>
-                                            <div class="col-md-2">
-                                                <p>${o.status}</p>
-                                            </div>
-                                            <div class="col-md-2">
-                                                <p>${o.paymentId}</p>
-                                            </div>
-                                            <div class="col-md-2" style="text-align: right;">
-                                                <a href="detailOrder.html">Chi tiết đơn</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- end don hang -->
-
-
-                                </c:forEach>
-                            </div>
-                        </div>
-                        <div id="shipping" class="tab-pane fade">
-                            <div class="order-tab">
-                                <c:forEach items="${ListShipping}" var="o">
-
-                                    <!-- start don hang -->
-                                    <div class="order-item">
-                                        <div class="header-order">
-                                            <div class="customer-id">
-                                                <a href="account.html">
-                                                    <h5 class="card-title">${o.userId}</h5>
-                                                </a>
-                                            </div>
-                                            <div class="order-id">
-                                                <a href="#">
-                                                    <h5 class="card-title">ID Đơn hàng: ${o.id}</h5>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="body-order">
-                                            <a href="single.html">
-                                                <div class="card mb-3" style="max-width: 540px;">
-                                                    <div class="col-md-2">
-                                                        <img src="images/laptopcucmanh01.jpg" alt="san-pham"
-                                                             width="50px" height="50px">
-                                                    </div>
-                                                    <div class="col-md-4">
-                                                        <div class="card-body">
-                                                            <h5 class="card-title">Macbook Air</h5>
-                                                            <p class="card-text"><small class="text-muted">Số lượng:
-                                                                1</small></p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                            <div class="col-md-2">
-                                                <p>${o.totalPrice}VNĐ</p>
-                                            </div>
-                                            <div class="col-md-2">
-                                                <p>${o.status}</p>
-                                            </div>
-                                            <div class="col-md-2">
-                                                <p>${o.paymentId}</p>
-                                            </div>
-                                            <div class="col-md-2" style="text-align: right;">
-                                                <a href="detailOrder.html">Chi tiết đơn</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- end don hang -->
-                                </c:forEach>
-                            </div>
-                        </div>
-                        <div id="delivered" class="tab-pane fade">
-                            <div class="order-tab">
-                                <c:forEach items="${ListDelivered}" var="o">
-
-                                    <!-- start don hang -->
-                                    <div class="order-item">
-                                        <div class="header-order">
-                                            <div class="customer-id">
-                                                <a href="account.html">
-                                                    <h5 class="card-title">${o.userId}</h5>
-                                                </a>
-                                            </div>
-                                            <div class="order-id">
-                                                <a href="#">
-                                                    <h5 class="card-title">ID Đơn hàng: ${o.id}</h5>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="body-order">
-                                            <a href="single.html">
-                                                <div class="card mb-3" style="max-width: 540px;">
-                                                    <div class="col-md-2">
-                                                        <img src="images/laptopcucmanh01.jpg" alt="san-pham"
-                                                             width="50px" height="50px">
-                                                    </div>
-                                                    <div class="col-md-4">
-                                                        <div class="card-body">
-                                                            <h5 class="card-title">Macbook Air</h5>
-                                                            <p class="card-text"><small class="text-muted">Số lượng:
-                                                                1</small></p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                            <div class="col-md-2">
-                                                <p>${o.totalPrice}VNĐ</p>
-                                            </div>
-                                            <div class="col-md-2">
-                                                <p>${o.status}</p>
-                                            </div>
-                                            <div class="col-md-2">
-                                                <p>${o.paymentId}</p>
-                                            </div>
-                                            <div class="col-md-2" style="text-align: right;">
-                                                <a href="detailOrder.html">Chi tiết đơn</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- end don hang -->
-                                </c:forEach>
-                            </div>
-                        </div>
-                        <div id="refund" class="tab-pane fade">
-<%--                            <div class="order-tab">--%>
-<%--                                <c:forEach items="${ListOrder}" var="o">--%>
-
-<%--                                    <!-- start don hang -->--%>
-<%--                                    <div class="order-item">--%>
-<%--                                        <div class="header-order">--%>
-<%--                                            <div class="customer-id">--%>
-<%--                                                <a href="account.html">--%>
-<%--                                                    <h5 class="card-title">${o.userId}</h5>--%>
-<%--                                                </a>--%>
-<%--                                            </div>--%>
-<%--                                            <div class="order-id">--%>
-<%--                                                <a href="#">--%>
-<%--                                                    <h5 class="card-title">ID Đơn hàng: ${o.id}</h5>--%>
-<%--                                                </a>--%>
-<%--                                            </div>--%>
-<%--                                        </div>--%>
-<%--                                        <div class="body-order">--%>
-<%--                                            <a href="single.html">--%>
-<%--                                                <div class="card mb-3" style="max-width: 540px;">--%>
-<%--                                                    <div class="col-md-2">--%>
-<%--                                                        <img src="images/laptopcucmanh01.jpg" alt="san-pham"--%>
-<%--                                                             width="50px" height="50px">--%>
-<%--                                                    </div>--%>
-<%--                                                    <div class="col-md-4">--%>
-<%--                                                        <div class="card-body">--%>
-<%--                                                            <h5 class="card-title">Macbook Air</h5>--%>
-<%--                                                            <p class="card-text"><small class="text-muted">Số lượng:--%>
-<%--                                                                1</small></p>--%>
-<%--                                                        </div>--%>
-<%--                                                    </div>--%>
-<%--                                                </div>--%>
-<%--                                            </a>--%>
-<%--                                            <div class="col-md-2">--%>
-<%--                                                <p>${o.totalPrice}VNĐ</p>--%>
-<%--                                            </div>--%>
-<%--                                            <div class="col-md-2">--%>
-<%--                                                <p>${o.status}</p>--%>
-<%--                                            </div>--%>
-<%--                                            <div class="col-md-2">--%>
-<%--                                                <p>${o.paymentId}</p>--%>
-<%--                                            </div>--%>
-<%--                                            <div class="col-md-2" style="text-align: right;">--%>
-<%--                                                <a href="detailOrder.html">Chi tiết đơn</a>--%>
-<%--                                            </div>--%>
-<%--                                        </div>--%>
-<%--                                    </div>--%>
-<%--                                    <!-- end don hang -->--%>
-<%--                                </c:forEach>--%>
-<%--                            </div>--%>
-                        </div>
+                    <div id="unactiveCustomer" class="tab-pane fade">
+                        <h3>Un-active Customer</h3>
+                        <p>Some content in menu 1.</p>
                     </div>
                 </div>
-
-                <!-- end all order -->
             </div>
-            <!-- end content-admin -->
+            <!-- end all order -->
         </div>
-
+        <!-- end content-admin -->
     </div>
+
+</div>
 
 </div>
 <!-- end body -->
@@ -776,6 +727,44 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         </div>
     </div>
 </div>
+<script>
+    function checkInfoConfig() {
+        {
+            var name = document.getElementById("name-staff-c").value;
+            var mail = document.getElementById("mail-staff-c").value;
+            var phone = document.getElementById("phone-staff-c").value;
+
+            var check_mail1 = mail.indexOf("@");
+            var check_mail2 = mail.lastIndexOf(".");
+            var f_name = "", f_mail = "", f_phone = "";
+            if (check_mail1 < 1 || check_mail2 < (check_mail1 + 2)
+                || (check_mail2 + 2) >= x.length) {
+                f_mail = "Mail không hợp lệ";
+            }
+            // if (phonenumber(phone)) {
+            // 	f_phone = "Số điện thoại không hợp lệ";
+            // }
+            if (name == "") {
+                f_name = "Vui lòng nhập dữ liệu";
+            }
+            if (mail == "") {
+                f_mail = "Vui lòng nhập dữ liệu";
+            }
+            if (phone == "") {
+                f_phone = "Vui lòng nhập dữ liệu";
+            }
+
+            if (f_name == "" && f_mail == "" && f_phone == "") {
+                return true;
+            } else {
+                document.getElementById("error-name-c").innerHTML = f_name;
+                document.getElementById("error-mail-c").innerHTML = f_mail;
+                document.getElementById("error-phone-c").innerHTML = f_phone;
+                return false;
+            }
+        }
+    }
+</script>
 <!-- //footer -->
 
 <!-- cart-js -->

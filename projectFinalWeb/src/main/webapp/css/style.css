@@ -5582,14 +5582,14 @@ li.pape-item {
 }
 .customer-id {
 	display: flex;
-	padding: 10px;
+	padding: 7px;
 	align-items: center;
 	float: left;
 }
 .order-id{
 	float: right;
 	display: flex;
-	padding: 10px;
+	padding: 7px;
 	align-items: center;
 }
 .search-order{
@@ -5806,7 +5806,7 @@ input{
 	flex-direction: column;
 	justify-content: space-around;
 }
-#config-staff-div label{
+.config-staff-div label{
 	width: 50%;
 	margin: auto;
 	display: flex;
@@ -5821,4 +5821,13 @@ input{
 	font-weight: normal;
 	font-style: italic;
 	color: red;
+}
+.right{
+	float: right;
+}
+.left{
+	float: left;
+}
+.center{
+	text-align: center;
 }
