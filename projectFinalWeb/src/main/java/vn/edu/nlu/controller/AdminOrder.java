@@ -29,14 +29,13 @@ public class AdminOrder extends HttpServlet {
             throwables.printStackTrace();
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
-        }
-//        if (listAll != null) {
-        request.setAttribute("ListOrder", listAll);
-        request.setAttribute("ListCancel", listCancel);
-        request.setAttribute("ListShipping", listShipping);
-        request.setAttribute("ListDelivered", listDelivered);
+        } finally {
+            request.setAttribute("ListOrder", listAll);
+            request.setAttribute("ListCancel", listCancel);
+            request.setAttribute("ListShipping", listShipping);
+            request.setAttribute("ListDelivered", listDelivered);
 
-        request.getRequestDispatcher("adminOrder.jsp").forward(request, response);
-//        }
+            request.getRequestDispatcher("adminOrder.jsp").forward(request, response);
+        }
     }
 }

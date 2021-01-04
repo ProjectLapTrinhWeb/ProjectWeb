@@ -19,20 +19,18 @@ public class AdminCustomer extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        List<Customer> listCus = null, listAc = null, listUnAc =null;
+        List<Customer> listCus = null, listAc = null, listUnAc = null;
         try {
             listCus = CustomerEntity.getAllCustomer();
             listAc = CustomerEntity.getActiveCustomer();
             listUnAc = CustomerEntity.getUnActiveCustomer();
-        } catch (SQLException throwables) {
+        } catch (SQLException | ClassNotFoundException throwables) {
             throwables.printStackTrace();
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
         } finally {
             request.setAttribute("listCus", listCus);
             request.setAttribute("listAc", listAc);
             request.setAttribute("listUnAc", listUnAc);
-            response.sendRedirect("adminCustomer.jsp");
+            request.getRequestDispatcher("adminCustomer.jsp").forward(request, response);
         }
     }
 }

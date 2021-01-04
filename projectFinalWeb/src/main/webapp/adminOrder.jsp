@@ -56,212 +56,18 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     </script>
     <!-- //end-smooth-scrolling -->
 </head>
-
 <body>
 <!-- for bootstrap working -->
 <script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
 <!-- //for bootstrap working -->
 <!-- header modal -->
-<div class="modal fade" id="myModal88" tabindex="-1" role="dialog" aria-labelledby="myModal88" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                    &times;
-                </button>
-                <h4 class="modal-title" id="myModalLabel">Chần chờ gì nữa, đăng nhập ngay để mua sắm nào!!!</h4>
-            </div>
-            <div class="modal-body modal-body-sub">
-                <div class="row">
-                    <div class="col-md-8 modal_body_left modal_body_left1"
-                         style="border-right: 1px dotted #C2C2C2;padding-right:3em;">
-                        <div class="sap_tabs">
-                            <div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
-                                <ul>
-                                    <li class="resp-tab-item" aria-controls="tab_item-0"><span>Đăng nhập</span></li>
-                                    <li class="resp-tab-item" aria-controls="tab_item-1"><span>Đăng ký</span></li>
-                                </ul>
-                                <div class="tab-1 resp-tab-content" aria-labelledby="tab_item-0">
-                                    <div class="facts">
-                                        <div class="register">
-                                            <form action="#" method="post">
-                                                <input name="Email" placeholder="Email" type="text" required="">
-                                                <input name="Password" placeholder="Mật khẩu" type="password"
-                                                       required="">
-                                                <div class="sign-up">
-                                                    <input type="submit" value="Đăng nhập"/>
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tab-2 resp-tab-content" aria-labelledby="tab_item-1">
-                                    <div class="facts">
-                                        <div class="register">
-                                            <form action="#" method="post">
-                                                <input placeholder="Tên" name="Name" type="text" required="">
-                                                <input placeholder="Email" name="Email" type="email" required="">
-                                                <input placeholder="Mật khẩu" name="Password" type="password"
-                                                       required="">
-                                                <input placeholder="Xác nhận mật khẩu" name="Password"
-                                                       type="password" required="">
-                                                <div class="sign-up">
-                                                    <input type="submit" value="Tạo tài khoản"/>
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
-                        <script type="text/javascript">
-                            $(document).ready(function () {
-                                $('#horizontalTab').easyResponsiveTabs({
-                                    type: 'default', //Types: default, vertical, accordion
-                                    width: 'auto', //auto or any width like 600px
-                                    fit: true   // 100% fit in a container
-                                });
-                            });
-                        </script>
-                        <div id="OR" class="hidden-xs">Hoặc</div>
-                    </div>
-                    <div class="col-md-4 modal_body_right modal_body_right1">
-                        <div class="row text-center sign-with">
-                            <div class="col-md-12">
-                                <h3 class="other-nw">Đăng ký bằng</h3>
-                            </div>
-                            <div class="col-md-12">
-                                <ul class="social">
-                                    <li class="social_facebook"><a href="#" class="entypo-facebook"></a></li>
-                                    <li class="social_dribbble"><a href="#" class="entypo-dribbble"></a></li>
-                                    <li class="social_twitter"><a href="#" class="entypo-twitter"></a></li>
-                                    <li class="social_behance"><a href="#" class="entypo-behance"></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- <script>
-    $('#myModal88').modal('show');
-</script>   -->
+<%@include file="iheaderModal.jsp" %>
 <!-- header modal -->
 <!-- header -->
-<div class="header" id="home1">
-    <div class="container">
-        <div class="w3l_login">
-            <a href="#" data-toggle="modal" data-target="#myModal88"><span class="glyphicon glyphicon-user"
-                                                                           aria-hidden="true"></span></a>
-        </div>
-        <div class="w3l_logo">
-            <h1><a href="index.html">Laptop Store<span>Nonglam University</span></a></h1>
-        </div>
-        <div class="search">
-            <input class="search_box" type="checkbox" id="search_box">
-            <label class="icon-search" for="search_box"><span class="glyphicon glyphicon-search"
-                                                              aria-hidden="true"></span></label>
-            <div class="search_form">
-                <form action="#" method="post">
-                    <input type="text" name="Search" placeholder="Laptop bạn cần là....">
-                    <input type="submit" value="Tìm">
-                </form>
-            </div>
-        </div>
-        <!-- <div class="cart cart box_1">
-            <form action="#" method="post" class="last">
-                <input type="hidden" name="cmd" value="_cart" />
-                <input type="hidden" name="display" value="1" />
-                <button class="w3view-cart" type="submit" name="submit" value=""><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></button>
-            </form>
-        </div>   -->
-    </div>
-</div>
+<%@include file="iheader.jsp"%>
 <!-- //header -->
 <!-- navigation -->
-<div class="navigation">
-    <div class="container">
-        <nav class="navbar navbar-default">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header nav_2">
-                <button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse"
-                        data-target="#bs-megadropdown-tabs">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-            <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
-                <ul class="nav navbar-nav">
-                    <li><a href="index.html" class="act">Trang chủ</a></li>
-                    <!-- Mega Menu -->
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sản phẩm<b class="caret"></b></a>
-                        <ul class="dropdown-menu multi-column columns-3">
-                            <div class="row">
-                                <div class="col-sm-3">
-                                    <ul class="multi-column-dropdown">
-                                        <h6>Laptop</h6>
-                                        <li><a href="products.html">Laptop Gaming</a></li>
-                                        <li><a href="products.html">Macbook<span>New</span></a></li>
-                                        <li><a href="products.html">Laptop Văn Phòng</a></li>
-                                        <li><a href="products.html">Laptop Đồ Họa<span>New</span></a></li>
-                                    </ul>
-                                </div>
-                                <div class="col-sm-3">
-                                    <ul class="multi-column-dropdown">
-                                        <h6>Phụ Kiện</h6>
-                                        <li><a href="products1.html">Bàn phím</a></li>
-                                        <li><a href="products1.html">Chuột</a></li>
-                                        <li><a href="products1.html">Loa<span>New</span></a></li>
-                                        <li><a href="products1.html">Tai nghe</a></li>
-                                        <!-- <li><a href="products1.html"><i>Tai nghe</i></a></li> -->
-                                    </ul>
-                                </div>
-                                <div class="col-sm-3">
-                                    <ul class="multi-column-dropdown">
-                                        <h6>Thương Hiệu</h6>
-                                        <li><a href="products2.html">Asus</a></li>
-                                        <li><a href="products2.html">Dell</a></li>
-                                        <li><a href="products2.html">Macbook<span>New</span></a></li>
-                                        <li><a href="products2.html">HP</a></li>
-                                        <!-- <li><a href="products2.html">Acer</a></li> -->
-                                        <!-- <li><a href="products2.html">Lenovo</a></li> -->
-                                    </ul>
-                                </div>
-                                <div class="img-product">
-                                    <img src="images/airpod.jpg" alt="air-pod"
-                                         style="width: 270px; height: 180px; border-radius: 4px;">
-                                </div>
-                                <!-- <div class="col-sm-4">
-                                    <div class="w3ls_products_pos">
-                                        <h4>30%<i>Off/-</i></h4>
-                                        <img src="images/1.jpg" alt=" " class="img-responsive" />
-                                    </div>
-                                </div> -->
-                                <div class="clearfix"></div>
-                            </div>
-                        </ul>
-                    </li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li class="w3pages"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-                                           aria-haspopup="true" aria-expanded="false">Pages <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="icons.html">Web Icons</a></li>
-                            <li><a href="codes.html">Short Codes</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="faq.html" class="">FAQ's</a></li>
-                    <li><a href="mail.html">Mail Us</a></li>
-                </ul>
-            </div>
-        </nav>
-    </div>
-</div>
+<%@include file="inavigation.jsp"%>
 <!-- //navigation -->
 <!-- banner -->
 <div class="banner banner10" style="background-image: url(images/banner-about1.jpg);">
@@ -645,56 +451,56 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             </div>
                         </div>
                         <div id="refund" class="tab-pane fade">
-<%--                            <div class="order-tab">--%>
-<%--                                <c:forEach items="${ListOrder}" var="o">--%>
+                            <%--                            <div class="order-tab">--%>
+                            <%--                                <c:forEach items="${ListOrder}" var="o">--%>
 
-<%--                                    <!-- start don hang -->--%>
-<%--                                    <div class="order-item">--%>
-<%--                                        <div class="header-order">--%>
-<%--                                            <div class="customer-id">--%>
-<%--                                                <a href="account.html">--%>
-<%--                                                    <h5 class="card-title">${o.userId}</h5>--%>
-<%--                                                </a>--%>
-<%--                                            </div>--%>
-<%--                                            <div class="order-id">--%>
-<%--                                                <a href="#">--%>
-<%--                                                    <h5 class="card-title">ID Đơn hàng: ${o.id}</h5>--%>
-<%--                                                </a>--%>
-<%--                                            </div>--%>
-<%--                                        </div>--%>
-<%--                                        <div class="body-order">--%>
-<%--                                            <a href="single.html">--%>
-<%--                                                <div class="card mb-3" style="max-width: 540px;">--%>
-<%--                                                    <div class="col-md-2">--%>
-<%--                                                        <img src="images/laptopcucmanh01.jpg" alt="san-pham"--%>
-<%--                                                             width="50px" height="50px">--%>
-<%--                                                    </div>--%>
-<%--                                                    <div class="col-md-4">--%>
-<%--                                                        <div class="card-body">--%>
-<%--                                                            <h5 class="card-title">Macbook Air</h5>--%>
-<%--                                                            <p class="card-text"><small class="text-muted">Số lượng:--%>
-<%--                                                                1</small></p>--%>
-<%--                                                        </div>--%>
-<%--                                                    </div>--%>
-<%--                                                </div>--%>
-<%--                                            </a>--%>
-<%--                                            <div class="col-md-2">--%>
-<%--                                                <p>${o.totalPrice}VNĐ</p>--%>
-<%--                                            </div>--%>
-<%--                                            <div class="col-md-2">--%>
-<%--                                                <p>${o.status}</p>--%>
-<%--                                            </div>--%>
-<%--                                            <div class="col-md-2">--%>
-<%--                                                <p>${o.paymentId}</p>--%>
-<%--                                            </div>--%>
-<%--                                            <div class="col-md-2" style="text-align: right;">--%>
-<%--                                                <a href="detailOrder.html">Chi tiết đơn</a>--%>
-<%--                                            </div>--%>
-<%--                                        </div>--%>
-<%--                                    </div>--%>
-<%--                                    <!-- end don hang -->--%>
-<%--                                </c:forEach>--%>
-<%--                            </div>--%>
+                            <%--                                    <!-- start don hang -->--%>
+                            <%--                                    <div class="order-item">--%>
+                            <%--                                        <div class="header-order">--%>
+                            <%--                                            <div class="customer-id">--%>
+                            <%--                                                <a href="account.html">--%>
+                            <%--                                                    <h5 class="card-title">${o.userId}</h5>--%>
+                            <%--                                                </a>--%>
+                            <%--                                            </div>--%>
+                            <%--                                            <div class="order-id">--%>
+                            <%--                                                <a href="#">--%>
+                            <%--                                                    <h5 class="card-title">ID Đơn hàng: ${o.id}</h5>--%>
+                            <%--                                                </a>--%>
+                            <%--                                            </div>--%>
+                            <%--                                        </div>--%>
+                            <%--                                        <div class="body-order">--%>
+                            <%--                                            <a href="single.html">--%>
+                            <%--                                                <div class="card mb-3" style="max-width: 540px;">--%>
+                            <%--                                                    <div class="col-md-2">--%>
+                            <%--                                                        <img src="images/laptopcucmanh01.jpg" alt="san-pham"--%>
+                            <%--                                                             width="50px" height="50px">--%>
+                            <%--                                                    </div>--%>
+                            <%--                                                    <div class="col-md-4">--%>
+                            <%--                                                        <div class="card-body">--%>
+                            <%--                                                            <h5 class="card-title">Macbook Air</h5>--%>
+                            <%--                                                            <p class="card-text"><small class="text-muted">Số lượng:--%>
+                            <%--                                                                1</small></p>--%>
+                            <%--                                                        </div>--%>
+                            <%--                                                    </div>--%>
+                            <%--                                                </div>--%>
+                            <%--                                            </a>--%>
+                            <%--                                            <div class="col-md-2">--%>
+                            <%--                                                <p>${o.totalPrice}VNĐ</p>--%>
+                            <%--                                            </div>--%>
+                            <%--                                            <div class="col-md-2">--%>
+                            <%--                                                <p>${o.status}</p>--%>
+                            <%--                                            </div>--%>
+                            <%--                                            <div class="col-md-2">--%>
+                            <%--                                                <p>${o.paymentId}</p>--%>
+                            <%--                                            </div>--%>
+                            <%--                                            <div class="col-md-2" style="text-align: right;">--%>
+                            <%--                                                <a href="detailOrder.html">Chi tiết đơn</a>--%>
+                            <%--                                            </div>--%>
+                            <%--                                        </div>--%>
+                            <%--                                    </div>--%>
+                            <%--                                    <!-- end don hang -->--%>
+                            <%--                                </c:forEach>--%>
+                            <%--                            </div>--%>
                         </div>
                     </div>
                 </div>
