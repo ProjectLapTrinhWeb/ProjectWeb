@@ -1,9 +1,3 @@
-<!--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
@@ -58,17 +52,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
 <!-- //for bootstrap working -->
 <!-- header modal -->
-<%@include file="iheaderModal.jsp" %>
+<jsp:include page="iheaderModal.jsp"></jsp:include>
 <!-- header modal -->
 <!-- header -->
-<%@include file="iheader.jsp" %>
+<jsp:include page="iheader.jsp"></jsp:include>
 <!-- //header -->
 <!-- navigation -->
-<%@include file="inavigation.jsp" %>
+<jsp:include page="inavigation.jsp"></jsp:include>
 <!-- //navigation -->
 <!-- banner -->
-<%@include file="ibanner.jsp"%>
->
+<jsp:include page="ibanner.jsp"></jsp:include>
 <!-- //banner -->
 <!-- banner-bottom -->
 <div class="banner-bottom">
@@ -1329,10 +1322,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 </div>
 <!-- //top-brands -->
 <!-- newsletter -->
-<%@include file="inewletter.jsp"%>>
+<jsp:include page="inewletter.jsp"></jsp:include>
 <!-- //newsletter -->
 <!-- footer -->
-<%@include file="ifooter.jsp"%>
+<jsp:include page="ifooter.jsp"></jsp:include>
 <!-- //footer -->
 </body>
 </html>

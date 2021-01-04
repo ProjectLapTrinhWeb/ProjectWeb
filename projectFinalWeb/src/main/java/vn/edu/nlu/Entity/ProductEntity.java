@@ -15,7 +15,8 @@ import java.util.StringTokenizer;
 public class ProductEntity {
     public static List<Product> getAllProduct() throws SQLException {
         List<Product> rs = new ArrayList<Product>();
-        String sql = "select * from product";
+        String sql = "select * from product where id = ?";
+
 
         return getFromDB(sql, rs);
     }

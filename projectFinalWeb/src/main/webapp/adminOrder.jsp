@@ -519,69 +519,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <div style="background-color: #0064cf; width: 100%; height: 60px;"></div>
 <!-- end div -->
 <!-- footer -->
-<div class="footer">
-    <div class="container">
-        <div class="w3_footer_grids">
-            <div class="col-md-3 w3_footer_grid">
-                <h3>Liên hệ</h3>
-                <ul class="address">
-                    <li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>Trường Đại Học Nông Lâm
-                        <span>Kp6, P.Linh Trung, Q.Thủ Đức, TP. Hồ Chí Minh</span>
-                    </li>
-                    <li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a
-                            href="18130000@st.hcmuaf.edu.vn">18130000@st.hcmuaf.edu.vn</a></li>
-                    <li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>+84 999 999 999</li>
-                </ul>
-            </div>
-            <div class="col-md-3 w3_footer_grid">
-                <h3>Thông tin</h3>
-                <ul class="info">
-                    <li><a href="about.html">Về chúng tôi</a></li>
-                    <li><a href="mail.html">Liên hệ chúng tôi</a></li>
-                    <li><a href="codes.html">Mã khuyến mãi</a></li>
-                    <li><a href="products.html">Sản phẩm đặc biệt</a></li>
-                    <li><a href="faq.html">FAQ's</a></li>
-                </ul>
-            </div>
-            <div class="col-md-3 w3_footer_grid">
-                <h3>Danh mục</h3>
-                <ul class="info">
-                    <li><a href="products.html">Tablets</a></li>
-                    <li><a href="products1.html">Laptops Gaming</a></li>
-                    <li><a href="products.html">Laptops Office</a></li>
-                    <li><a href="products2.html">Laptops Studying</a></li>
-                </ul>
-            </div>
-            <div class="col-md-3 w3_footer_grid">
-                <h3>Hồ sơ</h3>
-                <ul class="info">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="products.html">Today's Deals</a></li>
-                </ul>
-                <h4>Theo dõi</h4>
-                <div class="agileits_social_button">
-                    <ul>
-                        <li><a href="#" class="facebook"> </a></li>
-                        <li><a href="#" class="twitter"> </a></li>
-                        <li><a href="#" class="google"> </a></li>
-                        <li><a href="#" class="pinterest"> </a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="clearfix"></div>
-        </div>
-    </div>
-    <div class="footer-copy">
-        <div class="footer-copy1">
-            <div class="footer-copy-pos">
-                <a href="#home1" class="scroll"><img src="images/arrow.png" alt=" " class="img-responsive"/></a>
-            </div>
-        </div>
-        <div class="container">
-            <p>&copy; 2020 Laptop Store. All rights reserved | Design by <a href="#">WE</a></p>
-        </div>
-    </div>
-</div>
+<%@include file="ifooter.jsp"%>>
 <!-- //footer -->
 
 <!-- cart-js -->
