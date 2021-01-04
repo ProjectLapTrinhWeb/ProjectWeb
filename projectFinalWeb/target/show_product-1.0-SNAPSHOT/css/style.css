@@ -5463,7 +5463,7 @@ div.KM-Info>.NH-DV{
 }
 .user-pape-sidebar{
 	width: 180px;
-	height: 182px;
+	height: 500px;
 	display: block;
 }
 .startdust-dropdown{
@@ -5580,16 +5580,16 @@ li.pape-item {
 	padding: 10px;
 	/* display: flex; */
 }
-#customer-id {
+.customer-id {
 	display: flex;
-	padding: 10px;
+	padding: 7px;
 	align-items: center;
 	float: left;
 }
-#order-id{
+.order-id{
 	float: right;
 	display: flex;
-	padding: 10px;
+	padding: 7px;
 	align-items: center;
 }
 .search-order{
@@ -5637,6 +5637,59 @@ li.pape-item {
 	border-radius: 5px;
 	text-decoration: none;
 }
+#add-staff{
+	width: 180px;
+	/* padding: 3px 10px; */
+	height: 35px;
+	margin-right: 100px;
+	float: right;
+	color: white;
+	text-align: center;
+	background: #0064cf;
+	border-radius: 5px;
+	text-decoration: none;
+}
+.staff-info{
+	width: 1000px;
+	height: 80px;
+	margin: 10px 50px;
+	background: #fff;
+	border: 2px solid #f1f1f1;
+	/* display: flex; */
+	align-items:  center;
+	/* border-collapse: collapse; */
+}
+.staff-info p{
+	font-size: 17px;
+}
+.id-staff{
+	padding: 28px 0px 28px 15px;
+}
+.name-staff{
+	padding: 28px 0px 28px 15px;
+}
+.mail-staff{
+	padding: 28px 0px 28px 15px;
+}
+.phone-staff{
+	padding: 28px 0px 28px 15px;
+}
+.status-staff{
+	padding: 28px 0px 28px 15px;
+}
+.action-staff{
+	padding: 28px 0px 28px 75px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+#all-staff{
+	width: 100%;
+	height: 100%;
+	/* display: flex;
+	flex-direction: column; */
+}
 .search-box{
 	padding-left: 5px;
 	font-size: 17px;
@@ -5652,37 +5705,30 @@ li.pape-item {
 /* tài khoản của tôi */
 #menu-my-account div{
 	width: 180px;
-	height: 400px;
+	height: 170px;
 	padding: 15px;
 	padding-left: 5px;
+	margin-top: 20px;
 }
-.menu1-my-account >a {
-	font-weight: bold;
-	display: block;
-	list-style: none;
+.my-account-showline{
+	margin: auto;
 }
-.menu1-my-account> ul>li{
-	text-decoration: none;
-	list-style: none;
+#my_account div{
+	width: 80px;
+	height: 80px;
+	padding: 0px;
+	margin: 0px;
 }
-.submenu-my-account {
-	list-style: none;
-	padding-left: 10px;
-	position: relative;
+#my_account div a span{
+	color: black;
 }
-.submenu-my-account >ul>li {
-	list-style: none;
-	display: none;
-	position: absolute;
-	border-bottom: 1px solid #e8e8e8;
-}
-#menu-my-account :hover .submenu-my-account{
-	display: block;
+#my_account div a span:hover{
+	color: blue;
 }
 /* tài khoản của tôi */
+/*console tab */
 
-
-
+/*console tab */
 /* -------------form add product */
 #form-add{
 	min-height: 500px;
@@ -5731,3 +5777,57 @@ li.pape-item {
 	width: 200px;
 }
 /*  end form add product-----------------*/
+.template1{
+	width: 180px;
+	height: 200px;
+	text-align: center;
+}
+
+input[type=text]::placeholder{
+	opacity: 0.7;
+	font-weight: normal;
+}
+.modal-body{
+	border-top: 1px solid #E5E5E5;
+	padding: 15px;
+}
+select{
+	font-weight: normal;
+	font-size: 17px;
+}
+input{
+	font-weight: normal;
+	font-size: 17px;
+}
+#add-staff-div label{
+	width: 50%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.config-staff-div label{
+	width: 50%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.my-blue{
+	background: #0064cf;
+	color: white;
+}
+.error-validation{
+	font-weight: normal;
+	font-style: italic;
+	color: red;
+}
+.right{
+	float: right;
+}
+.left{
+	float: left;
+}
+.center{
+	text-align: center;
+}
