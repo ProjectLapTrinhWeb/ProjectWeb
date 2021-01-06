@@ -1,10 +1,7 @@
 package vn.edu.nlu.Beans;
 
-import java.util.Date;
-
 public class User {
     private String ID;
-    private String OrderID;
     private String userName;
     private String password;
     private String FullName;
@@ -13,15 +10,10 @@ public class User {
     private String Address;
     private String Status;
     private String RoleID;
-    private Date CreateDate;
-    private String CreateBy;
-    private String ModifiedDate;
-    private String ModifiedBy;
-    private String Role;
 
-    public User(String ID, String userName, String password, String fullName, String email, String phone, String address, String status, String roleID, Date createDate, String createBy, String modifiedDate, String modifiedBy, String role) {
+
+    public User(String ID, String userName, String password, String fullName, String email, String phone, String address, String status, String roleID) {
         this.ID = ID;
-        this.OrderID = OrderID;
         this.userName = userName;
         this.password = password;
         FullName = fullName;
@@ -30,11 +22,7 @@ public class User {
         Address = address;
         Status = status;
         RoleID = roleID;
-        CreateDate = createDate;
-        CreateBy = createBy;
-        ModifiedDate = modifiedDate;
-        ModifiedBy = modifiedBy;
-        Role = role;
+
     }
 
     public String getID() {
@@ -109,59 +97,13 @@ public class User {
         RoleID = roleID;
     }
 
-    public Date getCreateDate() {
-        return CreateDate;
-    }
 
-    public void setCreateDate(Date createDate) {
-        CreateDate = createDate;
-    }
 
-    public String getCreateBy() {
-        return CreateBy;
-    }
-
-    public void setCreateBy(String createBy) {
-        CreateBy = createBy;
-    }
-
-    public String getModifiedDate() {
-        return ModifiedDate;
-    }
-
-    public void setModifiedDate(String modifiedDate) {
-        ModifiedDate = modifiedDate;
-    }
-
-    public String getModifiedBy() {
-        return ModifiedBy;
-    }
-
-    public void setModifiedBy(String modifiedBy) {
-        ModifiedBy = modifiedBy;
-    }
-
-    public String getRole() {
-        return Role;
-    }
-
-    public void setRole(String role) {
-        Role = role;
-    }
-
-    public String getOrderID() {
-        return OrderID;
-    }
-
-    public void setOrderID(String orderID) {
-        OrderID = orderID;
-    }
 
     @Override
     public String toString() {
         return "User{" +
                 "ID='" + ID + '\'' +
-                "OrderID='" + OrderID + '\'' +
                 ", userName='" + userName + '\'' +
                 ", password='" + password + '\'' +
                 ", FullName='" + FullName + '\'' +
@@ -170,11 +112,6 @@ public class User {
                 ", Address='" + Address + '\'' +
                 ", Status='" + Status + '\'' +
                 ", RoleID='" + RoleID + '\'' +
-                ", CreateDate=" + CreateDate +
-                ", CreateBy='" + CreateBy + '\'' +
-                ", ModifiedDate='" + ModifiedDate + '\'' +
-                ", ModifiedBy='" + ModifiedBy + '\'' +
-                ", Role='" + Role + '\'' +
                 '}';
     }
 }
