@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Your Account | Laptop Store</title>
+<title>Laptop Store | Your Account</title>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -45,16 +45,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 </script>
 <!-- //end-smooth-scrolling --> 
 </head> 
-<style>
-	body{
-	font-family: Helvetica;
-    color: rgba(0,0,0,.8);
-	line-height: 1.2;
-	font-size: .875rem;
-}
-</style>
 <body> 
-
 	<!-- header modal -->
 	<div class="modal fade" id="myModal88" tabindex="-1" role="dialog" aria-labelledby="myModal88"
 		aria-hidden="true">
@@ -174,14 +165,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<div class="container">
 			<nav class="navbar navbar-default">
 				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header nav_2">
+				<!-- <div class="navbar-header nav_2">
 					<button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
 						<span class="sr-only">Toggle navigation</span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-				</div> 
+				</div>  -->
 				<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
 					<ul class="nav navbar-nav">
 						<li><a href="index.html" class="act">Trang chủ</a></li>	
@@ -247,7 +238,24 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			</nav>
 		</div>
 	</div>
-    <!-- //navigation -->
+	<!-- //navigation -->
+	<!-- banner -->
+	<div class="banner banner1">
+		<div class="container">
+			<h2>Ưu đãi tuyệt vời khi mua <span style="font-size: 55px; font-weight: bold;">Laptop</span> dành cho Sinh viên  <i>35% Discount</i></h2> 
+		</div>
+	</div> 
+	<!-- breadcrumbs -->
+	<div class="breadcrumb_dress">
+		<div class="container">
+			<ul>
+				<li><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a> <i>/</i></li>
+				<li>Account <i>/</i> Tài khoản</li>
+				
+			</ul>
+		</div>
+	</div>
+	<!-- //breadcrumbs --> 
 	<!-- Account body -->
 	<div class="mobiles">
 		<div class="container" style="margin: 0 !important;">
@@ -415,8 +423,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 									<h5 style="padding-bottom: 13px;">Quản lí hồ sơ để bảo mật tài khoản</h5>
 								</div>
 								<div class="body-profile" style="width: 100%;">
-									<div class="profile-body-content" style="width: 70%;">
-										<div class="form-mau" style="width: 700px; height:400px; display: flex;" >
+									<div class="profile-body-content" style="width: 70%;float: left;">
+										<div class="form-mau" style="width: 500px; height:400px; display: flex;" >
 											<div class="form-chu" style="width: 210px; height: 20px; text-align: right; margin-right: 0px; ">
 												<p style="margin-top: 60px ;margin-right: 0px;">Tên đăng nhập: </p>
 												<p style="margin-top: 30px ;">Tên: </p>
@@ -462,13 +470,35 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 											</div>
 										</div>
 									</div>
-									<div class="changeIMG" style="width: 30%; border-left: 1px solid gray;">
+									<div class="changeIMG" style="width: 30%; border-left: 1px solid gray;float: right; padding-left: 50px;padding-top: 30px;">
 										<div>
-
+											<div class="thumbnail" style="border-radius: 50px; width: 120px;height: 120px;margin-left: 50px;">
+												<img style="width: 100%;" src="images/1.jpg" alt="hinh-anh-san-pham" id="img-upload">
+											</div>
+											<div class="form-group">
+												<label for="imgProduct">
+													Đổi ảnh:
+													<input type="file" class="form-control" onchange="readURL(this)" name="img" id="imgProduct">
+												</label>
+											</div>
 										</div>
 									</div>
 									<button style="margin-left: 40%;" type="button" class="btn btn-success">Cập nhật</button>
 								</div>
+								<script>
+									function readURL(input) {
+										if (input.files && input.files[0]) {
+											var reader = new FileReader();
+											reader.onload = function (e) {
+												$('#img-upload')
+													.attr('src', e.target.result)
+													.width(450)
+													.height(300);
+											};
+											reader.readAsDataURL(input.files[0]);
+										}
+									}
+								</script>
 								<!-- <div id="order-tab"> -->
 
 									<!-- start don hang -->
@@ -513,17 +543,160 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								<!-- </div> -->
 							</div>
 							<div id="bank" class="tab-pane fade">
-								<h3>Menu 1</h3>
-								<p>Some content in menu 1.</p>
+								<div class="container-bank" style="width: 1000px;height: 500px;">
+									<div class="header-connect-visa" style="width: 800px;height: 50px; text-align: left;margin: auto;display: flex;padding-bottom: 10px;border-bottom: 1px solid gray;">
+										<h3>Thẻ tín dụng/ ghi nợ của tôi</h3>
+										<button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal1" style="float: right;margin-left: 200px;">+ Thêm thẻ tín dụng mới</button>
+										<div class="modal fade" id="myModal1" role="dialog">
+											<div class="modal-dialog" style="width: 500px;height: 600px;">
+											  <!-- Modal content-->
+												<div class="modal-content">
+													<div class="modal-header">
+													<button type="button" class="close" data-dismiss="modal">&times;</button>
+													<h4 class="modal-title">Thêm thẻ tín dụng/ ghi nợ</h4>
+													</div>
+													<div class="modal-body">
+														<div>
+															<input type="text" class="form-control" id="usr" placeholder="Nhập tên chủ thẻ">
+															<div style="width: 100%;height: 300px;">
+																<input type="text" class="form-control" id="usr" placeholder="Số thẻ tín dụng/ghi nợ" style="width: 50%;margin-top: 20px;">
+																<div style=" width: 100%;height: 15px;display: flex;margin-top: 10px;margin-bottom: 5px;">
+																	<h5>Ngày hết hạn</h5>
+																	<h5 style="margin-left: 170px;">CVV</h5>
+																</div>
+																<div style="margin-bottom: 60px;">
+																	<input style="width: 47%;float: left;" type="text" class="form-control" id="usr" placeholder="MM/YY">
+																	<input style="width: 47%;float: right;" type="text" class="form-control" id="usr" placeholder="000">
+																</div>
+																	<input style="width: 100%;height:34px;" type="text" class="form-control"  placeholder="Địa chỉ hóa đơn">
+																<div style="width: 100%;height:34px;padding-top: 35px;">
+																	<p>Chúng tôi hợp tác với CyberSouce, công ty thuộc tổ chức thẻ VISA, 
+																		nhằm đảm bảo thông tin thẻ Tín dụng/Ghi nợ của bạn luôn được bảo mật và an toàn. 
+																		Laptop Store không có quyền truy cập vào bất cứ thông tin nào</p>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="modal-footer">
+													<button type="button" class="btn btn-default" data-dismiss="modal">Trở lại</button>
+													<button type="button" class="btn btn-danger" data-dismiss="modal">Hoàn thành</button>
+													</div>
+												</div>
+											</div>
+										</div>	
+									</div>
+									<div class="body-connect-visa" style="width: 800px;height: 150px;margin: auto;">
+										<h3 style="text-align: center;margin-top: 50px;"> Bạn chưa có thẻ tín dụng/ ghi nợ</h3>
+									</div>
+									<div class="header-bank-account" style="width: 800px;height: 50px; text-align: left;margin: auto;display: flex;padding-bottom: 10px;border-bottom: 1px solid gray;">
+										<h3>Tài khoản ngân hàng của tôi</h3>
+										<button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal2" style="float: right;margin-left: 200px;">+ Thêm tài khoản ngân hàng</button>
+										<div class="modal fade" id="myModal2" role="dialog">
+											<div class="modal-dialog" style="width: 500px;height: 600px;">
+											  <!-- Modal content-->
+												<div class="modal-content">
+													<div class="modal-header">
+													<button type="button" class="close" data-dismiss="modal">&times;</button>
+													<h4 class="modal-title">Thêm số điện thoại</h4>
+													</div>
+													<div class="modal-body">
+														<div style="width: 450px;height: 130px;">
+															<div style="float: left; width: 100%;display: flex;margin-bottom: 20px;">
+																<input style="width: 60%;" type="text" class="form-control" id="usr" placeholder="Số điện thoại">
+																<input style="width: 40%;" type="text" disabled="disabled" placeholder="Gửi mã xác minh">
+															</div>
+															<div style="margin-top: 20px;">
+																<input  type="text" class="form-control"placeholder="Nhập mã xác minh">
+															</div>
+															
+														</div>
+													</div>
+													<div class="modal-footer">
+													<button type="button" class="btn btn-default" data-dismiss="modal">Trở lại</button>
+													<button type="button" class="btn btn-danger" data-dismiss="modal">Hoàn thành</button>
+													</div>
+												</div>
+											</div>
+										</div>	
+									</div>
+									<div class="body-bank-account" style="width: 800px;height: 150px;margin: auto;">
+										<h3 style="text-align: center;margin-top: 50px;"> Bạn chưa có tài khoản ngân hàng</h3>
+									</div>
+								</div>
 							</div>
 							<div id="address" class="tab-pane fade">
-								<h3>Menu 2</h3>
-								<p>Some content in menu 2.</p>
+								<div class="header-new-address" style="width: 800px;height: 50px; text-align: left;margin: auto;display: flex;padding-bottom: 10px;border-bottom: 1px solid gray;">
+									<h3>Địa chỉ của tôi</h3>
+									<button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal3" style="float:right;margin-left: 400px;">+ Thêm địa chỉ mới</button>
+									<div class="modal fade" id="myModal3" role="dialog">
+										<div class="modal-dialog" style="width: 500px;height: 600px;">
+										  <!-- Modal content-->
+											<div class="modal-content">
+												<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal">&times;</button>
+												<h4 class="modal-title">Thêm địa chỉ mới</h4>
+												</div>
+												<div class="modal-body">
+													<div style="width: 450px; height: 380px;">
+														<input style="width: 100%;margin-top: 20px;" type="text" placeholder="Họ & Tên">
+														<input style="width: 100%;margin-top: 20px;" type="text" placeholder="Số điện thoại">
+														<div class="form-group">
+															<select class="form-control" id="sel1" style="width: 100%;float: left;margin-top: 20px;" aria-placeholder="Thành phố">
+															 <option>Thành phố</option>
+															 <option>Bà Rịa - Vũng Tàu</option>
+															 <option> Nha Trang</option>
+															 <option> Hà Nội</option>
+															 <option>TP. Hồ Chí Minh</option>
+															</select>
+															<select class="form-control" id="sel1" style="width: 100%;float: left;margin-top: 20px;" aria-placeholder="Quận/Huyện">
+																<option>Quận/Huyện</option>
+															</select>
+															<select class="form-control" id="sel1" style="width: 100%;float: left;margin-top: 20px;" aria-placeholder="Phường/Xã">
+																<option>Phường xã</option>
+															</select>
+														</div>
+														<input style="width: 100%;margin-top: 20px;" type="text" placeholder="Tòa nhà tên đường">
+														<div class="btn-group" style="width: 100%; margin-top: 20px;">
+															<button type="button" class="btn btn-default disabled"><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i></button>
+															<button style="width: 83%;" type="button" class="btn btn-default disabled" >Chọn vị trí trên bảng đồ</button>
+															<button type="button" class="btn btn-default disabled">></button>
+														</div>
+													</div>
+												</div>
+												<div class="modal-footer">
+												<button type="button" class="btn btn-default" data-dismiss="modal">Trở lại</button>
+												<button type="button" class="btn btn-danger" data-dismiss="modal">Hoàn thành</button>
+												</div>
+											</div>
+										</div>
+									</div>	
+								</div>
+								<div class="body-connect-visa" style="width: 800px;height: 150px;margin: auto;">
+									<h3 style="text-align: center;margin-top: 50px;"> Bạn chưa có địa chỉ</h3>
+								</div>
 							</div>
 							<div id="addpassword" class="tab-pane fade">
-								<h3>Menu 3</h3>
-								<p>Some content in menu 3.</p>
+								<div class="header-add-password" style="width: 800px;height: 60px; text-align: left;margin: auto;padding-bottom: 10px;border-bottom: 1px solid gray;">
+									<h3>Thêm mật khẩu</h3>
+									<P>Để bảo mật tài khoản, vui lòng không chia sẽ mật khẩu cho người khác.</P>
+								</div>
+								<div class="body-add-password" style="width: 800px;height: 300px;display: flex">
+									<div class="form-chu-pass" style="width: 40%; text-align: right;">
+										<p style="margin-top: 40px;">Mật khẩu mới</p>
+										<p style="margin-top: 40px;">Xác nhận mật khẩu</p>
+										<p style="margin-top: 40px;">Mã xác minh</p>
+									</div>
+									<div class="form-input" style="width: 40%; margin-left: 30px;">
+										<input style="margin-top: 30px;width: 100%;" type="text">
+										<input style="margin-top: 30px;width: 100%;" type="text">
+										<div style="width: 204;height: 30px;float: left;width: 100%;display: flex;margin-top: 30px;">
+											<input style="width: 40%;" type="text">
+											<button style="width: 60%;">Gửi mã xác minh</button>
+									</div>
+								</div>
+								
 							</div>
+							<button style="margin-left: 40%;" type="button" class="btn btn-success">Cập nhật</button>
 						</div>
 					</div>
 
