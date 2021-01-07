@@ -250,13 +250,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<div class="container">
 			<ul>
 				<li><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a> <i>/</i></li>
-				<li>Account <i>/</i> Tài khoản</li>
+				<li>Account <i>/</i> Thông báo</li>
 				
 			</ul>
 		</div>
 	</div>
 	<!-- //breadcrumbs --> 
-	<!-- Account body -->
+	<!-- Purchase body -->
 	<div class="mobiles">
 		<div class="container" style="margin: 0 !important;">
 			<div class="w3ls_mobiles_grids">
@@ -279,7 +279,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								<div class="panel panel-default">
 									<div class="panel-heading" role="tab" id="headingOne">
 										<h4 class="panel-title asd">
-											<a class="pa_italic collapsed" href="account.html">
+											<a class="pa_italic" href="account.html">
 												<span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
 												<i class="glyphicon glyphicon-plus" aria-hidden="true"></i>Tài khoản
 											</a>
@@ -318,11 +318,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								</div> -->
 								</div>
 								<div class="panel panel-default">
-									<div class="panel-heading" role="tab" id="heading3">
+									<div class="panel-heading" role="tab" id="headingOne">
 										<h4 class="panel-title asd">
-											<a class="pa_italic" href="adminStaff.html">
-												<span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i
-													class="glyphicon glyphicon-plus" aria-hidden="true"></i>Thông báo
+											<a class="pa_italic collapsed" href="Notification.html">
+												<span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
+												<i class="glyphicon glyphicon-plus" aria-hidden="true"></i>Thông báo
 											</a>
 										</h4>
 									</div>
@@ -380,10 +380,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="content-admin collapse in" id="admin-product">
 					<div class="all-product">
 						<ul class="nav nav-tabs" id="myProductTab">
-							<li class="active"><a data-toggle="tab" href="#profile">Hồ sơ</a></li>
-							<li><a data-toggle="tab" href="#bank">Ngân hàng</a></li>
-							<li><a data-toggle="tab" href="#address">Địa chỉ</a></li>
-							<li><a data-toggle="tab" href="#addpassword">Thêm mật khẩu</a></li>
+							<li class="active"><a data-toggle="tab" href="#newupdate">Mới cập nhật</a></li>
+							<li><a data-toggle="tab" href="#saleoff">Khuyến mãi</a></li>
+							<li><a data-toggle="tab" href="#activity">Hoạt động</a></li>
+                            <li><a data-toggle="tab" href="#shopupdate">Cập nhật Shop</a></li>
 						</ul>
 						<!-- <div class="search-product search-order">
 							<form action="">
@@ -407,286 +407,201 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							</ul>
 						</div> -->
 						<div class="tab-content" id="content-order">
-							<div id="profile" class="tab-pane fade in active" style="position: absolute;">
-								<div class="header-profile" style="border-bottom: 1px solid gray;width:100%;height:20%; margin-left: 20px; ">
-									<h3>Hồ sơ của tôi</h3>
-									<h5 style="padding-bottom: 13px;">Quản lí hồ sơ để bảo mật tài khoản</h5>
-								</div>
-								<div class="body-profile" style="width: 100%;">
-									<div class="profile-body-content" style="width: 70%;float: left;">
-										<div class="form-mau" style="width: 500px; height:400px; display: flex;" >
-											<div class="form-chu" style="width: 210px; height: 20px; text-align: right; margin-right: 0px; ">
-												<p style="margin-top: 60px ;margin-right: 0px;">Tên đăng nhập: </p>
-												<p style="margin-top: 30px ;">Tên: </p>
-												<p style="margin-top: 30px ;">Email: </p>
-												<p style="margin-top: 30px ;">Số điện thoại:</p>
-												<p style="margin-top: 30px ;">Tên shop: </p>
-												<p style="margin-top: 30px ;">Giới tính: </p>
-												<p style="margin-top: 30px ;">Ngày sinh: </p>
-											</div>
-											<div class="form-dien" style="width:70% ;float: right;padding-left: 40px;height:20px;">
-												<p style="margin-top: 60px;">username12345 </p>
-												<input style="margin-top: 25px ;" type="text">
-												<p style="margin-top: 26px ;"><a href="">Thêm</a></p>
-												<p style="margin-top: 30px ;"><a href="">Thêm</a></p>
-												<input style="margin-top: 25px ;" type="text" placeholder="username12345">
-												<div class="checkbox-gioitinh" style="height: 20px;margin-top: 25px;">
-													<label class="radio-inline"><input type="radio" name="optradio" checked>Nam</label>
-													<label class="radio-inline"><input type="radio" name="optradio">Nữ</label>
-													<label class="radio-inline"><input type="radio" name="optradio">Khác</label>
-												</div>
-												<div class="datetimepicker" style="height: 30px;margin-top: 21px;display: flex;">
-													<div class="form-group">
-														<select class="form-control" id="sel1" style="width: 70px;">
-														  <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option>
-														  <option>11</option><option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option><option>19</option><option>20</option><option>21</option><option>22</option>
-														  <option>23</option><option>24</option><option>25</option><option>26</option><option>27</option><option>28</option><option>29</option><option>30</option><option>31</option>
-														</select>
-													</div>
-													<div class="form-group">
-														<select class="form-control" id="sel1" style="width: 100px;float: left;">
-														  <option>Tháng 1</option><option>Tháng 2</option><option>Tháng 3</option><option>Tháng 4</option><option>Tháng 5</option><option>Tháng 6</option><option>Tháng 7</option>
-														  <option>Tháng 8</option><option>Tháng 9</option><option>Tháng 10</option><option>Tháng 11</option><option>Tháng 12</option>
-														</select>
-													</div>
-													<div class="form-group">
-														<select class="form-control" id="sel1" style="width: 100px;float: left;">
-														  <option>1990</option><option>1991</option><option>1992</option><option>1993</option><option>1994</option><option>1995</option><option>1996</option><option>1997</option><option>1998</option><option>1999</option><option>2000</option>
-														  <option>2001</option><option>2002</option><option>2003</option><option>2004</option><option>2005</option><option>2006</option><option>2007</option><option>2008</option><option>2009</option><option>2010</option>
-														  <option>2011</option><option>2012</option><option>2013</option><option>2014</option><option>2015</option><option>2016</option><option>2017</option><option>2018</option><option>2019</option><option>2020</option><option>2021</option>
-														</select>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="changeIMG" style="width: 30%; border-left: 1px solid gray;float: right; padding-left: 50px;padding-top: 30px;">
-										<div>
-											<div class="thumbnail" style="border-radius: 50px; width: 120px;height: 120px;margin-left: 50px;">
-												<img style="width: 100%;" src="images/1.jpg" alt="hinh-anh-san-pham" id="img-upload">
-											</div>
-											<div class="form-group">
-												<label for="imgProduct">
-													Đổi ảnh:
-													<input type="file" class="form-control" onchange="readURL(this)" name="img" id="imgProduct">
-												</label>
-											</div>
-										</div>
-									</div>
-									<button style="margin-left: 40%;" type="button" class="btn btn-success">Cập nhật</button>
-								</div>
-								<script>
-									function readURL(input) {
-										if (input.files && input.files[0]) {
-											var reader = new FileReader();
-											reader.onload = function (e) {
-												$('#img-upload')
-													.attr('src', e.target.result)
-													.width(450)
-													.height(300);
-											};
-											reader.readAsDataURL(input.files[0]);
-										}
-									}
-								</script>
-								<!-- <div id="order-tab"> -->
-
-									<!-- start don hang -->
-									<!-- <div class="product-item">
-										<div class="header-product">
-											<div id="product-id">
-												<a href="#">
-													<h5 class="card-title">ID Sản phẩm: 333XXX</h5>
-												</a>
-											</div>
-										</div>
-										<div class="body-product body-order">
-											<a href="single.html">
-												<div class="card mb-3" style="max-width: 540px;">
-													<div class="col-md-2">
-														<img src="images/laptopcucmanh01.jpg" alt="san-pham"
-															width="50px" height="50px">
-													</div>
-													<div class="col-md-4">
-														<div class="card-body">
-															<h5 class="card-title">Macbook Air</h5>
-														</div>
-													</div>
-												</div>
-											</a>
-											<div class="col-md-2" id="supplier-product">
-												<p>Dell</p>
-											</div>
-											<div class="col-md-2" id="quantity-product">
-												<p>20</p>
-											</div>
-											<div class="col-md-2" id="price-product">
-												<p>25.000.000vnđ</p>
-											</div>
-											<div class="col-md-2" style="float: right;">
-												<a href="single.html">Xem sản phẩm</a>
-											</div>
-										</div>
-									</div> -->
-									<!-- end don hang -->
-
-								<!-- </div> -->
+                            <div id="newupdate" class="tab-pane fade in active">
+                                <div style="width: 100%;height: 50px;">
+                                    <h3>Sản phẩm mới</h3>
+                                </div>
+                                <div class="col-md-4 agile_ecommerce_tab_left">
+                                    <div class="hs-wrapper">
+                                        <img src="images/laptopvpp01.jpg" alt=" " class="img-responsive" />
+                                        <img src="images/laptopvpp02.jpg" alt=" " class="img-responsive" />
+                                        <img src="images/laptopvpp03.jpg" alt=" " class="img-responsive" />
+                                        <img src="images/laptopvpp04.jpg" alt=" " class="img-responsive" />
+                                        <img src="images/laptopvpp05.jpg" alt=" " class="img-responsive" />
+                                        <img src="images/laptopvpp06.jpg" alt=" " class="img-responsive" />
+                                        <img src="images/laptopvpp07.jpg" alt=" " class="img-responsive" />
+                                        <div class="w3_hs_bottom">
+                                            <ul>
+                                                <li>
+                                                    <a href="#" data-toggle="modal" data-target="#myModal9"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <h5><a href="single.html">Laptop gaming Acer</a></h5>
+                                    <div class="simpleCart_shelfItem">
+                                        <p><span>8.000.000VNĐ</span> <i class="item_price">5.999.999VNĐ</i></p>
+                                        <form action="#" method="post">
+                                            <input type="hidden" name="cmd" value="_cart" />
+                                            <input type="hidden" name="add" value="1" /> 
+                                            <input type="hidden" name="w3ls_item" value="Laptop công sở" /> 
+                                            <input type="hidden" name="amount" value="5.999.999" />   
+                                            <button type="submit" class="w3ls-cart">Thêm vào giỏ hàng</button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 agile_ecommerce_tab_left">
+                                    <div class="hs-wrapper">
+                                        <img src="images/laptopcucmanh01.jpg" alt=" " class="img-responsive" />
+                                        <img src="images/laptopcucmanh02.jpg" alt=" " class="img-responsive" />
+                                        <img src="images/laptopcucmanh03.jpg" alt=" " class="img-responsive" />
+                                        <img src="images/laptopcucmanh04.jpg" alt=" " class="img-responsive" />
+                                        <img src="images/laptopcucmanh05.jpg" alt=" " class="img-responsive" />
+                                        <img src="images/laptopcucmanh06.jpg" alt=" " class="img-responsive" />
+                                        <img src="images/laptopcucmanh07.jpg" alt=" " class="img-responsive" />
+                                        <div class="w3_hs_bottom">
+                                            <ul>
+                                                <li>
+                                                    <a href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div> 
+                                    <h5><a href="single.html">Macbook</a></h5>
+                                    <div class="simpleCart_shelfItem">
+                                        <p><span>22.000.000 VNĐ</span> <i class="item_price">19.999.999VNĐ</i></p>
+                                        <form action="#" method="post">
+                                            <input type="hidden" name="cmd" value="_cart" />
+                                            <input type="hidden" name="add" value="1" /> 
+                                            <input type="hidden" name="w3ls_item" value="Laptop cực mạnh" /> 
+                                            <input type="hidden" name="amount" value="19.999.999" />   
+                                            <button type="submit" class="w3ls-cart">Thêm vào giỏ hàng</button>
+                                        </form>  
+                                    </div>
+                                </div>
+                                <div class="col-md-4 agile_ecommerce_tab_left">
+                                    <div class="hs-wrapper">
+                                        <img src="img/1.jpg" alt=" " class="img-responsive" />
+                                        <img src="img/2.jpg" alt=" " class="img-responsive" />
+                                        <img src="img/3.jpg" alt=" " class="img-responsive" />
+                                        <img src="img/4.jpg" alt=" " class="img-responsive" />
+                                        <img src="img/1.jpg" alt=" " class="img-responsive" />
+                                        <img src="img/2.jpg" alt=" " class="img-responsive" />
+                                        <img src="img/3.jpg" alt=" " class="img-responsive" />
+                                        <img src="img/4.jpg" alt=" " class="img-responsive" />	
+                                        <div class="w3_hs_bottom">
+                                            <ul>
+                                                <li>
+                                                    <a href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div> 
+                                    <h5><a href="single.html">Laptop Asus</a></h5>
+                                    <div class="simpleCart_shelfItem">
+                                        <p><span>12.000.000 VNĐ</span> <i class="item_price">9.999.999VNĐ</i></p>
+                                        <form action="#" method="post">
+                                            <input type="hidden" name="cmd" value="_cart" />
+                                            <input type="hidden" name="add" value="1" /> 
+                                            <input type="hidden" name="w3ls_item" value="Laptop cực mạnh" /> 
+                                            <input type="hidden" name="amount" value="19.999.999" />   
+                                            <button type="submit" class="w3ls-cart">Thêm vào giỏ hàng</button>
+                                        </form>  
+                                    </div>
+                                </div>
+                                <div class="col-md-4 agile_ecommerce_tab_left">
+                                    <div class="hs-wrapper">
+                                        <img src="img/lt10.jpg" alt=" " class="img-responsive" />
+                                        <img src="img/lt11.jpg" alt=" " class="img-responsive" />
+                                        <img src="img/lt12.jpg" alt=" " class="img-responsive" />
+                                        <img src="img/lt13.jpg" alt=" " class="img-responsive" />
+                                        <img src="img/lt14.jpg" alt=" " class="img-responsive" />
+                                        <img src="img/lt15.jpg" alt=" " class="img-responsive" />
+                                        <img src="img/lt16.jpg" alt=" " class="img-responsive" />
+                                        <div class="w3_hs_bottom">
+                                            <ul>
+                                                <li>
+                                                    <a href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div> 
+                                    <h5><a href="single.html">Macbook</a></h5>
+                                    <div class="simpleCart_shelfItem">
+                                        <p><span>22.000.000 VNĐ</span> <i class="item_price">19.999.999VNĐ</i></p>
+                                        <form action="#" method="post">
+                                            <input type="hidden" name="cmd" value="_cart" />
+                                            <input type="hidden" name="add" value="1" /> 
+                                            <input type="hidden" name="w3ls_item" value="Laptop cực mạnh" /> 
+                                            <input type="hidden" name="amount" value="19.999.999" />   
+                                            <button type="submit" class="w3ls-cart">Thêm vào giỏ hàng</button>
+                                        </form>  
+                                    </div>
+                                </div>
+                                <div class="col-md-4 agile_ecommerce_tab_left">
+                                    <div class="hs-wrapper">
+                                        <img src="img/lt11.jpg" alt=" " class="img-responsive" />
+                                        <img src="img/lt12.jpg" alt=" " class="img-responsive" />
+                                        <img src="img/lt13.jpg" alt=" " class="img-responsive" />
+                                        <img src="img/lt14.jpg" alt=" " class="img-responsive" />
+                                        <img src="img/lt15.jpg" alt=" " class="img-responsive" />
+                                        <img src="img/lt16.jpg" alt=" " class="img-responsive" />
+                                        <img src="img/lt17.jpg" alt=" " class="img-responsive" />
+                                        <div class="w3_hs_bottom">
+                                            <ul>
+                                                <li>
+                                                    <a href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div> 
+                                    <h5><a href="single.html">Macbook</a></h5>
+                                    <div class="simpleCart_shelfItem">
+                                        <p><span>22.000.000 VNĐ</span> <i class="item_price">19.999.999VNĐ</i></p>
+                                        <form action="#" method="post">
+                                            <input type="hidden" name="cmd" value="_cart" />
+                                            <input type="hidden" name="add" value="1" /> 
+                                            <input type="hidden" name="w3ls_item" value="Laptop cực mạnh" /> 
+                                            <input type="hidden" name="amount" value="19.999.999" />   
+                                            <button type="submit" class="w3ls-cart">Thêm vào giỏ hàng</button>
+                                        </form>  
+                                    </div>
+                                </div>
+                                <div class="col-md-4 agile_ecommerce_tab_left">
+                                    <div class="hs-wrapper">
+                                        <img src="img/lt12.jpg" alt=" " class="img-responsive" />
+                                        <img src="img/lt13.jpg" alt=" " class="img-responsive" />
+                                        <img src="img/lt14.jpg" alt=" " class="img-responsive" />
+                                        <img src="img/lt15.jpg" alt=" " class="img-responsive" />
+                                        <img src="img/lt16.jpg" alt=" " class="img-responsive" />
+                                        <img src="img/lt17.jpg" alt=" " class="img-responsive" />
+                                        <img src="img/lt18.jpg" alt=" " class="img-responsive" />
+                                        <div class="w3_hs_bottom">
+                                            <ul>
+                                                <li>
+                                                    <a href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div> 
+                                    <h5><a href="single.html">Macbook</a></h5>
+                                    <div class="simpleCart_shelfItem">
+                                        <p><span>22.000.000 VNĐ</span> <i class="item_price">19.999.999VNĐ</i></p>
+                                        <form action="#" method="post">
+                                            <input type="hidden" name="cmd" value="_cart" />
+                                            <input type="hidden" name="add" value="1" /> 
+                                            <input type="hidden" name="w3ls_item" value="Laptop cực mạnh" /> 
+                                            <input type="hidden" name="amount" value="19.999.999" />   
+                                            <button type="submit" class="w3ls-cart">Thêm vào giỏ hàng</button>
+                                        </form>  
+                                    </div>
+                                </div>
 							</div>
-							<div id="bank" class="tab-pane fade">
-								<div class="container-bank" style="width: 1000px;height: 500px;">
-									<div class="header-connect-visa" style="width: 800px;height: 50px; text-align: left;margin: auto;display: flex;padding-bottom: 10px;border-bottom: 1px solid gray;">
-										<h3>Thẻ tín dụng/ ghi nợ của tôi</h3>
-										<button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal1" style="float: right;margin-left: 200px;">+ Thêm thẻ tín dụng mới</button>
-										<div class="modal fade" id="myModal1" role="dialog">
-											<div class="modal-dialog" style="width: 500px;height: 600px;">
-											  <!-- Modal content-->
-												<div class="modal-content">
-													<div class="modal-header">
-													<button type="button" class="close" data-dismiss="modal">&times;</button>
-													<h4 class="modal-title">Thêm thẻ tín dụng/ ghi nợ</h4>
-													</div>
-													<div class="modal-body">
-														<div>
-															<input type="text" class="form-control" id="usr" placeholder="Nhập tên chủ thẻ">
-															<div style="width: 100%;height: 300px;">
-																<input type="text" class="form-control" id="usr" placeholder="Số thẻ tín dụng/ghi nợ" style="width: 50%;margin-top: 20px;">
-																<div style=" width: 100%;height: 15px;display: flex;margin-top: 10px;margin-bottom: 5px;">
-																	<h5>Ngày hết hạn</h5>
-																	<h5 style="margin-left: 170px;">CVV</h5>
-																</div>
-																<div style="margin-bottom: 60px;">
-																	<input style="width: 47%;float: left;" type="text" class="form-control" id="usr" placeholder="MM/YY">
-																	<input style="width: 47%;float: right;" type="text" class="form-control" id="usr" placeholder="000">
-																</div>
-																	<input style="width: 100%;height:34px;" type="text" class="form-control"  placeholder="Địa chỉ hóa đơn">
-																<div style="width: 100%;height:34px;padding-top: 35px;">
-																	<p>Chúng tôi hợp tác với CyberSouce, công ty thuộc tổ chức thẻ VISA, 
-																		nhằm đảm bảo thông tin thẻ Tín dụng/Ghi nợ của bạn luôn được bảo mật và an toàn. 
-																		Laptop Store không có quyền truy cập vào bất cứ thông tin nào</p>
-																</div>
-															</div>
-														</div>
-													</div>
-													<div class="modal-footer">
-													<button type="button" class="btn btn-default" data-dismiss="modal">Trở lại</button>
-													<button type="button" class="btn btn-danger" data-dismiss="modal">Hoàn thành</button>
-													</div>
-												</div>
-											</div>
-										</div>	
-									</div>
-									<div class="body-connect-visa" style="width: 800px;height: 150px;margin: auto;">
-										<h3 style="text-align: center;margin-top: 50px;"> Bạn chưa có thẻ tín dụng/ ghi nợ</h3>
-									</div>
-									<div class="header-bank-account" style="width: 800px;height: 50px; text-align: left;margin: auto;display: flex;padding-bottom: 10px;border-bottom: 1px solid gray;">
-										<h3>Tài khoản ngân hàng của tôi</h3>
-										<button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal2" style="float: right;margin-left: 200px;">+ Thêm tài khoản ngân hàng</button>
-										<div class="modal fade" id="myModal2" role="dialog">
-											<div class="modal-dialog" style="width: 500px;height: 600px;">
-											  <!-- Modal content-->
-												<div class="modal-content">
-													<div class="modal-header">
-													<button type="button" class="close" data-dismiss="modal">&times;</button>
-													<h4 class="modal-title">Thêm số điện thoại</h4>
-													</div>
-													<div class="modal-body">
-														<div style="width: 450px;height: 130px;">
-															<div style="float: left; width: 100%;display: flex;margin-bottom: 20px;">
-																<input style="width: 60%;" type="text" class="form-control" id="usr" placeholder="Số điện thoại">
-																<input style="width: 40%;" type="text" disabled="disabled" placeholder="Gửi mã xác minh">
-															</div>
-															<div style="margin-top: 20px;">
-																<input  type="text" class="form-control"placeholder="Nhập mã xác minh">
-															</div>
-															
-														</div>
-													</div>
-													<div class="modal-footer">
-													<button type="button" class="btn btn-default" data-dismiss="modal">Trở lại</button>
-													<button type="button" class="btn btn-danger" data-dismiss="modal">Hoàn thành</button>
-													</div>
-												</div>
-											</div>
-										</div>	
-									</div>
-									<div class="body-bank-account" style="width: 800px;height: 150px;margin: auto;">
-										<h3 style="text-align: center;margin-top: 50px;"> Bạn chưa có tài khoản ngân hàng</h3>
-									</div>
-								</div>
+							<div id="saleoff" class="tab-pane fade">
+                                <div style="width: 100%;height: 50px;">
+                                    <h3>Khuyến mãi</h3>
+                                </div>
 							</div>
-							<div id="address" class="tab-pane fade">
-								<div class="header-new-address" style="width: 800px;height: 50px; text-align: left;margin: auto;display: flex;padding-bottom: 10px;border-bottom: 1px solid gray;">
-									<h3>Địa chỉ của tôi</h3>
-									<button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal3" style="float:right;margin-left: 400px;">+ Thêm địa chỉ mới</button>
-									<div class="modal fade" id="myModal3" role="dialog">
-										<div class="modal-dialog" style="width: 500px;height: 600px;">
-										  <!-- Modal content-->
-											<div class="modal-content">
-												<div class="modal-header">
-												<button type="button" class="close" data-dismiss="modal">&times;</button>
-												<h4 class="modal-title">Thêm địa chỉ mới</h4>
-												</div>
-												<div class="modal-body">
-													<div style="width: 450px; height: 380px;">
-														<input style="width: 100%;margin-top: 20px;" type="text" placeholder="Họ & Tên">
-														<input style="width: 100%;margin-top: 20px;" type="text" placeholder="Số điện thoại">
-														<div class="form-group">
-															<select class="form-control" id="sel1" style="width: 100%;float: left;margin-top: 20px;" aria-placeholder="Thành phố">
-															 <option>Thành phố</option>
-															 <option>Bà Rịa - Vũng Tàu</option>
-															 <option> Nha Trang</option>
-															 <option> Hà Nội</option>
-															 <option>TP. Hồ Chí Minh</option>
-															</select>
-															<select class="form-control" id="sel1" style="width: 100%;float: left;margin-top: 20px;" aria-placeholder="Quận/Huyện">
-																<option>Quận/Huyện</option>
-															</select>
-															<select class="form-control" id="sel1" style="width: 100%;float: left;margin-top: 20px;" aria-placeholder="Phường/Xã">
-																<option>Phường xã</option>
-															</select>
-														</div>
-														<input style="width: 100%;margin-top: 20px;" type="text" placeholder="Tòa nhà tên đường">
-														<div class="btn-group" style="width: 100%; margin-top: 20px;">
-															<button type="button" class="btn btn-default disabled"><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i></button>
-															<button style="width: 83%;" type="button" class="btn btn-default disabled" >Chọn vị trí trên bảng đồ</button>
-															<button type="button" class="btn btn-default disabled">></button>
-														</div>
-													</div>
-												</div>
-												<div class="modal-footer">
-												<button type="button" class="btn btn-default" data-dismiss="modal">Trở lại</button>
-												<button type="button" class="btn btn-danger" data-dismiss="modal">Hoàn thành</button>
-												</div>
-											</div>
-										</div>
-									</div>	
-								</div>
-								<div class="body-connect-visa" style="width: 800px;height: 150px;margin: auto;">
-									<h3 style="text-align: center;margin-top: 50px;"> Bạn chưa có địa chỉ</h3>
-								</div>
-							</div>
-							<div id="addpassword" class="tab-pane fade">
-								<div class="header-add-password" style="width: 800px;height: 60px; text-align: left;margin: auto;padding-bottom: 10px;border-bottom: 1px solid gray;">
-									<h3>Thêm mật khẩu</h3>
-									<P>Để bảo mật tài khoản, vui lòng không chia sẽ mật khẩu cho người khác.</P>
-								</div>
-								<div class="body-add-password" style="width: 800px;height: 300px;display: flex">
-									<div class="form-chu-pass" style="width: 40%; text-align: right;">
-										<p style="margin-top: 40px;">Mật khẩu mới</p>
-										<p style="margin-top: 40px;">Xác nhận mật khẩu</p>
-										<p style="margin-top: 40px;">Mã xác minh</p>
-									</div>
-									<div class="form-input" style="width: 40%; margin-left: 30px;">
-										<input style="margin-top: 30px;width: 100%;" type="text">
-										<input style="margin-top: 30px;width: 100%;" type="text">
-										<div style="width: 204;height: 30px;float: left;width: 100%;display: flex;margin-top: 30px;">
-											<input style="width: 40%;" type="text">
-											<button style="width: 60%;">Gửi mã xác minh</button>
-									</div>
-								</div>
-								
-							</div>
-							<button style="margin-left: 40%;" type="button" class="btn btn-success">Cập nhật</button>
+							<div id="activity" class="tab-pane fade">
+								<div style="width: 100%;height: 50px;">
+                                    <h3>Hoạt động</h3>
+                                </div>
+                            </div>
+                            <div id="shopupdate" class="tab-pane fade">
+								<div style="width: 100%;height: 50px;">
+                                    <h3>Cập nhật shop</h3>
+                                </div>
+                            </div>
 						</div>
 					</div>
 
